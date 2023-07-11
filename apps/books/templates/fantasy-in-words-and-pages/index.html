@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="theme-color" content="{{ #D9135A }}">
+<meta name="theme-color" content="{{ D9135A }}">
 <link rel="profile" href="https://gmpg.org/xfn/11"/>
 <link rel="pingback" href="https://themes.workdo.io/wordpress/toaster/books/xmlrpc.php">
  				<script>document.documentElement.className = document.documentElement.className + ' yes-js js_active js'</script>
@@ -2025,9 +2025,9 @@ color: #ccc;
 	</div>
 </div>
 <script type="text/template" id="tmpl-variation-template">
-	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
-	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
-	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+	<div class="woocommerce-variation-description">{{ data.variation.availability_html }}</div>
+	<div class="woocommerce-variation-price">{{ data.variation.availability_html }}</div>
+	<div class="woocommerce-variation-availability">{{ data.variation.availability_html }}</div>
 </script>
 <script type="text/template" id="tmpl-unavailable-variation-template">
 	<p>Sorry, this product is unavailable. Please choose a different combination.</p>
