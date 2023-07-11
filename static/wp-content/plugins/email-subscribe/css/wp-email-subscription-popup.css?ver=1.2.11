@@ -1,0 +1,239 @@
+div.container_n span.modal-close {position: absolute ;top: -13px ;right: -14px ;width: 35px ;height: 35px ;background: url(../images/close-buttons-sprite.png) no-repeat ;}
+div.container_n span.modal-close span {display: none }
+div.container_n span.modal-close.left {top: -13px ;left: -13px ;}
+div.container_n span.modal-close:hover {background-position: 0 -37px ;cursor: pointer ;}
+div.container_n span.modal-close.black {background-position: -35px 0 ;}
+div.container_n span.modal-close.black:hover {background-position: -35px -36px ;}
+.overlay{position:fixed ;top:0 ;left:0 ;width:100% ;height:100% ;z-index:100001 ;background-color:#000000 ;opacity:0.5 ;text-align: center ;margin-right: auto ; margin-left: auto ;margin: 0 ;padding: 0 ; filter: alpha(opacity = 50) ;display: none }
+#formFormEmail{}
+
+
+
+.container_n {
+
+    /*max-width: 350px ;*/
+    margin: 0 auto ;
+}
+
+#newsletter_signup {
+    padding: 0px 25px 25px ;
+    background: #fff ;
+  /*  box-shadow:
+        0px 0px 0px 5px rgba( 255,255,255,0.4 ),
+        0px 4px 20px rgba( 0,0,0,0.33 ) ;
+    -moz-border-radius: 5px ;
+    -webkit-border-radius: 5px ;
+    border-radius: 5px ;*/
+    display: table ;
+
+}
+
+#newsletter_signup .header {
+    margin-top: 10px ;
+    margin-bottom: 20px ;
+}
+
+#newsletter_signup .header .subheading{
+    margin-top: 9px ;
+    max-width:350px ;
+    font-size: 13px ;
+
+}
+
+#newsletter_signup .header h3 {
+    color: #333333 ;
+    font-size: 24px ;
+    font-weight: bold ;
+    margin-bottom: 5px ;
+    background:none ;
+    background-color: none ;
+    background-image: none ;
+    border: none ;
+    color: none ;
+    padding:0px ;
+
+}
+
+#newsletter_signup .header p {
+    color: #8f8f8f ;
+    line-height 1 ;
+    font-size: 14px ;
+    font-weight: 300 ;
+    background:none ;
+    background-color: none ;
+    background-image: none ;
+    border: none ;
+    color: none ;
+    padding:0px ;
+}
+
+#newsletter_signup .sep {
+    height: 1px;
+    background: #e8e8e8 ;
+    max-width: 350px ;
+    background-color: none ;
+    background-image: none ;
+    border: none ;
+    color: none ;
+    padding:0px ;
+
+}
+
+#newsletter_signup .inputs {
+    margin-top: 25px ;
+    background:none ;
+    background-color: none ;
+    background-image: none ;
+    border: none ;
+    color: none ;
+    padding:0px ;
+}
+
+
+
+#newsletter_signup .textfield{
+    background: #f5f5f5 ;
+    font-size: 14px ;
+    -moz-border-radius: 3px ;
+    -webkit-border-radius: 3px ;
+    border-radius: 3px ;
+    border: none ;
+    padding: 13px 10px ;
+    width: 95% ;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 ) ;
+    clear: both ;
+    color:#8F8F8F ;
+    margin: 0px ;
+    box-sizing:content-box;
+    border:1px solid #cccccc;
+
+}
+
+#newsletter_signup .textfield:focus {
+    background: #fff ;
+    box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 ) ;
+    outline: none ;
+    background: #f5f5f5\9 ;
+    color:#000000 ;
+    margin: 0px ;
+
+}
+
+
+#newsletter_signup .inputs #submit_newsletter {
+    cursor: pointer ;
+    text-decoration: none ;
+    width: 100% ;
+    margin-top: 20px ;
+    padding: 15px 0 ;
+    color: #fff ;
+    font-size: 14px ;
+    font-weight: 500 ;
+    letter-spacing: 1px ;
+    text-align: center ;
+    text-decoration: none ;
+        background: -moz-linear-gradient(
+        top,
+        #b9c5dd 0%,
+        #a4b0cb) ;
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#b9c5dd),
+        to(#a4b0cb)) ;
+    -moz-border-radius: 5px ;
+    -webkit-border-radius: 5px ;
+    border-radius: 5px ;
+    border: 1px solid #737b8d ;
+    -moz-box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5) ;
+    -webkit-box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5) ;
+    box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5) ;
+    text-shadow:
+        0px 1px 3px rgba(000,000,000,0.3),
+        0px 0px 0px rgba(255,255,255,0) ;
+    display: table ;
+    position: static ;
+    clear: both ;
+    /* Newer Browsers */
+    background: linear-gradient(top, #b9c5dd, #a4b0cb) ;
+
+    /* IE5.5 - IE7 */
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#b9c5dd,EndColorStr=#a4b0cb) ;
+
+    /* IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#b9c5dd,EndColorStr=#a4b0cb)" ;
+
+
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, #b9c5dd,#a4b0cb) ;
+
+
+}
+
+#newsletter_signup .inputs #submit_newsletter:hover {
+    cursor: pointer;
+    background: -moz-linear-gradient(
+        top,
+        #a4b0cb 0%,
+        #b9c5dd) ;
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#a4b0cb),
+        to(#b9c5dd)) ;
+
+     /* Newer Browsers */
+    background: linear-gradient(top, #a4b0cb, #b9c5dd) ;
+
+    /* IE5.5 - IE7 */
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#a4b0cb,EndColorStr=#b9c5dd) ;
+
+    /* IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#a4b0cb,EndColorStr=#b9c5dd)" ;
+
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, #b9c5dd,#a4b0cb) ;
+}
+.image_error{color:red ;font-size: 12px ;font-weight: 300 ;letter-spacing: 1px ;margin-bottom: 7px ;display: block ;margin-top: 4px ;}
+.errorinput{margin-bottom: 17px ;}
+.errorinput_widget{}
+.mysuccess_msg,.myerror_msg{border: 1px solid ;margin: 10px 0px ;padding:6px 6px 6px 40px ;background-repeat: no-repeat ;background-position: 10px center ;}
+.mysuccess_msg {color: #4F8A10 ;background-color:#ffffe0 ;border-radius:3px;display:none ;border-color: #e6db55 ;background-image:url('../images/1378845314_001_06.gif') }
+.myerror_msg {color: #D8000C ;background-color: #FFBABA ;border-radius:3px ;display: none ;background-image:url('../images/1378845578_Error.png') }
+.AjaxLoader{margin: 10px 0px ;padding:6px 6px 6px 40px ;display:none ;font-weight: bold ;vertical-align: middle ;}
+.AjaxLoader img{padding-right: 10px ;margin-top: -7px ;vertical-align: middle ;padding-right: 10px ;}
+
+.ajaxLoaderWidget{margin: 10px 0px ;padding:6px 6px 6px 40px ;display:none ;font-weight: bold ;vertical-align: middle ;}
+.ajaxLoaderWidget img{padding-right: 10px ;margin-top: -7px ;vertical-align: middle ;padding-right: 10px ;}
+.ajaxLoaderWidget img{border-radius:0px ;box-shadow:none ;}
+
+.Nknewsletter-widget{ margin: 0 auto;}
+.Nknewsletter_description{margin: 0 0 28px;padding: 0;font-weight: 300;line-height: 1.625;}
+.Nknewsletter_name{
+      border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: inherit;
+    padding: 10px;
+    width: 100% ;
+}
+.Nknewsletter_email{
+      border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: inherit;
+    padding: 10px;
+    width: 100%;
+}
+.Nknewsletter_space{clear:both;margin-bottom: 20px}
+.Nknewsletter_space_submit{ /*max-width: 247px;*/min-width: 150px;padding: 10px;width: 100%;}
+.Nksnewsletter_text_align_left{text-align: left}
+#chkagreeornot{vertical-align:middle}
+.agree_term{vertical-align:middle}
+.agree_term a{text-decoration:underline}
+
+.nk_newsletter_agree{vertical-align:middle}
+.nk_newsletter_agree{vertical-align:middle}
+.nk_newsletter_agree a{text-decoration:underline}
