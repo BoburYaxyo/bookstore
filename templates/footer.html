@@ -81,3 +81,52 @@
 </footer>
 <!-- #colophon -->
 </div>
+
+<div class="backtotop"> 
+    <a style="display: none;" id="to_top" href="#">Top</a></div>
+    
+<script>
+    window.RS_MODULES = window.RS_MODULES || {};
+    window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+    window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+    window.RS_MODULES.defered = true;
+    window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+    window.RS_MODULES.type = 'compiled';
+</script>
+        <div class="overlay" id="mainoverlayDiv" ></div> 
+
+<div class="mydiv" id='formFormEmail' style="display:none" >
+   <div class="container_n">
+
+     <form id="newsletter_signup" name="newsletter_signup">
+
+
+        <div class="header">
+            <div class="AjaxLoader"><img src="https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/email-subscribe/images/AjaxLoader.gif"/>Please wait...</div>
+            <div id="myerror_msg" class="myerror_msg"></div>
+            <div id="mysuccess_msg" class="mysuccess_msg"></div>
+
+            <h3>Subscribe to our newsletter</h3>
+
+            <div class="subheading">Want to be notified when our article is published? Enter your email address and name below to be the first to know.</div>
+
+        </div>
+
+        <div class="sep"></div>
+
+        <div class="inputs">
+
+           <input type="email" class="textfield"  onblur="restoreInput(this,'Email')" onfocus="return clearInput(this,'Email');"  value="Email" name="youremail" id="youremail"  />
+           <div style="clear:both"></div>
+           <div class="errorinput"></div>
+                               <input type="text" class="textfield" id="yourname" onblur="restoreInput(this,'Name')" onfocus="return clearInput(this,'Name');"  value="Name" name="yourname" />
+            <div style="clear:both"></div>
+            <div class="errorinput"></div>
+                                        <a id="submit_newsletter"  onclick="submit_newsletter();" name="submit_newsletter">SIGN UP FOR NEWSLETTER NOW</a>
+
+    </div>
+
+</form>
+
+</div>      
+</div> 
