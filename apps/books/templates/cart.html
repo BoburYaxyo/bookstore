@@ -1,0 +1,95 @@
+
+{% extends 'main.html' %}
+
+
+
+{% block content %}
+   <body>
+      <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+      <div id="main" class="site-main ">
+         <div class="main_inner">
+                           <div class="page-title shop-page-title">
+                        <div class="page-title-inner theme-container">
+                           <a href="/" rel="nofollow">Home</a>							<h1 class="entry-title-main shop-entry-title-main">
+                             Cart							</h1>
+                           
+                        </div>
+                     </div>
+        <!-- page-banner-area-end -->
+
+        <!-- cart-area-start -->
+        <section class="cart-area pt-120 pb-120">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12">
+                        <form action="#">
+                           <div class="table-content table-responsive">
+                              <table class="table">
+                                    <thead>
+                                       <tr>
+                                          <th class="product-thumbnail">Images</th>
+                                          <th class="cart-product-name">Product</th>
+                                          <th class="product-price">Unit Price</th>
+                                        
+                                          
+                                          <th class="product-remove">Remove</th>
+                                       </tr>
+                                    </thead>
+                             
+                                    <tbody>
+                                       {% for item in cartitems %}
+                                       <tr>
+                                          <td class="product-thumbnail"><a href="{% url 'shop' %}"><img src="{{ item.imageURL }}" alt=""></a></td>
+                                          <td class="product-name"><a href="{% url 'shop' %}">{{item.name}}</a></td>
+                                          <td class="product-price"><span class="shop">{{item.price}}</span></td>
+                                          <div style="flex:1">
+                                             <p class="quantity"></p>
+               
+                                          </div>
+                                     
+                                          <td class="product-remove"><a href="{% url 'rem-cart' item.id %}"><i class="fa fa-times"></i></a></td>
+                                       </tr>
+                                       {% endfor %}
+                                    </tbody>
+                              </table>
+                           </div>
+                         
+                           <div class="row">
+                              <div class="col-12">
+                                    <div class="coupon-all">
+                                       <div class="coupon">
+                                          <input id="coupon_code" class="input-text" name="coupon_code" value="" placeholder="Coupon code" type="text">
+                                          <button class="tp-btn-h1" name="apply_coupon" type="submit">Apply
+                                                coupon</button>
+                                       </div>
+                                       <div class="coupon2">
+                                          <button class="tp-btn-h1" name="update_cart" type="submit">Update cart</button>
+                                       </div>
+                                    </div>
+                              </div>
+                           </div>
+                           <div class="row justify-content-end ">
+                              <div class="col-md-5">
+                                    <div class="cart-page-total">
+                                       <blockquote class="wp-block-quote">     <h2>Cart totals</h2>
+                                        
+                                       
+                                       <ul class="mb-20">
+                                          <li>Total <span>{{sum_price}}0</span></li>
+                                       </ul>
+                                       <a class="tp-btn-h1 button" href="">Proceed to checkout</a>
+                                    </div>   </blockquote>
+                              </div>
+                           </div>
+                        </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- cart-area-end -->
+    </main>
+   </body>
+</html>
+{% endblock content %}

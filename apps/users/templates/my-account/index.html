@@ -1,12 +1,14 @@
 {% extends 'main.html' %}
 
 {% block content %}
+{% if page == 'login' %}
+
 <div id="main" class="site-main ">
 	<div class="main_inner">
 							<div class="page-title shop-page-title">
 						<div class="page-title-inner theme-container">
-							<a href="https://themes.workdo.io/wordpress/toaster/books" rel="nofollow">Home</a>&nbsp;&nbsp;&#187;&nbsp;&nbsp;My account							<h1 class="entry-title-main shop-entry-title-main">
-								My account							</h1>
+							<a href="https://themes.workdo.io/wordpress/toaster/books" rel="nofollow">Home</a>&nbsp;&nbsp;&#187;&nbsp;&nbsp;Login							<h1 class="entry-title-main shop-entry-title-main">
+								Login						</h1>
 							<div class="breadcrumb-inner">Reading not only improves your vocabulary but also assists you in gaining a fresh perspective.</div>
 						</div>
 					</div>
@@ -29,9 +31,9 @@
 
 		<h2>Login</h2>
 
-		<form class="woocommerce-form woocommerce-form-login login" method="post">
+		<form action="{% url 'login' %}" class="woocommerce-form woocommerce-form-login login" method="POST">
 
-			
+			{% csrf_token %}
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 				<label for="username">Username or email address&nbsp;<span class="required">*</span></label>
 				<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="" />			</p>
@@ -45,10 +47,10 @@
 				<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
 					<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span>Remember me</span>
 				</label>
-				<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="a754192888" /><input type="hidden" name="_wp_http_referer" value="/wordpress/toaster/books/my-account/" />				<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Log in">Log in</button>
+				<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="a754192888" /><input type="hidden" name="_wp_http_referer" value="/wordpress/toaster/books/my-account/" />				<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Log in">Log in</button> <a href="{% url 'register' %}" style="background-color: none; margin-left:20px;" class="woocommerce-button">Sign up</a>
 			</p>
 			<p class="woocommerce-LostPassword lost_password">
-				<a href="https://themes.workdo.io/wordpress/toaster/books/my-account/lost-password/">Lost your password?</a>
+				<a href="{% url 'password_reset' %}">Lost your password?</a>
 			</p>
 
 			
@@ -57,26 +59,97 @@
 
 	</div>
 
-	<div class="u-column2 col-2">
+</div>
 
-		<h2>Register</h2>
+</div>
+		<div class="inner-container">
+				</div>
+	<!-- .inner-container -->
+</div>
+<!-- .entry-content -->
+</article>
+<!-- #post-## -->			            </div> <!-- #content -->
+  </div> <!-- #primary -->
+	<div id="secondary" class="left-col col-md-3 col-sm-4 col-lg-3">
+                        <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+                          <aside id="recent-posts-3" class="widget widget_recent_entries">            <h3 class="widget-title">Recent Posts</h3>            <ul>
+                            <li>
+                	<span class="recent-posts-thumbnail"> 
+	                <img width="330" height="200" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2023/02/7-330x200.jpg" class="attachment-wntr-small-thumb size-wntr-small-thumb wp-post-image" alt="" decoding="async" loading="lazy" />										</span>
+                   
+					<span class="recent-post-detail">
+                  <a href="https://themes.workdo.io/wordpress/toaster/books/learn-once-read-everywhere/">Learn Once, Read Everywhere</a>
+                                    <span class="post-date">May 27, 2023</span>
+                                </span>
+                </li>
+                            <li>
+                	<span class="recent-posts-thumbnail"> 
+	                <img width="330" height="200" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2023/02/1-330x200.jpg" class="attachment-wntr-small-thumb size-wntr-small-thumb wp-post-image" alt="" decoding="async" loading="lazy" />										</span>
+                   
+					<span class="recent-post-detail">
+                  <a href="https://themes.workdo.io/wordpress/toaster/books/fantasy-in-words-and-pages/">Fantasy In Words And Pages</a>
+                                    <span class="post-date">May 27, 2023</span>
+                                </span>
+                </li>
+                        </ul>
+            </aside>                        </div>
+        <!-- #primary-sidebar -->
+        </div>
+<!-- #secondary -->  
+</div><!-- #main-content -->
+<div class="home_last"></div>
+</div><!-- .main-content-inner -->
+</div><!-- .main_inner -->
+</div><!-- #main -->
+{% else %}
+<div id="main" class="site-main ">
+	<div class="main_inner">
+							<div class="page-title shop-page-title">
+						<div class="page-title-inner theme-container">
+							<a href="/" rel="nofollow">Home</a>&nbsp;&nbsp;&#187;&nbsp;&nbsp;Register							<h1 class="entry-title-main shop-entry-title-main">
+								Register							</h1>
+							<div class="breadcrumb-inner">Reading not only improves your vocabulary but also assists you in gaining a fresh perspective.</div>
+						</div>
+					</div>
+			
+			<div class="main-content-inner theme-container full-width">
+						
+											
+<div id="main-content" class="main-content full-width box-page ">
+<div id="primary" class="content-area col-sm-12 col-md-9 col-sm-8">
 
-		<form method="post" class="woocommerce-form woocommerce-form-register register"  >
+	<div id="content" class="site-content" role="main">
+      <article id="post-7261" class="post-7261 page type-page status-publish hentry">
+		<div class="entry-content">
+		<div class="woocommerce"><div class="woocommerce-notices-wrapper"></div>
 
+<div class="u-columns col2-set" id="customer_login">
+	</div>
+
+	<div class="u-column2 hok col-2">
+
+		<h2 class="hdf">Register</h2>
+
+		<form action="{% url 'register' %}" method="POST" class=" hokform woocommerce-form woocommerce-form-register register">
+			{% csrf_token %}
 			
 			
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+				<label for="username">Username&nbsp;<span class="required">*</span></label>
+				<input type="username" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="reg_email" autocomplete="username" value="" />	
 				<label for="reg_email">Email address&nbsp;<span class="required">*</span></label>
-				<input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email" autocomplete="email" value="" />			</p>
+				<input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email" autocomplete="email" value="" />			
+				<label for="password1">Password&nbsp;<span class="required">*</span></label>
+				<input type="password1" class="woocommerce-Input woocommerce-Input--text input-text" name="password1" id="reg_email" autocomplete="password1" value="" />	
+				<label for="password2">Password confirmation&nbsp;<span class="required">*</span></label>
+				<input type="password2" class="woocommerce-Input woocommerce-Input--text input-text" name="password2" id="reg_email" autocomplete="password2" value="" />	
+			</p>
 
 			
-				<p>A link to set a new password will be sent to your email address.</p>
-
-			
-			<div class="woocommerce-privacy-policy-text"><p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="" class="woocommerce-privacy-policy-link" target="_blank">privacy policy</a>.</p>
+			<div class="woocommerce-privacy-policy-text">
 </div>
 			<p class="woocommerce-form-row form-row">
-				<input type="hidden" id="woocommerce-register-nonce" name="woocommerce-register-nonce" value="f0f8c3e39f" /><input type="hidden" name="_wp_http_referer" value="/wordpress/toaster/books/my-account/" />				<button type="submit" class="woocommerce-Button woocommerce-button button woocommerce-form-register__submit" name="register" value="Register">Register</button>
+				<input type="hidden" id="woocommerce-register-nonce" name="woocommerce-register-nonce" value="f0f8c3e39f" /><input type="hidden" name="_wp_http_referer" value="/wordpress/toaster/books/my-account/" />				<button style="margin-left: 40%;" type="submit" class="renafkl woocommerce-Button woocommerce-button button woocommerce-form-register__submit" name="register" value="Register">Register</button>
 			</p>
 
 			
@@ -126,4 +199,35 @@
 </div><!-- .main-content-inner -->
 </div><!-- .main_inner -->
 </div><!-- #main -->
+<style>
+	@media only screen and (min-width: 992px) {
+	.hok {
+	margin-left: 30%;
+	}
+	.hdf{
+		margin-left: 80%;
+	}
+	}
+	@media only screen and (min-width: 360px) {
+		.hokform{
+			width: 320px;
+		}
+	}
+	@media only screen and (min-width: 760px) {
+		.hok{
+			margin-left: 30%;
+		}
+	}
+	@media only screen and (max-width: 280px) {
+		.hokform{
+			width: 220px;
+		}
+		.renafkl{
+			margin-left: -20px;
+		
+		}
+	}
+
+	</style>
+{% endif %}
 {% endblock content %}

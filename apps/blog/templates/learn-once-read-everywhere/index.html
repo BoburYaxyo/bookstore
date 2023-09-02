@@ -44,16 +44,16 @@
                         <article id="post-1270" class="post-1270 post type-post status-publish format-standard has-post-thumbnail hentry category-machine">
                             <div class="blog-desc">   
                                 
-<p>{{blog.description}}</p>
+<p>{% for post in blog.posts.all %}{{post.comment}}{% endfor %}</p>
 
 
 
 <blockquote class="wp-block-quote">
-<p><strong>At its core, &#8220;The Tapestry of Destiny&#8221; is an exploration of the intricate patterns that shape our lives, questioning the delicate balance between predestination and free will.</strong></p>
+<p><strong>{{blog.description}}</strong></p>
 </blockquote>
                                      
                             </div>
-                                                        <div class="bs-img">
+                            {% if blog.host == request.user %}<a style="margin: 10px;" class="button button-edit" href="{% url 'edit-blog' blog.id %}">Edit</a> <a class="button button-add" href="{% url 'add-blog' %}">Add</a> <a class="button button-delete" href="{% url 'delete-blog' blog.id %}">Delete</a>{% endif %}                           <div class="bs-img">
                               <img width="1000" height="700" src="{{blog.imageURL}}" class="attachment-wntr-blog-posts-list size-wntr-blog-posts-list wp-post-image" alt="" decoding="async" />                            </div>
                                                          
                                                                                     <div class="clearfix"></div> 

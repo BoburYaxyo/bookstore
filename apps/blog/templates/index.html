@@ -21,14 +21,14 @@
 
 												<div id="primary" class="contents-sticky  col-sm-8 col-md-12 col-lg-9-full full-layout">
 							<div class="row main-blog-page">            
-																								<div class="blog-post-content col-sm-3 col-xs-12">
+																								<div class="blog-post-content col-sm-3 col-xs-12 mvb">
 
 																									{% for blog in blogs %}														
 									<article class="post-1270 post type-post status-publish format-standard has-post-thumbnail hentry category-machine">
 										<div class="blog-item">
 											<div class="blog-img">
 											   <a href="#">
-												<img src="{{ blog.imageURL }}" alt="blog"/></a>
+												<img class="gofjl" src="{{ blog.imageURL }}" alt="blog"/></a>
 												<span class="btm-catagory">
 													                                                     
 																  <span class="tag-line">
@@ -62,10 +62,10 @@
 													</div> 
 												</div>
 												<div class="blog-desc">   
-								</div>
+															{{blog.description}} 	</div>
 
 																										<div class="blog-button ">
-															<a href="{% url 'blog-data' blog.id %}">
+															<a href="{% url 'blog-data' blog.id %}" class="fds">
 																Read More<svg><use xlink:href="#arrowright"></svg>
 															</a>
 														</div>
@@ -93,4 +93,112 @@
 	</div><!-- .main-content-inner -->
 </div><!-- .main_inner -->
 </div><!-- #main -->
+<style>
+
+
+		@media only screen and (min-width: 360px) {
+			.mvb{
+				display: grid;
+				 grid-template-columns:repeat(3, 80px);
+				  grid-gap:40px;
+			}
+			.gofjl{
+				min-width: 80px;
+				max-width: 81px;
+				min-height: 80px;
+				max-height: 81px;
+			}
+			.fds{
+				min-width: 80px;
+				max-width: 81px;
+				min-height: 20px;
+				max-height: 30px;
+				
+			}
+		}
+		@media only screen and (min-width: 500px) {
+			.mvb{
+				display: grid;
+				 grid-template-columns:repeat(3, 120px);
+				  grid-gap:60px;
+			}
+			.gofjl{
+				min-width: 100px;
+				max-width: 101px;
+				min-height: 100px;
+				max-height: 101px;
+			}
+			.fds{
+				min-width: 90px;
+				max-width: 91px;
+				min-height: 30px;
+				max-height: 40px;
+				
+			}
+		}
+		@media only screen and (min-width: 760px) {
+			.mvb{
+				display: grid;
+				 grid-template-columns:repeat(3, 200px);
+				grid-gap: 70px;
+			
+			}
+			.gofjl{
+				min-width: 2%;
+				max-width: 201px;
+				min-height: 200px;
+				max-height: 201px;
+			}
+			.fds{
+				min-width: 150px;
+				max-width: 151px;
+				min-height: 40px;
+				max-height: 41px;
+				
+			}
+		}
+		@media only screen and (min-width: 992px) {
+			.mvb{
+				display: grid;
+				 grid-template-columns:repeat(3, 250px);
+				  grid-gap:100px;
+			}
+			.gofjl{
+				min-width: 250px;
+				max-width: 251px;
+				min-height: 250px;
+				max-height: 251px;
+			}
+			.fds{
+				min-width: 150px;
+				max-width: 151px;
+				min-height: 40px;
+				max-height: 41px;
+				
+			}
+		}
+		@media only screen and (min-width: 1300px) {
+			.mvb{
+				display: grid;
+				 grid-template-columns:repeat(3, 350px);
+				  grid-gap:150px;
+			}
+			.gofjl{
+				min-width: 350px;
+				max-width: 351px;
+				min-height: 350px;
+				max-height: 351px;
+			}
+			.fds{
+				min-width: 170px;
+				max-width: 171px;
+				min-height: 40px;
+				max-height: 41px;
+				
+			}
+		}
+		@media only screen and (max-width: 280px) {
+		
+		}
+</style>
 {% endblock content %}

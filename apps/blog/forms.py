@@ -7,7 +7,7 @@ from blog.models import Blog
 class BlogForm(ModelForm):
     class Meta:
         model = Blog
-        fields =['title', 'category', 'image', 'description']
+        fields = '__all__'
 
     def __init__(self, *args, **kwargs):
         super(BlogForm, self).__init__(*args, **kwargs)

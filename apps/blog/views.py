@@ -3,6 +3,7 @@ from django.shortcuts import redirect, render
 from apps.blog.utils import paginateBlogs
 from blog.models import BCategory, Blog, Post
 from .forms import BlogForm
+from django.contrib import messages
 from django.db.models import Q
 # Create your views here.
 
@@ -12,7 +13,7 @@ def blog(request):
     blogs = Blog.objects.filter(
         Q(category__name__icontains=b)
     )
-    custom_range, blogs = paginateBlogs(request, blogs, 5)
+    custom_range, blogs = paginateBlogs(request, blogs, 6)
     context={"blogs":blogs, 'kated':kated}
     return render(request, 'index.html', context)
 
@@ -50,16 +51,19 @@ def blog_details(request, pk):
 
     return render(request, 'learn-once-read-everywhere/index.html', context)
 def add_blog(request):
+    page = 'add-blog'
     form = BlogForm()
     
     if request.method == 'POST':
         form = BlogForm(request.POST, request.FILES)
         
         if form.is_valid():
-            form.save()
+            user = form.save(commit=False)
+            user.owner = request.user
+            user.save()
             return redirect('blog')
             
-    context={'form': form}
+    context={'form': form, 'page': page}
     return render(request, 'crud.html', context)
 def edit_blog(request, pk):
     room = Blog.objects.get(id=pk)
@@ -72,4 +76,14 @@ def edit_blog(request, pk):
         
     context = {'form': form, 'blog': room}
     return render(request, 'crud.html', context)
+
+def deleteBlog(request, pk):
+    skill=Blog.objects.get(id=pk)
+    if request.method == 'POST':
+        skill.delete()
+        messages.success(request, 'Skill was deleted successfully!')
+        return redirect('blog')
+
+    context = {'object': skill}
+    return render(request, 'delete_template.html', context)
 
