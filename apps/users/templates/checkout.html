@@ -1,0 +1,264 @@
+
+{% extends 'main.html' %}
+
+
+{% block content %}
+   <body>
+      <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+      <div id="main" class="site-main ">
+        <div class="main_inner">
+                                <div class="page-title shop-page-title">
+                            <div class="page-title-inner theme-container">
+                                <a href="https://themes.workdo.io/wordpress/toaster/books" rel="nofollow">Home</a>&nbsp;&nbsp;&#187;&nbsp;&nbsp;Checkout							<h1 class="entry-title-main shop-entry-title-main">
+                                    Checkout						</h1>
+                                <div class="breadcrumb-inner">Reading not only improves your vocabulary but also assists you in gaining a fresh perspective.</div>
+                            </div>
+                        </div>
+        <!-- coupon-area-start -->
+        <section class="coupon-area pt-120 pb-30">
+            <div class="container">
+            <div class="row">
+            <div class="col-md-6">
+                <div class="coupon-accordion">
+
+                        <!-- ACCORDION END -->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="coupon-accordion">
+                        <!-- ACCORDION START -->
+                        <h3>Have a coupon? <span id="showcoupon">Click here to enter your code</span></h3>
+                        <div id="checkout_coupon" class="coupon-checkout-content">
+                        <div class="coupon-info">
+                            <form action="#">
+                                    <p class="checkout-coupon">
+                                    <input type="text" placeholder="Coupon Code">
+                                    <button class="tp-btn-h1" type="submit">Apply Coupon</button>
+                                    </p>
+                            </form>
+                        </div>
+                        </div>
+                        <!-- ACCORDION END -->
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+        <!-- coupon-area-end -->
+
+        <!-- checkout-area-start -->
+
+        <section class="checkout-area pb-85">
+            <div class="container">
+                <form action="{% url 'checkout' %}" method='POST'>
+                    {% csrf_token %} 
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="checkbox-form">
+                                <h3>Billing Details</h3>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="country-select">
+                                            <label>Viloyatingizni kiriting:</label>
+                                            <select name='country'>
+                                                <option value="Andijon" selected>Andijon</option>
+                                                <option value="Namangan">Namangan</option>
+                                                <option value="Fergana">Fergana</option>
+                                                <option value="Tashkent">Tashkent</option>
+                                                <option value="Urganch">Urganch</option>
+                                                <option value="Buxoro">Buxoro</option>
+                                                <option value="Samarqand">Samarqand</option>
+                                                <option value="Navoiy">Navoiy</option>
+                                                <option value="Qoraqolpog'iston res">Qoraqolpog'iston res</option>
+                                                <option value="Sirdaryo">Sirdaryo</option>
+                                                <option value="Qashqadaryo">Qashqadaryo</option>
+                                                <option value="Guliston">Guliston</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="checkout-form-list">
+                                            <label>First Name <span class="required">*</span></label>
+                                            <input name="first_name" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="checkout-form-list">
+                                            <label>Last Name <span class="required">*</span></label>
+                                            <input name='last_name' type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Company Name</label>
+                                            <input name='company_name' type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Address <span class="required">*</span></label>
+                                            <input name='street_adress' type="text" placeholder="Street address">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <input name='home_place_number' type="text" placeholder="Ko'cha va uy raqami">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Town / City <span class="required">*</span></label>
+                                            <input name='town_or_city' type="text" placeholder="Town / City">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="checkout-form-list">
+                                            <label>State / County <span class="required">*</span></label>
+                                            <input name='state' type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="checkout-form-list">
+                                            <label>Postcode / Zip <span class="required">*</span></label>
+                                            <input name='post_code' type="text" placeholder="Postcode / Zip">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="checkout-form-list">
+                                            <label>Email Address <span class="required">*</span></label>
+                                            <input name='email_adress' type="email" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="checkout-form-list">
+                                            <label>Phone <span class="required">*</span></label>
+                                            <input name='phone_number' type="text" placeholder="Postcode / Zip">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                    
+                                    </div>
+                                </div>
+                                <div class="different-address">
+                                    <div class="ship-different-title">
+                                        <h3>
+                                            <label>Ship to a different address?</label>
+                                            <input id="ship-box" type="checkbox">
+                                        </h3>
+                                    </div>
+                                    <div id="ship-box-info">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                  
+                    
+                                        </div>
+                                    </div>
+                                 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="your-order mb-30 ">
+                                <h3>Your order</h3>
+                                <div class="your-order-table table-responsive">
+                                    <table>
+                                        <thead>
+                                       
+                                        </thead>
+                                        
+                                        <tr class="cart_item">
+
+                                            <td class="product-name">
+                                           {% for product in cartitems %}*{{product.name}}<br>{% endfor %}   Jami product soni: <strong>{{cart_count}}</strong>
+                                            </td>
+                                        </tr>
+                                        <tbody>
+                                        
+                                            </tr>
+                                         
+                                        </tbody>
+                                        <tfoot>
+                                            <tr class="cart-subtotal">
+                                                <th>Cart Subtotal</th>
+                                                <td><span class="amount">{{sum_price}}$</span></td>
+                                            </tr>
+                                            <tr class="shipping">
+                                                <th>Shipping</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>
+                                                            <label>
+                                                                Flat Rate: <span class="amount">$7.00</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                          
+                                        </tfoot>
+                                    </table>
+                                </div>
+
+                                <div class="payment-method">
+                                    <div class="accordion" id="checkoutAccordion">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="checkoutOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bankOne" aria-expanded="true" aria-controls="bankOne">
+                                            Direct Bank Transfer
+                                            </button>
+                                        </h2>
+                                        <div id="bankOne" class="accordion-collapse collapse show" aria-labelledby="checkoutOne" data-bs-parent="#checkoutAccordion">
+                                            <div class="accordion-body">
+                                             <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="paymentTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment" aria-expanded="false" aria-controls="payment">
+                                            Cheque Payment
+                                            </button>
+                                        </h2>
+                                        <div id="payment" class="accordion-collapse collapse" aria-labelledby="paymentTwo" data-bs-parent="#checkoutAccordion">
+                                            <div class="accordion-body">
+                                            <p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="paypalThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paypal" aria-expanded="false" aria-controls="paypal">
+                                            PayPal
+                                            </button>
+                                        </h2>
+                                        <div id="paypal" class="accordion-collapse collapse" aria-labelledby="paypalThree" data-bs-parent="#checkoutAccordion">
+                                            <div class="accordion-body">
+                                                <p>Pay via PayPal; you can pay with your credit card if you don’t have a
+                                                PayPal account.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="order-button-payment mt-20">
+                                    <button type="submit" class="tp-btn-h1">Place order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- checkout-area-end -->
+
+       
+
+    </main>
+ 
+   </body>
+</html>
+{% endblock content %}

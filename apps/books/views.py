@@ -1,5 +1,5 @@
-from django.shortcuts import render, redirect
-from books.models import Book, Cart, Category, Sizes, Tags, Wishist
+from django.shortcuts import get_object_or_404, render, redirect
+from books.models import Book, Cart, Category, Review, Sizes, Tags, Wishist
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from books.utils import cartview, wishview, paginateProducts
@@ -50,15 +50,15 @@ def shop(request):
     tags = Tags.objects.all()
     sizes = Sizes.objects.all()
     q = request.GET.get('q') if request.GET.get('q') != None else ''
-    
-    books = Book.objects.filter(
+    products = Book.objects.filter(
         Q(category__name__icontains=q) |
         Q(price__icontains=q) |
         Q(tags__name__icontains=q)|
         Q(size__name__icontains=q)
     )
-    num=books.count()
-    context = {'books': books, 'tags':tags, 'category': category, 'num': num, 'sizes': sizes}
+    num=products.count()
+    custom_range, products = paginateProducts(request, products, 1)
+    context = {'books': products, 'tags':tags,'custom_range':custom_range, 'category': category, 'num': num, 'sizes': sizes}
     return render(request, 'shop/index.html', context)
 
 @login_required(login_url='login')
@@ -103,7 +103,33 @@ def addWishlistView(request, id) -> None:
 
     return redirect('shop')
 
-def singleBook(request):
-    
-    context = {}
+def singleBook(request, pk):
+    book = get_object_or_404(Book, id=pk)
+    if request.method == 'POST':
+        name = request.POST.get('author', '')
+        email = request.POST.get('email', '')
+        rating = request.POST.get('rating', 3)
+        content = request.POST.get('content', '')
+        
+        if content:
+            reviews = Review.objects.filter(created_by=request.user, book=book)
+            if reviews.count() > 2:
+                review = reviews.first()
+                review.name=name
+                review.email=email
+                review.rating=rating
+                review.content=content
+                review.save()
+            else:
+                review = Review.objects.create(
+                    name=name,
+                    email=email,
+                    book=book,
+                    rating=rating,
+                    content=content,
+                    created_by = request.user
+                )
+            
+            return redirect('single-book', pk=pk)
+    context = {'book': book}
     return render(request, 'single_book.html', context)

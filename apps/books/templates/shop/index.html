@@ -132,9 +132,10 @@
 </li>
 {% endfor %}
 </ul>
-</main></div>					</div></div>
-					
-				</div>
+
+</main></div>	 		</div>{% include 'pagination.html' with queryset=books custom_range=custom_range %}</div>
+		
+			</div>
 	</div><!-- .main-content-inner -->
 </div><!-- .main_inner -->
 </div><!-- #main -->
