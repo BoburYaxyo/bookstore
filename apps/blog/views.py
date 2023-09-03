@@ -59,7 +59,7 @@ def add_blog(request):
         
         if form.is_valid():
             user = form.save(commit=False)
-            user.owner = request.user
+            user.host = request.user
             user.save()
             return redirect('blog')
             

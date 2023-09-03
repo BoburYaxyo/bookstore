@@ -4,18 +4,27 @@
 <head>
 <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="theme-color" content="{{ D9135A }}">
-<link rel="profile" href="https://gmpg.org/xfn/11"/>
-<link rel="pingback" href="https://themes.workdo.io/wordpress/toaster/books/xmlrpc.php">
+<meta name="theme-color">
+<link rel="pingback" href="{% static 'css/xmlrpc.php' %}">
  				<script>document.documentElement.className = document.documentElement.className + ' yes-js js_active js'</script>
-				<title>Shop &#8211; Books WorkDo</title>
+				<title>Books WorkDo</title>
 
-<meta name='robots' content='max-image-preview:large' />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("input[type=checkbox]").click(function () {
+            if ($(this).is(":checked")) {
+                $("input[type=checkbox]").removeAttr("checked");
+                $(this).attr("checked", "checked");
+            }
+        });
+    });
+</script><meta name='robots' content='max-image-preview:large' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-<link rel="alternate" type="application/rss+xml" title="Books WorkDo &raquo; Feed" href="https://themes.workdo.io/wordpress/toaster/books/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Books WorkDo &raquo; Comments Feed" href="https://themes.workdo.io/wordpress/toaster/books/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Books WorkDo &raquo; Products Feed" href="https://themes.workdo.io/wordpress/toaster/books/shop/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Books WorkDo &raquo; Feed" href="{% static 'feed/' %}" />
+<link rel="alternate" type="application/rss+xml" title="Books WorkDo &raquo; Comments Feed" href="{% static 'comments/feed/' %}" />
 <script type="text/javascript">
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
 /*! This file is auto-generated */
@@ -35,145 +44,174 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-	<link rel='stylesheet' id='font-awesome-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/products-compare-for-woocommerce/berocket/assets/css/font-awesome.min.css?ver=6.2.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='font-awesome-css' href="{% static 'css/wp-content/plugins/products-compare-for-woocommerce/berocket/assets/css/font-awesome.min.css' %}" type='text/css' media='all' />
 <style id='font-awesome-inline-css' type='text/css'>
-[data-font="FontAwesome"]:before {font-family: 'FontAwesome' !important;content: attr(data-icon) !important;speak: none !important;font-weight: normal !important;font-variant: normal !important;text-transform: none !important;line-height: 1 !important;font-style: normal !important;-webkit-font-smoothing: antialiased !important;-moz-osx-font-smoothing: grayscale !important;}
+[data-font="FontAwesome"]:before {font-family: 'FontAwesome' !important;content: attr(data-icon) !important; font-variant: normal !important;text-transform: none !important;line-height: 1 !important;font-style: normal !important;-webkit-font-smoothing: antialiased !important;-moz-osx-font-smoothing: grayscale !important;}
 </style>
 <link rel='stylesheet' id='wntr-google-fonts-css' href='https://fonts.googleapis.com/css?family=Quicksand%3A100%2C200%2C300%2C400%2C500%2C600%2C700&#038;ver=1.0.0#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='wntr-custom-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/custom.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='owl-carousel-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/owl.carousel.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='owl-transitions-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/owl.transitions.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='shadowbox-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/shadowbox.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='animate-min-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/animate.min.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wntr-shortcode-style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/shortcode_style.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='slick-theme-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/slick-theme.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='slick-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/slick.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='bootstrap-min-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/bootstrap.min.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wntr-woocommerce-css-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/woocommerce.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-library-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wc-blocks-vendors-style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=10.2.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wc-blocks-style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=10.2.3' type='text/css' media='all' />
-<link rel='stylesheet' id='jquery-selectBox-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/yith-woocommerce-wishlist/assets/css/jquery.selectBox.css?ver=1.2.0' type='text/css' media='all' />
-<link rel='stylesheet' id='yith-wcwl-font-awesome-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/yith-woocommerce-wishlist/assets/css/font-awesome.css?ver=4.7.0' type='text/css' media='all' />
-<link rel='stylesheet' id='woocommerce_prettyPhoto_css-css' href='//themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/assets/css/prettyPhoto.css?ver=3.1.6' type='text/css' media='all' />
-<link rel='stylesheet' id='yith-wcwl-main-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/yith-woocommerce-wishlist/assets/css/style.css?ver=3.22.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wntr-custom-css' href="{% static 'css/wp-content/themes/books/css/workdo/custom.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-css' href="{% static 'css/wp-content/themes/books/css/workdo/owl.carousel.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='owl-transitions-css' href="{% static 'css/wp-content/themes/books/css/workdo/owl.transitions.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='shadowbox-css' href="{% static 'css/wp-content/themes/books/css/workdo/shadowbox.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='animate-min-css' href="{% static 'css/wp-content/themes/books/css/workdo/animate.min.css' %}" type='text/css' media='all' /> 
+<link rel='stylesheet' id='wntr-shortcode-style-css' href="{% static 'css/wp-content/themes/books/css/workdo/shortcode_style.css' %}" type='text/css' media='all' /> 
+<link rel='stylesheet' id='slick-theme-css' href="{% static 'css/wp-content/themes/books/css/workdo/slick-theme.css' %}" type='text/css' media='all' /> 
+<link rel='stylesheet' id='slick-css' href="{% static 'css/wp-content/themes/books/css/workdo/slick.css' %}" type='text/css' media='all' /> 
+<link rel='stylesheet' id='bootstrap-min-css' href="{% static 'css/wp-content/themes/books/css/workdo/bootstrap.min.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wntr-woocommerce-css-css' href="{% static 'css/wp-content/themes/books/css/workdo/woocommerce.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href="{% static 'css/wp-includes/css/dist/block-library/style.min.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-vendors-style-css' href="{% static 'css/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-css' href="{% static 'css/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-selectBox-css' href="{% static 'css/wp-content/plugins/yith-woocommerce-wishlist/assets/css/jquery.selectBox.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='yith-wcwl-font-awesome-css' href="{% static 'css/wp-content/plugins/yith-woocommerce-wishlist/assets/css/font-awesome.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce_prettyPhoto_css-css' href="{% static 'css/wp-content/plugins/woocommerce/assets/css/prettyPhoto.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='yith-wcwl-main-css' href="{% static 'css/wp-content/plugins/yith-woocommerce-wishlist/assets/css/style.css' %}" type='text/css' media='all' />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <style id='yith-wcwl-main-inline-css' type='text/css'>
 .yith-wcwl-share li a{color: #FFFFFF;}.yith-wcwl-share li a:hover{color: #FFFFFF;}.yith-wcwl-share a.facebook{background: #39599E; background-color: #39599E;}.yith-wcwl-share a.facebook:hover{background: #39599E; background-color: #39599E;}.yith-wcwl-share a.twitter{background: #45AFE2; background-color: #45AFE2;}.yith-wcwl-share a.twitter:hover{background: #39599E; background-color: #39599E;}.yith-wcwl-share a.pinterest{background: #AB2E31; background-color: #AB2E31;}.yith-wcwl-share a.pinterest:hover{background: #39599E; background-color: #39599E;}.yith-wcwl-share a.email{background: #FBB102; background-color: #FBB102;}.yith-wcwl-share a.email:hover{background: #39599E; background-color: #39599E;}.yith-wcwl-share a.whatsapp{background: #00A901; background-color: #00A901;}.yith-wcwl-share a.whatsapp:hover{background: #39599E; background-color: #39599E;}
 </style>
-<link rel='stylesheet' id='classic-theme-styles-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-includes/css/classic-themes.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href="{% static 'css/wp-includes/css/classic-themes.min.css' %}" type='text/css' media='all' />
 <style id='global-styles-inline-css' type='text/css'>
 body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
 .wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
 </style>
-<link rel='stylesheet' id='redux-extendify-styles-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/redux-framework/redux-core/assets/css/extendify-utilities.css?ver=4.4.1' type='text/css' media='all' />
-<link rel='stylesheet' id='wpmm-frontend-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/ap-mega-menu/css/style.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wpmm-responsive-stylesheet-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/ap-mega-menu/css/responsive.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wpmm-animate-css-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/ap-mega-menu/css/animate.css?ver=ap-mega-menu' type='text/css' media='all' />
-<link rel='stylesheet' id='wpmm-frontwalker-stylesheet-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/ap-mega-menu/css/frontend_walker.css?ver=ap-mega-menu' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-extendify-styles-css' href="{% static 'css/wp-content/plugins/redux-framework/redux-core/assets/css/extendify-utilities.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wpmm-frontend-css' href="{% static 'css/wp-content/plugins/ap-mega-menu/css/style.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wpmm-responsive-stylesheet-css' href="{% static 'css/wp-content/plugins/ap-mega-menu/css/responsive.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wpmm-animate-css-css' href="{% static 'css/wp-content/plugins/ap-mega-menu/css/animate.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wpmm-frontwalker-stylesheet-css' href="{% static 'css/wp-content/plugins/ap-mega-menu/css/frontend_walker.css' %}" type='text/css' media='all' />
 <link rel='stylesheet' id='wpmm-google-fonts-style-css' href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700&#038;ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wpmegamenu-fontawesome-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/ap-mega-menu/css/wpmm-icons/font-awesome/font-awesome.min.css?ver=ap-mega-menu' type='text/css' media='all' />
-<link rel='stylesheet' id='wpmegamenu-genericons-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/ap-mega-menu/css/wpmm-icons/genericons.css?ver=ap-mega-menu' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-includes/css/dashicons.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wpmegamenu-fontawesome-css' href="{% static 'css/wp-content/plugins/ap-mega-menu/css/wpmm-icons/font-awesome/font-awesome.min.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wpmegamenu-genericons-css' href="{% static 'css/wp-content/plugins/ap-mega-menu/css/wpmm-icons/genericons.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href="{% static 'css/wp-includes/css/dashicons.min.css' %}" type='text/css' media='all' />
 <style id='dashicons-inline-css' type='text/css'>
-[data-font="Dashicons"]:before {font-family: 'Dashicons' !important;content: attr(data-icon) !important;speak: none !important;font-weight: normal !important;font-variant: normal !important;text-transform: none !important;line-height: 1 !important;font-style: normal !important;-webkit-font-smoothing: antialiased !important;-moz-osx-font-smoothing: grayscale !important;}
+[data-font="Dashicons"]:before {font-family: 'Dashicons' !important;content: attr(data-icon) !important;font-weight: normal !important;font-variant: normal !important;text-transform: none !important;line-height: 1 !important;font-style: normal !important;-webkit-font-smoothing: antialiased !important;-moz-osx-font-smoothing: grayscale !important;}
 </style>
-<link rel='stylesheet' id='contact-form-7-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.7' type='text/css' media='all' />
-<link rel='stylesheet' id='woo-multi-currency-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woo-multi-currency/css/woo-multi-currency.min.css?ver=2.1.30' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href="{% static 'css/wp-content/plugins/contact-form-7/includes/css/styles.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='woo-multi-currency-css' href="{% static 'css/wp-content/plugins/woo-multi-currency/css/woo-multi-currency.min.css' %}" type='text/css' media='all' />
 <style id='woo-multi-currency-inline-css' type='text/css'>
 .woo-multi-currency .wmc-list-currencies .wmc-currency.wmc-active,.woo-multi-currency .wmc-list-currencies .wmc-currency:hover {background: #f78080 !important;}
-		.woo-multi-currency .wmc-list-currencies .wmc-currency,.woo-multi-currency .wmc-title, .woo-multi-currency.wmc-price-switcher a {background: #212121 !important;}
-		.woo-multi-currency .wmc-title, .woo-multi-currency .wmc-list-currencies .wmc-currency span,.woo-multi-currency .wmc-list-currencies .wmc-currency a,.woo-multi-currency.wmc-price-switcher a {color: #ffffff !important;}.woo-multi-currency.wmc-shortcode .wmc-currency{background-color:#ffffff;color:#212121}.woo-multi-currency.wmc-shortcode .wmc-currency.wmc-active,.woo-multi-currency.wmc-shortcode .wmc-current-currency{background-color:#ffffff;color:#212121}.woo-multi-currency.wmc-shortcode.vertical-currency-symbols-circle:not(.wmc-currency-trigger-click) .wmc-currency-wrapper:hover .wmc-sub-currency,.woo-multi-currency.wmc-shortcode.vertical-currency-symbols-circle.wmc-currency-trigger-click .wmc-sub-currency{animation: height_slide 100ms;}@keyframes height_slide {0% {height: 0;} 100% {height: 100%;} }
+.woo-multi-currency .wmc-list-currencies .wmc-currency,.woo-multi-currency .wmc-title, .woo-multi-currency.wmc-price-switcher a {background: #212121 !important;}
+.woo-multi-currency .wmc-title, .woo-multi-currency .wmc-list-currencies .wmc-currency span,.woo-multi-currency .wmc-list-currencies .wmc-currency a,.woo-multi-currency.wmc-price-switcher a {color: #ffffff !important;}.woo-multi-currency.wmc-shortcode .wmc-currency{background-color:#ffffff;color:#212121}.woo-multi-currency.wmc-shortcode .wmc-currency.wmc-active,.woo-multi-currency.wmc-shortcode .wmc-current-currency{background-color:#ffffff;color:#212121}.woo-multi-currency.wmc-shortcode.vertical-currency-symbols-circle:not(.wmc-currency-trigger-click) .wmc-currency-wrapper:hover .wmc-sub-currency,.woo-multi-currency.wmc-shortcode.vertical-currency-symbols-circle.wmc-currency-trigger-click .wmc-sub-currency{animation: height_slide 100ms;}@keyframes height_slide {0% {height: 0;} 100% {height: 100%;} }
 </style>
-<link rel='stylesheet' id='wmc-flags-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woo-multi-currency/css/flags-64.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wmc-flags-css' href="{% static 'css/wp-content/plugins/woo-multi-currency/css/flags-64.min.css' %}" type='text/css' media='all' />
 <style id='woocommerce-inline-inline-css' type='text/css'>
 .woocommerce form .form-row .required { visibility: visible; }
 </style>
-<link rel='stylesheet' id='yith-quick-view-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/yith-woocommerce-quick-view/assets/css/yith-quick-view.css?ver=1.28.1' type='text/css' media='all' />
+<link rel='stylesheet' id='yith-quick-view-css' href="{% static 'css/wp-content/plugins/yith-woocommerce-quick-view/assets/css/yith-quick-view.css' %}" type='text/css' media='all' />
 <style id='yith-quick-view-inline-css' type='text/css'>
-
 				#yith-quick-view-modal .yith-wcqv-main{background:#ffffff;}
 				#yith-quick-view-close{color:#cdcdcd;}
 				#yith-quick-view-close:hover{color:#ff0000;}
 </style>
-<link rel='stylesheet' id='parent-style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/style.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wntr-responsive-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/responsive.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css' href="{% static 'css/wp-content/themes/books/style.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wntr-responsive-css' href="{% static 'css/wp-content/themes/books/responsive.css' %}" type='text/css' media='all' />
 <link rel='stylesheet' id='wntr-fonts-css' href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CRubik%3A400%2C500%2C600%2C700%2C800&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='wntr-style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books-child/style.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-icons-ekiticons-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css?ver=2.8.8' type='text/css' media='all' />
-<link rel='stylesheet' id='elementskit-parallax-style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit/modules/parallax/assets/css/style.css?ver=3.1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='berocket_compare_products_style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/products-compare-for-woocommerce/css/products_compare.css?ver=3.5.7.8' type='text/css' media='all' />
-<link rel='stylesheet' id='wt-owlcarousel-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/workdo-addon/assets/css/owlcarousel/owl.carousel.min.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wt-elementor-style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/workdo-addon/assets/css/workdo-style.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='grid-list-layout-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce-grid-list-toggle/assets/css/style.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='grid-list-button-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce-grid-list-toggle/assets/css/button.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='ekit-widget-styles-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=2.8.8' type='text/css' media='all' />
-<link rel='stylesheet' id='ekit-widget-styles-pro-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit/widgets/init/assets/css/widget-styles-pro.css?ver=3.1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='ekit-responsive-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=2.8.8' type='text/css' media='all' />
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Quicksand&#038;display=swap&#038;ver=1687526223" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&#038;display=swap&#038;ver=1687526223" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&#038;display=swap&#038;ver=1687526223" /></noscript><script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js'></script>
+<link rel='stylesheet' id='wntr-style-css' href="{% static 'css/wp-content/themes/books-child/style.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-ekiticons-css' href="{% static 'css/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='elementskit-parallax-style-css' href="{% static 'css/wp-content/plugins/elementskit/modules/parallax/assets/css/style.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='berocket_compare_products_style-css' href="{% static 'css/wp-content/plugins/products-compare-for-woocommerce/css/products_compare.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href="{% static 'css/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href="{% static 'css/wp-content/plugins/elementor/assets/css/frontend-lite.min.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='swiper-css' href="{% static 'css/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-7-css' href="{% static 'css/wp-content/uploads/elementor/css/post-7.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href="{% static 'css/wp-content/uploads/elementor/css/global.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-600-css' href="{% static 'css/wp-content/uploads/elementor/css/post-600.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wt-owlcarousel-css' href="{% static 'css/wp-content/plugins/workdo-addon/assets/css/owlcarousel/owl.carousel.min.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wt-elementor-style-css' href="{% static 'css/wp-content/plugins/workdo-addon/assets/css/workdo-style.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='ekit-widget-styles-css' href="{% static 'css/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='ekit-widget-styles-pro-css' href="{% static 'css/wp-content/plugins/elementskit/widgets/init/assets/css/widget-styles-pro.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='ekit-responsive-css' href="{% static 'css/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css' %}" type='text/css' media='all' />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Quicksand&#038;display=swap&#038;ver=1687526223" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&#038;display=swap&#038;ver=1687526223" media="print" onload="this.media='all'">
+<noscript>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&#038;display=swap&#038;ver=1687526223" />
+</noscript>
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.2.2' type='text/css' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<script type="text/javascript" src="{% static 'css/wp-includes/js/jquery/jquery.min.js' %}" id='jquery-core-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-includes/js/jquery/jquery-migrate.min.js' %}" id='jquery-migrate-js'></script>
 <script type='text/javascript' id='wp_megamenu-frontend_scripts-js-extra'>
 /* <![CDATA[ */
 var wp_megamenu_params = {"wpmm_mobile_toggle_option":"toggle_standard","wpmm_event_behavior":"click_submenu","wpmm_ajaxurl":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","wpmm_ajax_nonce":"45fca89587","check_woocommerce_enabled":"true","wpmm_mlabel_animation_type":"none","wpmm_animation_delay":"2s","wpmm_animation_duration":"3s","wpmm_animation_iteration_count":"1","enable_mobile":"1"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/ap-mega-menu/js/frontend.js?ver=ap-mega-menu' id='wp_megamenu-frontend_scripts-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/ap-mega-menu/js/frontend.js' %}" id='wp_megamenu-frontend_scripts-js'></script>
 <script type='text/javascript' id='woo-multi-currency-js-extra'>
 /* <![CDATA[ */
 var wooMultiCurrencyParams = {"enableCacheCompatible":"0","ajaxUrl":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","extra_params":[],"current_currency":"USD"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woo-multi-currency/js/woo-multi-currency.min.js?ver=2.1.30' id='woo-multi-currency-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woo-multi-currency/js/filter-price.js?ver=2.1.30' id='woocommerce-multi-currency-filter-price-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.jqtransform.js?ver=6.2.2' id='jqtransform-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.jqtransform.script.js?ver=6.2.2' id='jqtransform-script-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.custom.min.js?ver=6.2.2' id='wntr-custom-script-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/jquery.isotope.min.js?ver=6.2.2' id='isotope-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/custom.min.js?ver=6.2.2' id='custom-min-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.easypiechart.min.js?ver=6.2.2' id='easypiechart-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/owl.carousel.min.js?ver=6.2.2' id='owlcarousel-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.formalize.min.js?ver=6.2.2' id='formalize-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/respond.min.js?ver=6.2.2' id='respond-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.validate.js?ver=6.2.2' id='validate-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/shadowbox.js?ver=6.2.2' id='shadowbox-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/waypoints.min.js?ver=6.2.2' id='waypoints-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.megamenu.js?ver=6.2.2' id='megamenu-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/easyResponsiveTabs.js?ver=6.2.2' id='easyResponsiveTabs-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.treeview.js?ver=6.2.2' id='jtree-min-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.jscroll.min.js?ver=6.2.2' id='scroll-min-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/countUp.js?ver=6.2.2' id='countUp-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/doubletaptogo.js?ver=6.2.2' id='doubletaptogo-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/slick.min.js?ver=6.2.2' id='slick-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/bootstrap.min.js?ver=6.2.2' id='bootstrap-min-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/custom.js?ver=6.2.2' id='wntr-custom-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit/modules/parallax/assets/js/jarallax.js?ver=3.1.0' id='jarallax-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/products-compare-for-woocommerce/js/jquery.cookie.js?ver=3.5.7.8' id='berocket_jquery_cookie-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/woo-multi-currency/js/woo-multi-currency.min.js' %}" id='woo-multi-currency-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.jqtransform.js' %}" id='jqtransform-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.jqtransform.script.js' %}" id='jqtransform-script-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.custom.min.js' %}" id='wntr-custom-script-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/jquery.isotope.min.js' %}" id='isotope-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/custom.min.js' %}" id='custom-min-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.easypiechart.min.js' %}" id='easypiechart-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/owl.carousel.min.js' %}" id='owlcarousel-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.formalize.min.js' %}" id='formalize-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/respond.min.js' %}" id='respond-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.validate.js' %}" id='validate-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/shadowbox.js' %}" id='shadowbox-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/waypoints.min.js' %}" id='waypoints-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.megamenu.js' %}" id='megamenu-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/easyResponsiveTabs.js' %}" id='easyResponsiveTabs-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.treeview.js' %}" id='jtree-min-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.jscroll.min.js' %}" id='scroll-min-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/countUp.js' %}" id='countUp-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/doubletaptogo.js' %}" id='doubletaptogo-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/slick.min.js' %}" id='slick-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/bootstrap.min.js' %}" id='bootstrap-min-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/custom.js' %}" id='wntr-custom-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit/modules/parallax/assets/js/jarallax.js' %}" id='jarallax-js'></script>
+<script type='text/javascript' src="ST" id='berocket_jquery_cookie-js'></script>
 <script type='text/javascript' id='berocket_compare_products_script-js-extra'>
 /* <![CDATA[ */
 var the_compare_products_data = {"ajax_url":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","user_func":{"before_load":"","after_load":"","before_remove":"","after_remove":"","custom_css":""},"home_url":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books","hide_same":"Hide attributes with same values","show_same":"Show attributes with same values","hide_same_default":"","compare_selector":"#br_popup_1","toppadding":"0","is_compare_page":""};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/products-compare-for-woocommerce/js/products_compare.js?ver=3.5.7.8' id='berocket_compare_products_script-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/products-compare-for-woocommerce/js/jquery.mousewheel.min.js?ver=3.5.7.8' id='jquery-mousewheel-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce-grid-list-toggle/assets/js/jquery.cookie.min.js?ver=6.2.2' id='cookie-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce-grid-list-toggle/assets/js/jquery.gridlistview.min.js?ver=6.2.2' id='grid-list-scripts-js'></script>
-<link rel="https://api.w.org/" href="https://themes.workdo.io/wordpress/toaster/books/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://themes.workdo.io/wordpress/toaster/books/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://themes.workdo.io/wordpress/toaster/books/wp-includes/wlwmanifest.xml" />
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/products-compare-for-woocommerce/js/products_compare.js' %}" id='berocket_compare_products_script-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/products-compare-for-woocommerce/js/jquery.mousewheel.min.js' %}" id='jquery-mousewheel-js'></script>
+<link rel="https://api.w.org/" href="{% static 'css/wp-json/' %}" />
+<link rel="alternate" type="application/json" href="{% static 'css/wp-json/wp/v2/pages/600' %}" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="{% static 'css/xmlrpc.php' %}" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{% static 'css/wp-includes/wlwmanifest.xml' %}" />
 <meta name="generator" content="WordPress 6.2.2" />
 <meta name="generator" content="WooCommerce 7.8.0" />
-<meta name="generator" content="Redux 4.4.1" /><style type='text/css'>                .wp-megamenu-main-wrapper .wpmm-mega-menu-icon{
-                font-size: 13px;
-                }
-                </style><style>.br_new_compare_block .br_left_table {background-color: #ffffff!important;}.br_new_compare_block .br_main_top table {background-color: #ffffff!important;}div.br_new_compare_block.br_full_size_popup {background-color: #ffffff!important;}
-            div.br_new_compare .br_right_table tr td,
-            div.br_new_compare .br_right_table tr th,
-            div.br_new_compare .br_left_table,
-            div.br_new_compare_block .br_top_table table th,
-            div.br_new_compare_block .br_top_table table td {width: 200px!important;min-width: 200px!important;max-width: 200px!important;}
-            div.br_new_compare div.br_right_table,
-            div.br_top_table div.br_main_top,
-            div.br_top_table div.br_opacity_top{margin-left: 200px!important;}div.br_new_compare_block .br_top_table .br_show_compare_dif {max-width: 200px!important;}div.br_new_compare_block .br_show_compare_dif {bottom: 0px!important;}div.br_new_compare_block .br_show_compare_dif:hover {}div.br_new_compare_block .br_remove_all_compare {bottom: 0px!important;}div.br_new_compare_block .br_remove_all_compare:hover {}.br_new_compare_block .br_new_compare img {width: px!important;}.br_new_compare_block {margin-top: px!important;margin-bottom: px!important;margin-left: px!important;margin-right: px!important;}div.br_new_compare_block.br_full_size_popup {top: px!important;bottom: px!important;left: px!important;right: px!important;}div.br_new_compare_black_popup {background-color: #000000!important;opacity: 0.5!important;}.br_full_size_close a {font-size: 34px!important;top: 0px!important;right: 0px!important;color: #!important;}.br_new_compare_block .br_same_attr {background-color: #!important;}</style><style>.berocket_compare_widget_start .berocket_compare_widget .berocket_open_compare ,.berocket_compare_widget_toolbar .berocket_compare_widget .berocket_open_compare {border-color: #999999;border-width: 0px;border-radius: 0px;font-size: 16px;color: #333333;background-color: #9999ff;}.berocket_compare_widget_start .berocket_show_compare_toolbar {border-color: #999999;border-width: 0px;border-radius: 0px;font-size: 16px;color: #333333;background-color: #9999ff;}.br_compare_button {background-color: #!important;color: #!important;}.button.br_compare_button:hover {background-color: #!important;color: #!important;}.br_compare_added {background-color: #!important;color: #!important;}</style><meta name="generator" content="/var/www/vhosts/themes.workdo.io/httpdocs/wordpress/toaster/books/wp-content/themes/books/style.css - " /><link rel="shortcut icon" type="image/png" href="https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/images/workdo/favicon.png" /><style>
+<link rel="canonical" href="{% static 'css/' %}" />
+<link rel='shortlink' href="{% static 'css/' %}" />
+<link rel="alternate" type="application/json+oembed" href="{% static 'css/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthemes.workdo.io%2Fwordpress%2Ftoaster%2Fbooks%2F' %}" />
+<link rel="alternate" type="text/xml+oembed" href="{% static 'css/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthemes.workdo.io%2Fwordpress%2Ftoaster%2Fbooks%2F&#038;format=xm' %}l" />
+<meta name="generator" content="Redux 4.4.1" />
+<style type='text/css'>                
+.wp-megamenu-main-wrapper .wpmm-mega-menu-icon{
+    font-size: 13px;
+}
+</style>
+<style>.br_new_compare_block .br_left_table {background-color: #ffffff!important;}.br_new_compare_block .br_main_top table {background-color: #ffffff!important;}div.br_new_compare_block.br_full_size_popup {background-color: #ffffff!important;}
+	div.br_new_compare .br_right_table tr td,
+	div.br_new_compare .br_right_table tr th,
+	div.br_new_compare .br_left_table,
+	div.br_new_compare_block .br_top_table table th,
+	div.br_new_compare_block .br_top_table table td {width: 200px!important;min-width: 200px!important;max-width: 200px!important;}
+	div.br_new_compare div.br_right_table,
+	div.br_top_table div.br_main_top,
+	div.br_top_table div.br_opacity_top {margin-left: 200px !important;}
+	div.br_new_compare_block .br_top_table .br_show_compare_dif {max-width: 200px !important;}
+	div.br_new_compare_block .br_show_compare_dif {bottom: 0px !important;}
+	div.br_new_compare_block .br_remove_all_compare {bottom: 0px !important;}
+	.br_new_compare_block .br_new_compare img {width: px !important;}
+	div.br_new_compare_block {margin-top: px !important; margin-bottom: px !important; margin-left: px !important; margin-right: px !important;}
+	div.br_new_compare_block.br_full_size_popup {top: px !important;bottom: px !important;left: px !important;right: px !important;}
+	div.br_new_compare_black_popup {background-color: #000000 !important; opacity: 0.5 !important;}
+	.br_full_size_close a {font-size: 34px !important;top: 0px !important;right: 0px !important;color: red !important;}
+	.br_new_compare_block .br_same_attr {background-color: #ff0000 !important;}
+</style>
+<style>
+.berocket_compare_widget_start .berocket_compare_widget .berocket_open_compare ,.berocket_compare_widget_toolbar .berocket_compare_widget .berocket_open_compare {border-color: #999999;border-width: 0px;border-radius: 0px;font-size: 16px;color: #333333;background-color: #9999ff;}.berocket_compare_widget_start .berocket_show_compare_toolbar {border-color: #999999;border-width: 0px;border-radius: 0px;font-size: 16px;color: #333333;background-color: #9999ff;}.br_compare_button {background-color: #9999ff !important;color: red !important;}.button.br_compare_button:hover {background-color: #ff0000 !important;color: red !important;}.br_compare_added {background-color: #ff0000 !important;color: red !important;}</style><meta name="generator" content="{% static 'css/wp-content/themes/books/style.css' %}" /><link rel="shortcut icon" type="image/png" href="{% static 'css/wp-content/themes/books/images/workdo/favicon.png' %}" /><style>
 	@media only screen and (min-width: 980px)  {  .elementor-icon-list-item b  {
 			font-family: serif;
 			font-style: italic;
@@ -369,7 +407,7 @@ var the_compare_products_data = {"ajax_url":"https:\/\/themes.workdo.io\/wordpre
     .site-main .upsells.products > h2, .site-main .related.products h2{
 		color:#000000;
 	}
-	.workdo_content h4,{
+	.workdo_content h4{
 		color: #000000 ;
 	}
 	.contact-block .contact-inner:hover, .top-rated-product .woocommerce ul.products li.product .product-name:hover{
@@ -598,7 +636,7 @@ var the_compare_products_data = {"ajax_url":"https:\/\/themes.workdo.io\/wordpre
 		font-family: Quicksand, sans-serif;
 		font-style: normal;
 		background-color:#ffffff !important;
-				background-image: url("https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/images/workdo/colorpicker/pattern/body-bg.png")!important;
+				background-image: url(static/css/wp-content/themes/books/images/workdo/colorpicker/pattern/body-bg.png)!important;
 			}		
 	.widget button, .widget input[type="button"], .widget input[type="reset"], .widget input[type="submit"], a.button, button, .contributor-posts-link, input[type="button"], input[type="reset"], input[type="submit"], .button_content_inner a, .woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce .wishlist_table td.product-add-to-cart a,.woocommerce .wc-proceed-to-checkout .checkout-button:hover,
 	.woocommerce-page input.button:hover,.woocommerce #content input.button.disabled,.woocommerce #content input.button:disabled,.woocommerce #respond input#submit.disabled,.woocommerce #respond input#submit:disabled,.woocommerce a.button.disabled,.woocommerce a.button:disabled,.woocommerce button.button.disabled,.woocommerce button.button:disabled,.woocommerce input.button.disabled,.woocommerce input.button:disabled,.woocommerce-page #content input.button.disabled,.woocommerce-page #content input.button:disabled,.woocommerce-page #respond input#submit.disabled,.woocommerce-page #respond input#submit:disabled,.woocommerce-page a.button.disabled,.woocommerce-page a.button:disabled,.woocommerce-page button.button.disabled,.woocommerce-page button.button:disabled,.woocommerce-page input.button.disabled,.woocommerce-page input.button:disabled,.loadgridlist-wrapper .woocount:hover,#primary .entry-summary .single_add_to_cart_button,.loadgridlist-wrapper .woocount{
@@ -651,7 +689,7 @@ var the_compare_products_data = {"ajax_url":"https:\/\/themes.workdo.io\/wordpre
 	
 			.page-template-blog-list .page-title, .single.single-post .page-title{
 			text-align: center;
-		    background-image: url(https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/images/workdo/blog-brd.jpg) !important;
+		    background-image: url(static/css/wp-content/themes/books/images/workdo/blog-brd.jpg) !important;
 		    background-size:cover;
 			background-position: center;
 		    background-repeat: repeat;
@@ -721,77 +759,411 @@ var the_compare_products_data = {"ajax_url":"https:\/\/themes.workdo.io\/wordpre
 		}
 	}
 </style>
-	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
-	<meta name="generator" content="Elementor 3.14.0; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
-
-			<script type="text/javascript">
-				var elementskit_module_parallax_url = "https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit/modules/parallax/"
-			</script>
-		<meta name="generator" content="Powered by Slider Revolution 6.5.25 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
-<script>function setREVStartSize(e){
-			//window.requestAnimationFrame(function() {
-				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
-				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
-				try {
-					var pw = document.getElementById(e.c).parentNode.offsetWidth,
-						newh;
-					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
-					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
-					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
-					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
-					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
-					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
-					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
-					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
-					if(e.layout==="fullscreen" || e.l==="fullscreen")
-						newh = Math.max(e.mh,window.RSIH);
-					else{
-						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
-						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
-						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
-						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+<noscript>
+    <style>.woocommerce-product-gallery{ opacity: 1 !important; }</style>
+</noscript>
+<meta name="generator" content="Elementor 3.14.0; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<script type="text/javascript">
+var elementskit_module_parallax_url = "static/css/wp-content/plugins/elementskit/modules/parallax/"
+</script>
+<meta name="generator" content="Powered by Slider Revolution 6.5.25 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<script>
+function setREVStartSize(e){
+    //window.requestAnimationFrame(function() {
+        window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+        window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+        try {
+            var pw = document.getElementById(e.c).parentNode.offsetWidth,
+            newh;
+            pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+            e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+            e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+            e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+            e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+            e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+            e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+            e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+            if(e.layout==="fullscreen" || e.l==="fullscreen")
+            newh = Math.max(e.mh,window.RSIH);
+            else{
+                e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+                for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+                e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+                e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
 						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
-											
-						var nl = new Array(e.rl.length),
-							ix = 0,
-							sl;
-						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+                        var nl = new Array(e.rl.length),
+                        ix = 0,
+                        sl;
+                        e.tabw = e.tabhide>=pw ? 0 : e.tabw;
 						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
 						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
 						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
-						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
-						sl = nl[0];
+                        for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+                        sl = nl[0];
 						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
 						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
 						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
-					}
-					var el = document.getElementById(e.c);
+                    }
+                    var el = document.getElementById(e.c);
 					if (el!==null && el) el.style.height = newh+"px";
 					el = document.getElementById(e.c+"_wrapper");
 					if (el!==null && el) {
-						el.style.height = newh+"px";
+                        el.style.height = newh+"px";
 						el.style.display = "block";
 					}
-				} catch(e){
+                } 
+                catch(e){
 					console.log("Failure at Presize of Slider:" + e)
-				}
-			//});
-		  };</script>
+                }
+                //});
+            };
+</script>
  
   
 
- <link
- rel="stylesheet"
- href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
- integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
- crossorigin="anonymous"
- referrerpolicy="no-referrer"
-/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- ✅ Load slick theme CSS ✅ -->
 <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="archive post-type-archive post-type-archive-product theme-books woocommerce-multi-currency-USD woocommerce-shop woocommerce woocommerce-page woocommerce-no-js masthead-fixed list-view elementor-default elementor-kit-7">
+<body class="home page-template-default page page-id-600 theme-books woocommerce-multi-currency-USD woocommerce-no-js masthead-fixed grid elementor-default elementor-kit-7 elementor-page elementor-page-600">
+
+
+	<style>
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-horizontal,
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-vertical{
+	background: #5ec073;
+
+	}
+	/* a tag small line on before tag */
+	.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-sub-menu-wrap ul li h4.wpmm-mega-block-title::before, 
+	.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-sub-menu-wrap ul li.wp-mega-menu-header > a.wp-mega-menu-link::before {
+		background:  #5ec073;
+		bottom: 0;
+		content: "";
+		height: 1px;
+		position: absolute;
+		width: 30px;
+	}
+
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-horizontal,
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-vertical{
+	border-radius: 0px 0px 0px 0px;
+	border: 1px solid #5ec073;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+	}
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-horizontal ul.wpmm-mega-wrapper{
+	text-align: left;   
+	}
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-horizontal{
+		width: 100%;
+	}
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-horizontal ul.wpmm-mega-wrapper > li > a, 
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-vertical ul.wpmm-mega-wrapper > li > a{
+	color: #ffffff;
+	}
+
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-horizontal ul.wpmm-mega-wrapper > li > a,
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-vertical ul.wpmm-mega-wrapper > li > a{
+	font-size: 13px; font-family: Open Sans;font-weight: normal;line-height: 1.5;text-transform: initial !important;text-decoration: none;}
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-horizontal ul.wpmm-mega-wrapper > li > a{
+	padding: 20px 22px 25px 20px;
+	}
+
+		.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-horizontal ul.wpmm-mega-wrapper > li:hover,
+		.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-vertical ul.wpmm-mega-wrapper > li:hover{
+		background: #47a35b;
+	}
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper > li:hover > a{
+		font-weight: normal;
+		text-decoration: none;
+	}
+
+	/*menu divider enable*/
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-horizontal ul.wpmm-mega-wrapper > li > a::before{
+	background: rgb(255,255,255);
+		opacity: 0.5;
+		content: "";
+		height: 100%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 1px; 
+	}
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-mega-wrapper > li.current-menu-item{
+	background: #47a35b}
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-mega-wrapper > li.current-menu-item > a{
+		color: #ffffff !important;
+	}
+
+	/*Mega menu */
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-horizontal ul.wpmm-mega-wrapper li .wpmm-sub-menu-wrap,
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-vertical ul.wpmm-mega-wrapper li .wpmm-sub-menu-wrap{
+	background: #ffffff;
+	}
+
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-horizontal ul.wpmm-mega-wrapper li .wpmm-sub-menu-wrap,
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-vertical ul.wpmm-mega-wrapper li .wpmm-sub-menu-wrap{
+	width: 100%;
+	padding-top:15px;
+	padding-bottom:5px;
+	padding-left:8px;
+	padding-right: 8px;
+	border: 1px solid #ffffff;
+	border-radius: 0px;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	}
+
+	/*Widget section*/
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-sub-menu-wrap ul li h4.wpmm-mega-block-title, 
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-sub-menu-wrap ul li.wp-mega-menu-header  a.wp-mega-menu-link span.wpmm-mega-menu-href-title{
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Open Sans;
+	text-decoration: none;
+	margin-bottom:10px;
+	margin-top:0px; 
+	}
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-sub-menu-wrap ul li h4.wpmm-mega-block-title:hover, 
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-sub-menu-wrap ul li.wp-mega-menu-header  a.wp-mega-menu-link span.wpmm-mega-menu-href-title:hover{
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+
+	}
+
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-sub-menu-wrap ul li {
+	color: #000000;
+	/*font-size: 13px;*/
+	font-family: Open Sans;
+	}
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper
+	li .wpmm-sub-menu-wrap ul.wp-mega-sub-menu > li > a{
+		color: #000000;
+	font-family: Open Sans;
+	}
+	.wpmm_megamenu .wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-sub-menu-wrap ul li{
+		font-size: 13px;
+	}
+
+		.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li ul.wp-mega-sub-menu li div.woocommerce ul.products li a h3{
+		color: #000000;
+	}
+	/*.wpmm_megamenu .wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .woocommerce ul.cart_list li a, .wpmm_megamenu .woocommerce ul.product_list_widget li a*/
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li ul.wp-mega-sub-menu li div.woocommerce ul.products li a span.price ins,
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li ul.wp-mega-sub-menu li div.woocommerce ul.products li a span.price .woocommerce-Price-amount{
+	color: #000000;
+	}
+
+
+	.wpmm-ctheme-wrapper.wpmega-default-theme .wp-mega-sub-menu li .wpmm-sub-menu-wrapper.wpmm_menu_1 li::before, 
+	.wpmm-ctheme-wrapper.wpmega-default-theme .wp-mega-sub-menu .widget_pages li::before, 
+	.wpmm-ctheme-wrapper.wpmega-default-theme .wp-mega-sub-menu .widget_categories li::before,
+	.wpmm-ctheme-wrapper.wpmega-default-theme .wp-mega-sub-menu .widget_archive li::before, 
+	.wpmm-ctheme-wrapper.wpmega-default-theme .wp-mega-sub-menu .widget_meta li::before, 
+	.wpmm-ctheme-wrapper.wpmega-default-theme .wp-mega-sub-menu .widget_recent_comments li::before, 
+	.wpmm-ctheme-wrapper.wpmega-default-theme .wp-mega-sub-menu .widget_recent_entries li::before,
+	.wpmm-ctheme-wrapper.wpmega-default-theme .wp-mega-sub-menu .widget_product_categories ul.product-categories li a::before, 
+	.wpmm-ctheme-wrapper.wpmega-default-theme .wp-mega-sub-menu .widget_categories li::before, 
+	.wpmm-ctheme-wrapper.wpmega-default-theme .wp-mega-sub-menu .widget_archive li::before{
+		color: #000000;
+	}
+		.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul ul li a:hover,
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul ul li a,
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul ul li a:focus{
+	color: #000000;
+	}
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wp-mega-sub-menu li.wpmm-custom-post-settings.wpmega-image-left .wpmm-custom-postimage span.wpmm-mega-menu-href-title, 
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wp-mega-sub-menu li.wpmm-custom-post-settings.wpmega-image-top .wpmm-custom-postimage span.wpmm-mega-menu-href-title{
+	color: #000000;
+	}
+
+	
+
+	/*
+	* Top Section Stylesheet
+	*/
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li .wpmm-sub-menu-wrap span.wpmm_megamenu_topcontent{
+		font-size :13px;
+		color:#000000;
+		font-family: Open Sans;
+		font-weight: normal;
+		text-transform: initial;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li .wpmm-sub-menu-wrap .top_clearfix{
+		margin-bottom: 10px; 
+	}
+
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li .wpmm-sub-menu-wrap .wpmm-topimage{
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+	}
+
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li .wpmm-sub-menu-wrap .wpmm-ctop{
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+	}
+
+	/*
+	* Bottom Section stylhesheet
+	*/
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li .wpmm-sub-menu-wrap span.wpmm_megamenu_bottomcontent{
+		font-size :13px;
+		color:#000000;
+		font-family: Open Sans;
+		font-weight: normal;
+		text-transform: initial;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li .wpmm-sub-menu-wrap .bottom_clearfix{
+		margin-top: 10px;
+	}
+
+
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li .wpmm-sub-menu-wrap .wpmm-bottomimage{
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+	}
+
+	.wpmm_megamenu .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li .wpmm-sub-menu-wrap .wpmm-cbottom{
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+	}
+
+
+	/*flyout*/
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li.wpmega-menu-flyout ul{
+		background: #5ec073;
+	}
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li.wpmega-menu-flyout ul{
+		width: 210px;
+	}
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li.wpmega-menu-flyout ul.wp-mega-sub-menu li:hover > a {
+		background: #47a35b;
+	}
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li.wpmega-menu-flyout.wpmega-flyout-horizontal-left ul.wp-mega-sub-menu li{
+		margin: 0px 5px;
+	}
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li.wpmega-menu-flyout.wpmega-flyout-horizontal-left ul.wp-mega-sub-menu li a.wp-mega-menu-link {
+		padding:10px;
+	}
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li.wpmega-menu-flyout ul.wp-mega-sub-menu li a {
+		color: #ffffff;
+		font-size: 12px;
+		font-weight: normal;
+		text-transform: initial;
+		font-family: Open Sans;
+		text-decoration: none;
+	}
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li.wpmega-menu-flyout ul.wp-mega-sub-menu li:hover a {
+		color: #ffffff;
+		font-weight: normal;
+		text-decoration: none;
+	}
+
+	/* search bar */
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper li.wpmm-menu-align-right.wpmm-search-type .wpmm-sub-menu-wrap
+	.megamenu-type-search input.search-submit[type="submit"]{
+	font-size: 10px;
+	color: #ffffff;
+	background: #5ec073;
+	}
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme ul.wpmm-mega-wrapper 
+	li.wpmm-menu-align-right.wpmm-search-type .wpmm-sub-menu-wrap .megamenu-type-search input.search-field[type="search"]{
+	width: 182px;
+	color: #ccc;
+	}
+
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-search-type  > .wpmm-mega-menu-icon > i.fa-search,
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-search-type  > .wpmm-mega-menu-icon > i.genericon-search,
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-search-type  > .wpmm-mega-menu-icon > i.dashicons-search{
+	color:  #ffffff;
+
+	}
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-mega-wrapper .wpmega-searchinline input.search-field{
+		width: 182px;
+	}
+
+	/* menu label custom css */
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-mega-menu-label::before {
+		border-color: #f1ee1a transparent transparent;
+	}
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-sub-menu-wrap ul.wp-mega-sub-menu li.wp-mega-menu-header a span.wpmm-mega-menu-label{
+		font-size:10pxpx;
+		color:#000;
+	}
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmm-mega-menu-label {
+		background: #f1ee1a;
+		color:#000;
+		font-size:10pxpx;
+		font-weight: normal;
+		text-transform: uppercase;
+		font-family: Open Sans    
+	}
+
+
+	/*Mobile settings*/
+	@media (max-width: 910px){
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-horizontal,
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme.wpmm-orientation-vertical{
+		background: #47a35b;  
+	}
+			
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmegamenu-toggle{
+		display: block !important;
+		height: 40px;
+		background: #5ec073;
+		text-align:  left;
+	}   
+
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmegamenu-toggle .wpmega-closeblock{
+		display: none;
+	}
+
+	.main-navigation button.menu-toggle{
+		display: none;
+	}
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmegamenu-toggle .wpmega-openblock,
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .wpmegamenu-toggle .wpmega-closeblock{
+		color: #ffffff;
+	}
+	.wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .close-primary{
+		color: #ffffff;
+	}
+	}
+	</style>
+	<body class="archive post-type-archive post-type-archive-product theme-books woocommerce-multi-currency-USD woocommerce-shop woocommerce woocommerce-page woocommerce-no-js masthead-fixed list-view elementor-default elementor-kit-7">
     {% include 'navbar.html' %}
 {% block content %}
 
@@ -800,4 +1172,475 @@ var the_compare_products_data = {"ajax_url":"https:\/\/themes.workdo.io\/wordpre
 
 
 {% include 'footer.html' %}
-{% include 'scripts.html' %}
+<script>
+	window.RS_MODULES = window.RS_MODULES || {};
+	window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+	window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+	window.RS_MODULES.defered = true;
+	window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+	window.RS_MODULES.type = 'compiled';
+</script>
+<div class="overlay" id="mainoverlayDiv" ></div> 
+    <div class="mydiv" id='formFormEmail' style="display:none" >
+        <div class="container_n">
+            <form id="newsletter_signup" name="newsletter_signup">
+				<div class="header">
+                    <div class="AjaxLoader">
+						<img src="{% static 'css/wp-content/plugins/email-subscribe/images/AjaxLoader.gif' %}"/>Please wait...</div>
+                    		<div id="myerror_msg" class="myerror_msg"></div>
+							<div id="mysuccess_msg" class="mysuccess_msg"></div>
+							<h3>Subscribe to our newsletter</h3>
+							<div class="subheading">Want to be notified when our article is published? Enter your email address and name below to be the first to know.</div>
+				</div>
+				<div class="sep"></div>
+				<div class="inputs">
+					<input type="email" class="textfield"  onblur="restoreInput(this,'Email')" onfocus="return clearInput(this,'Email');"  value="Email" name="youremail" id="youremail"  />
+					<div style="clear:both"></div>
+                   	<div class="errorinput"></div>
+					<input type="text" class="textfield" id="yourname" onblur="restoreInput(this,'Name')" onfocus="return clearInput(this,'Name');"  value="Name" name="yourname" />
+					<div style="clear:both"></div>
+                    <div class="errorinput"></div>
+					<a id="submit_newsletter"  onclick="submit_newsletter();" name="submit_newsletter">SIGN UP FOR NEWSLETTER NOW</a>
+				</div>
+			</form>
+		</div>      
+    </div>                     
+<script type='text/javascript'>
+var htmlpopup='';
+function clearInput(source, initialValue) {
+	if (source.value.toUpperCase() == initialValue.toUpperCase())
+	source.value = '';
+	return false;
+}
+function restoreInput(source, initialValue) {
+	if (source.value == '')
+	source.value = initialValue;
+	return false;
+}
+function submit_newsletter() {
+	var emailAdd = jQuery.trim(jQuery("#youremail").val());
+	var yourname = jQuery.trim(jQuery("#yourname").val());
+	var returnval = false;
+	var isvalidName = false;
+	var isvalidEmail = false;
+	var is_agreed = false;
+	if (jQuery('#yourname').length > 0) {
+		var yourname = jQuery.trim(jQuery("#yourname").val());
+		if (yourname != "" && yourname != null && yourname.toLowerCase() != 'Name'.toLowerCase()) {
+			var element = jQuery("#yourname").next().next();
+			isvalidName = true;
+			jQuery(element).html('');
+		} 
+		else{
+			var element = jQuery("#yourname").next().next();
+			jQuery(element).html('<div class="image_error">This field is required.</div>');
+			// emailAdd=false;
+		}
+	} 
+	else{
+		isvalidName = true;
+	}
+	if (emailAdd != "") {
+		var element = jQuery("#youremail").next().next();
+		if (emailAdd.toLowerCase() == 'Email'.toLowerCase()) {
+			jQuery(element).html('<div  class="image_error">This field is required.</div>');
+			isvalidEmail = false;
+		} 
+		else {
+			var JsRegExPatern = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+			if (JsRegExPatern.test(emailAdd)) {
+				isvalidEmail = true;
+				jQuery(element).html('');
+			}
+			else {
+				var element = jQuery("#youremail").next().next();
+				jQuery(element).html('<div class="image_error">Please enter valid email address.</div>');
+				isvalidEmail = false;
+			}
+		}
+	}	 
+	else{
+		var element = jQuery("#yourname").next().next();
+		jQuery(element).html('<div class="image_error">This field is required.</div>');
+		isvalidEmail = false;
+	}
+	if (jQuery('#chkagreeornot').length > 0) {
+		if (jQuery("#chkagreeornot").is(':checked')) {
+			var element = jQuery("#chkagreeornot").next().next();
+			jQuery(element).html('');
+			is_agreed = true;
+		} 
+		else{
+			var element = jQuery("#chkagreeornot").next().next();
+			jQuery(element).html('<div class="image_error">Please read and agree to our terms & conditions.</div>');
+			is_agreed = false;
+		}
+	} 
+	else {
+		is_agreed = true;
+	}
+	if (isvalidName == true && isvalidEmail == true && is_agreed == true) {
+		jQuery(".AjaxLoader").show();
+		jQuery('#mysuccess_msg').html('');
+		jQuery('#mysuccess_msg').hide();
+		jQuery('#myerror_msg').html('');
+		jQuery('#myerror_msg').hide();
+		var name = "";
+		if (jQuery('#yourname').length > 0) {
+			name = jQuery("#yourname").val();
+		}
+		var nonce = '1d3471463e';
+		var url = 'static/css/wp-content/plugins/email-subscribe/';
+		var email = jQuery("#youremail").val();
+		var str = "action=store_email&email=" + email + '&name=' + name + '&is_agreed=' + is_agreed + '&sec_string=' + nonce;
+		jQuery.ajax({
+			type: "POST",
+			url: 'static/css/wp-admin/admin-ajax.php',
+			data: str,
+			async: true,
+			success: function (msg) {
+				if (msg != '') {
+					var result = msg.split("|");
+					if (result[0] == 'success') {
+						jQuery(".AjaxLoader").hide();
+						jQuery('#mysuccess_msg').html(result[1]);
+						jQuery('#mysuccess_msg').show();
+						setTimeout(function () {
+							jQuery.fancybox_ns.close();
+						}, 2000);
+					} 
+					else{
+						jQuery(".AjaxLoader").hide();
+						jQuery('#myerror_msg').html(result[1]);
+						jQuery('#myerror_msg').show();
+					}
+				}
+			}
+		});
+	}
+}  
+var interval_64aad56b880a4 = setInterval(function() {
+	if(document.readyState === 'complete') {
+		clearInterval(interval_64aad56b880a4);
+		/* if ( jQuery.browser.msie && jQuery.browser.version >= 9 ){
+			jQuery.support.noCloneEvent = true
+		}*/
+		var htmlpopup = jQuery("#formFormEmail").html();
+		jQuery("#formFormEmail").remove();
+		jQuery('body').on('click', '.shownewsletterbox', function () {
+			jQuery.fancybox_ns({
+				'overlayColor': '#000000',
+				'hideOnOverlayClick': false,
+				'padding': 10,
+				'autoScale': true,
+				'showCloseButton': true,
+				'content': htmlpopup,
+				'transitionIn': 'fade',
+				'transitionOut': 'elastic',
+				'width': 560,
+				'height': 360
+			});
+		});
+		jQuery(document).ready(function () {
+			if (readCookie('newsLatterPopup') == null) {
+				setTimeout(function(){
+					jQuery.fancybox_ns({
+						'overlayColor': '#000000',
+						'hideOnOverlayClick': false,
+						'padding': 10,
+						'autoScale': true,
+						'showCloseButton': true,
+						'content': htmlpopup,
+						'transitionIn': 'fade',
+						'transitionOut': 'elastic',
+						'width': 560,
+						'height': 360
+					});
+					createCookie('newsLatterPopup', 'donotshow', 1);
+				},1500);
+			}
+		});
+	}    
+}, 100);
+</script>
+<style></style>
+<div class="woo-multi-currency wmc-right style-1 wmc-bottom wmc-sidebar">
+	<div class="wmc-list-currencies">
+		<div class="wmc-title">
+			Select your currency
+		</div>
+		<div class="wmc-currency wmc-active" data-currency="USD">
+			<span class="wmc-currency-symbol">USD</span>
+			<span class="wmc-active-title">United States (US) dollar</span>
+		</div>
+		<div class="wmc-currency "
+		data-currency="INR">
+		<span class="wmc-currency-symbol">INR</span>
+		<a href="/wordpress/toaster/books/?wmc-">Indian rupee</a>
+	</div>
+	<div class="wmc-sidebar-open"></div>
+</div>
+</div>
+<div id="yith-quick-view-modal">
+	<div class="yith-quick-view-overlay"></div>
+	<div class="yith-wcqv-wrapper">
+		<div class="yith-wcqv-main">
+			<div class="yith-wcqv-head">
+				<a href="#" id="yith-quick-view-close" class="yith-wcqv-close">X</a>
+			</div>
+			<div id="yith-quick-view-content" class="woocommerce single-product"></div>
+		</div>
+	</div>
+</div>
+<script>
+jQuery('a[target="_blank"]').removeAttr('target');
+</script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400%7CQuicksand:400%2C500%2C300%2C600%7COutfit:600%2C500&display=swap" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
+<script type="text/javascript">
+(function () {
+	var c = document.body.className;
+	c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+	document.body.className = c;
+})();
+</script>
+<script>
+if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script>
+<link rel="preload" as="font" id="rs-icon-set-revicon-woff" href="{% static 'css/wp-content/plugins/revslider/public/assets/fonts/revicons/revicons.woff' %}" type="font/woff" crossorigin="anonymous" media="all" />
+<link rel="stylesheet" property="stylesheet" id="rs-icon-set-pe-7s-css" href="{% static 'css/wp-content/plugins/revslider/public/assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css' %}" type="text/css" media="all" />
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="pswp__bg"></div>
+	<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+			<div class="pswp__top-bar">
+				<div class="pswp__counter"></div>
+				<button class="pswp__button pswp__button--close" aria-label="Close (Esc)"></button>
+				<button class="pswp__button pswp__button--share" aria-label="Share"></button>
+				<button class="pswp__button pswp__button--fs" aria-label="Toggle fullscreen"></button>
+				<button class="pswp__button pswp__button--zoom" aria-label="Zoom in/out"></button>
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div>
+			</div>
+			<button class="pswp__button pswp__button--arrow--left" aria-label="Previous (arrow left)"></button>
+			<button class="pswp__button pswp__button--arrow--right" aria-label="Next (arrow right)"></button>
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/template" id="tmpl-variation-template">
+	<div class="woocommerce-variation-description"></div>
+	<div class="woocommerce-variation-price"></div>
+	<div class="woocommerce-variation-availability"></div>
+</script>
+<script type="text/template" id="tmpl-unavailable-variation-template">
+	<p>Sorry, this product is unavailable. Please choose a different combination.</p>
+</script>
+<link rel='stylesheet' id='edn-google-fonts0-css' href='fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
+<link rel='stylesheet' id='edn-google-fonts-style-css-css' href='fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
+<link rel='stylesheet' id='edn-google-fonts-style2-css-css' href='fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
+<link rel='stylesheet' id='edn-google-fonts-style3-css-css' href='fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
+<link rel='stylesheet' id='edn-google-fonts-style4-css-css' href='fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
+<link rel='stylesheet' id='edn-google-fonts-style5-css-css' href='fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
+<link rel='stylesheet' id='berocket_framework_popup-animate-css' href="{% static 'css/wp-content/plugins/products-compare-for-woocommerce/berocket/assets/popup/animate.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='berocket_framework_popup-css' href="{% static 'css/wp-content/plugins/products-compare-for-woocommerce/berocket/assets/popup/br_popup.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wp-email-subscription-popup-css' href="{% static 'css/wp-content/plugins/email-subscribe/css/wp-email-subscription-popup.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='subscribe-popup-css' href="{% static 'css/wp-content/plugins/email-subscribe/css/subscribe-popup.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='photoswipe-css' href="{% static 'css/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='photoswipe-default-skin-css' href="{% static 'css/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css"' %} type='text/css' media='all' />
+<link rel='stylesheet' id='quick-view-css' href="{% static 'css/wp-content/themes/books/quick-view.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css' href="{% static 'css/wp-content/plugins/revslider/public/assets/css/rs6.css' %}"" type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rev_slider_1_1_wrapper .custom.tparrows{cursor:pointer;background:#000;background:rgba(0,0,0,0.5);width:40px;height:40px;position:absolute;display:block;z-index:1000}#rev_slider_1_1_wrapper .custom.tparrows.rs-touchhover{background:#000}#rev_slider_1_1_wrapper .custom.tparrows:before{font-family:'revicons';font-size:15px;color:#fff;display:block;line-height:40px;text-align:center}#rev_slider_1_1_wrapper .custom.tparrows.tp-leftarrow:before{content:'\e824'}#rev_slider_1_1_wrapper .custom.tparrows.tp-rightarrow:before{content:'\e825'}
+#rev_slider_1_1_wrapper rs-loader.spinner2{background-color:#183a40 !important}
+</style>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.selectBox.min.js' %}" id='jquery-selectBox-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/prettyPhoto/jquery.prettyPhoto.min.js' %}" id='prettyPhoto-js'></script>
+<script type='text/javascript' id='jquery-yith-wcwl-js-extra'>
+/* <![CDATA[ */
+var yith_wcwl_l10n = {"ajax_url":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","redirect_to_cart":"no","yith_wcwl_button_position":"after_add_to_cart","multi_wishlist":"","hide_add_button":"1","enable_ajax_loading":"","ajax_loader_url":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-content\/plugins\/yith-woocommerce-wishlist\/assets\/images\/ajax-loader-alt.svg","remove_from_wishlist_after_add_to_cart":"1","is_wishlist_responsive":"1","time_to_close_prettyphoto":"3000","fragments_index_glue":".","reload_on_found_variation":"1","mobile_media_query":"768","labels":{"cookie_disabled":"We are sorry, but this feature is available only if cookies on your browser are enabled.","added_to_cart_message":"<div class=\"woocommerce-notices-wrapper\"><div class=\"woocommerce-message\" role=\"alert\">Product added to cart successfully<\/div><\/div>"},"actions":{"add_to_wishlist_action":"add_to_wishlist","remove_from_wishlist_action":"remove_from_wishlist","reload_wishlist_and_adding_elem_action":"reload_wishlist_and_adding_elem","load_mobile_action":"load_mobile","delete_item_action":"delete_item","save_title_action":"save_title","save_privacy_action":"save_privacy","load_fragments":"load_fragments"},"nonce":{"add_to_wishlist_nonce":"e799b71993","remove_from_wishlist_nonce":"6d4d28fbf1","reload_wishlist_and_adding_elem_nonce":"940009fab1","load_mobile_nonce":"f6c937edcb","delete_item_nonce":"bd1e75652c","save_title_nonce":"60c2aaea1f","save_privacy_nonce":"32a332c4f1","load_fragments_nonce":"394ddb9fa6"},"redirect_after_ask_estimate":"","ask_estimate_redirect_url":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books"};
+/* ]]> */
+</script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.yith-wcwl.min.js' %}" id='jquery-yith-wcwl-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/contact-form-7/includes/swv/js/index.js' id='swv-js' %}"></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/contact-form-7/includes/js/index.js' %}" id='contact-form-7-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/revslider/public/assets/js/rbtools.min.js' %}" defer async id='tp-tools-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/revslider/public/assets/js/rs6.min.js' %}" defer async id='revmin-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js' %}" id='jquery-blockui-js'></script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wordpress\/toaster\/books\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js' %}" id='wc-add-to-cart-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js' %}" id='js-cookie-js'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wordpress\/toaster\/books\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js' %}" id='woocommerce-js'></script>
+<script type='text/javascript' id='yith-wcqv-frontend-js-extra'>
+/* <![CDATA[ */
+var yith_qv = {"ajaxurl":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","loader":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-content\/plugins\/yith-woocommerce-quick-view\/assets\/image\/qv-loader.gif","lang":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/yith-woocommerce-quick-view/assets/js/frontend.min.js' %}" id='yith-wcqv-frontend-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/functions.js' %}" id='wntr-script-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/navigation.js' %}"" id='wntr-navigation-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.countdown.min.js' %}" id='countdown-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js' %}" id='elementskit-framework-js-frontend-js'></script>
+<script type='text/javascript' id='elementskit-framework-js-frontend-js-after'>
+var elementskit = {
+	resturl: "static/css/wp-json/elementskit/v1/",
+}
+</script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js' %}" id='ekit-widget-scripts-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit/modules/parallax/assets/js/anime.js' %}" id='animejs-js'></script>
+<script defer type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit/modules/parallax/assets/js/parallax-frontend-scripts.js' %}" id='elementskit-parallax-frontend-defer-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/workdo-addon/assets/js/owlcarousel/owl.carousel.js' %}" id='wt-owl-carousel-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/workdo-addon/assets/js/workdo-elementor.js' %}" id='wt-elementor-js-js'></script>
+<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wordpress\/toaster\/books\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_d84b290640c554891817c008057bf54d","fragment_name":"wc_fragments_d84b290640c554891817c008057bf54d","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js' %}" id='wc-cart-fragments-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/products-compare-for-woocommerce/berocket/assets/popup/br_popup.js' %}" id='berocket_framework_popup-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/email-subscribe/js/wp-email-subscription-popup-js.js' %}" id='wp-email-subscription-popup-js-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/email-subscribe/js/subscribe-popup.js' %}"" id='subscribe-popup-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-includes/js/underscore.min.js' %}" id='underscore-js'></script>
+<script type='text/javascript' id='wp-util-js-extra'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src="{% static 'css/wp-includes/js/wp-util.min.js' %}" id='wp-util-js'></script>
+<script type='text/javascript' id='wc-add-to-cart-variation-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/wordpress\/toaster\/books\/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
+/* ]]> */
+</script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js' %}" id='wc-add-to-cart-variation-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js' %}" id='zoom-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js' %}" id='photoswipe-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js' %}" id='photoswipe-ui-default-js'></script>
+<script type='text/javascript' id='wc-single-product-js-extra'>
+/* <![CDATA[ */
+var wc_single_product_params = {"i18n_required_rating_text":"Please select a rating","review_rating_required":"yes","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":"thumbnails","slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_enabled":"1","zoom_options":[],"photoswipe_enabled":"1","photoswipe_options":{"shareEl":false,"closeOnScroll":false,"history":false,"hideAnimationDuration":0,"showAnimationDuration":0},"flexslider_enabled":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js' %}" id='wc-single-product-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js' %}" id='elementor-webpack-runtime-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementor/assets/js/frontend-modules.min.js' %}" id='elementor-frontend-modules-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js' %}" id='elementor-waypoints-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-includes/js/jquery/ui/core.min.js' %}" id='jquery-ui-core-js'></script>
+<script type='text/javascript' id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.14.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"e_swiper_latest":true,"landing-pages":true},"urls":{"assets":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":600,"title":"Books%20WorkDo","excerpt":"","featuredImage":false}};
+</script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementor/assets/js/frontend.min.js' %}" id='elementor-frontend-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.js' %}" id='animate-circle-js'></script>
+<script type='text/javascript' id='elementskit-elementor-js-extra'>
+/* <![CDATA[ */
+var ekit_config = {"ajaxurl":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","nonce":"6de11c7760"};
+/* ]]> */
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js' %}" id='elementskit-elementor-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit/widgets/init/assets/js/elementor.js' %}" id='elementskit-elementor-pro-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js' %}" id='swiper-js'></script>
+<script defer type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit/modules/sticky-content/assets/js/elementskit-sticky-content.js' %}" id='elementskit-sticky-content-script-init-defer-js'></script>
+<script defer type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit/modules/parallax/assets/js/parallax-admin-scripts.js' %}" id='elementskit-parallax-admin-defer-js'></script>
+<script id="rs-initialisation-scripts">
+var	tpj = jQuery;
+var	revapi1;
+if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+RS_MODULES.modules["revslider11"] = {once: RS_MODULES.modules["revslider11"]!==undefined ? RS_MODULES.modules["revslider11"].once : undefined, init:function() {
+	window.revapi1 = window.revapi1===undefined || window.revapi1===null || window.revapi1.length===0  ? document.getElementById("rev_slider_1_1") : window.revapi1;
+	if(window.revapi1 === null || window.revapi1 === undefined || window.revapi1.length==0) { window.revapi1initTry = window.revapi1initTry ===undefined ? 0 : window.revapi1initTry+1; if (window.revapi1initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider11"].init()}); return;}
+	window.revapi1 = jQuery(window.revapi1);
+	if(window.revapi1.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_1_1"); return;}
+	revapi1.revolutionInit({
+		revapi:"revapi1",
+		DPR:"dpr",
+		visibilityLevels:"1240,1024,778,480",
+		gridwidth:"1920,1025,778,480",
+		gridheight:"650,340,335,140",
+		lazyType:"smart",
+		spinner:"spinner2",
+		perspective:600,
+		perspectiveType:"local",
+		editorheight:"940,502,381,235",
+		responsiveLevels:"1240,1024,778,480",
+		ajaxUrl:"static/css/wp-admin/admin-ajax.php",
+		progressBar:{disableProgressBar:true},
+		navigation: {
+			mouseScrollNavigation:false,
+			wheelCallDelay:1000,
+			onHoverStop:false,
+			arrows: {
+				enable:true,
+				style:"custom",
+				hide_onmobile:true,
+				hide_under:"767px",
+				left: {
+					container:"layergrid",
+					h_offset:0
+				},
+				right: {
+					container:"layergrid",
+					h_offset:0
+				}
+			}
+		},
+		viewPort: {
+			global:true,
+			globalDist:"-200px",
+			enable:false,
+			visible_area:"20%"
+		},
+		fallbacks: {
+			allowHTML5AutoPlayOnAndroid:true
+		},
+	});
+}} 
+// End of RevInitScript
+if (window.RS_MODULES.checkMinimal !== undefined) {
+	window.RS_MODULES.checkMinimal();
+	}
+</script>
+
+<div id="br_popup_1" style="display: none!important;"></div>
+<script>
+jQuery(document).ready(function() {
+	function berocket_popup_run_script() {
+		jQuery("#br_popup_1").br_popup({"close_delay":"0","hide_body_scroll":true,"print_button":false,"width":"90%","height":"90%","theme":null});
+	}
+	berocket_popup_run_script();
+	jQuery(document).ajaxComplete(function() {
+		berocket_popup_run_script();
+	});
+});
+</script>
