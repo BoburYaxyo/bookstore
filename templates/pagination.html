@@ -1,9 +1,15 @@
+<style>
+.fd{
+    display: flex;
+    justify-content: space-evenly;
+}
+</style>
 {% if queryset.has_other_pages %}
 <div class="pagination">
-    <ul class="container">
+    <ul class="container fd">
 
         {% if queryset.has_previous %}
-        <li><a href="?page={{queryset.previous_page_number}}" class="btn page-link"
+        <li class="fd"><a href="?page={{queryset.previous_page_number}}" class="button page-link"
                 data-page="{{queryset.previous_page_number}}">&#10094; Prev</a></li>
         {% endif %}
 
@@ -18,7 +24,7 @@
         {% endfor %}
 
         {% if queryset.has_next %}
-        <li><a href="?page={{queryset.next_page_number}}" class="btn page-link"
+        <li class="fds"><a href="?page={{queryset.next_page_number}}" class="button page-link"
                 data-page="{{queryset.next_page_number}}">Next &#10095;</a></li>
         {% endif %}
 

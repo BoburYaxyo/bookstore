@@ -68,7 +68,10 @@ def register(request):
     context = {'form': form}
     
     return render(request, 'my-account/index.html')
-
+def logoutUser(request):
+    logout(request)
+    messages.info(request, 'User was logged out!')
+    return redirect('login')
 
 @login_required(login_url='login')
 def checkout(request):

@@ -130,12 +130,10 @@
 						<div class="header-menu">
 							<!-- #site-navigation -->
 							<div class="category-list">
-																	<aside id="nav_menu-3" class="widget widget_nav_menu"><h3 class="widget-title">All Products</h3><div class="menu-foomenu1-container"><ul id="menu-foomenu1" class="menu"><li id="menu-item-5473" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5473"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/">Fantasy</a></li>
-<li id="menu-item-5475" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5475"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
-<li id="menu-item-5481" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5481"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/humour/">Humour</a></li>
-<li id="menu-item-5482" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5482"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/thrillers/">Thrillers</a></li>
-<li id="menu-item-5484" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5484"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/">Fantasy</a></li>
-<li id="menu-item-5486" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5486"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
+																	<aside id="nav_menu-3" class="widget widget_nav_menu"><h3 class="widget-title">All Products</h3><div class="menu-foomenu1-container"><ul id="menu-foomenu1" class="menu">
+																		{% for category in ncategory %}
+<li id="menu-item-5475" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5475"><a href="{% url 'shop' %}?q={{category.name}}">{{category.name}}</a></li>
+{% endfor %}
 </ul></div></aside>															</div>
 					<!-- #site-navigation -->
 						
@@ -476,175 +474,234 @@ color: #ccc;
           .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper.wpmega-default-theme .close-primary{
          color: #ffffff;
      }
+	 .ght{
+		font-family: Quicksand, sans-serif !important;border: 0;
+				font-style: normal;
+				outline: 0;
+				margin: 0px;
+				vertical-align: baseline;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 400;
+	 }
+	 ght:hover{
+		color: green;
+	 }
  </style>
 
-
-
-<div id="wpmm-wrap-megamenu" class="wp-megamenu-main-wrapper wpmm-ctheme-wrapper wpmega-default-theme wpmega-enabled-mobile-menu wpmm-toggle-standard wpmm-onhover wpmm-orientation-horizontal  wpmm-fade"><div class="wpmegamenu-toggle wpmega-enabled-menutoggle" data-responsive-breakpoint="910px"><div class='wp-mega-toggle-block'><div class='wpmega-closeblock'><i class='dashicons dashicons-no'></i></div><div class='wpmega-openblock'><i class='dashicons dashicons-menu'></i></div><div class='menutoggle'>Menu</div></div></div><ul id="wpmega-menu-megamenu" class="wpmm-mega-wrapper" data-advanced-click="wpmm-click-submenu" data-trigger-effect="wpmm-onhover"><li class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item wpmega-menu-flyout wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-flyout-horizontal-right menu-item-7219 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7219'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/shop/"><span class="wpmm-mega-menu-href-title">Shop</span></a></li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-7222 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7222'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/fairy-tales/"><span class="wpmm-mega-menu-href-title">Fairy tales</span></a><div class='wpmm-sub-menu-wrap'></li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-5708 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-5708'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/crime/"><span class="wpmm-mega-menu-href-title">Crime</span></a><div class='wpmm-sub-menu-wrap'>
-<div class='wpmm-sub-menu-wrapper wpmm-menu0'><ul class="wp-mega-sub-menu">
-	<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4883 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4883'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/humour/"><span class="wpmm-mega-menu-href-title">Humour</span></a>
-		{% for categor in category  %}
-		<li class="cat-item cat-item-27"><a href="{% url 'shop' %}?q={{categor.name}}">{{categor.name}}</a> <span class="count">({{categor.book_set.all.count}})</span></li>
-		{% endfor %}
-</li></ul></div>
-</li><li class='menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-2828 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-2828'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/blog/"><span class="wpmm-mega-menu-href-title">Blog</span></a><div class='wpmm-sub-menu-wrap'>
-<div class='wpmm-sub-menu-wrapper wpmm-menu0'><ul class="wp-mega-sub-menu">
-	<li class='menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4881 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4881'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/blog/"><span class="wpmm-mega-menu-href-title">Blog</span></a>
-	<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
-		<li class='menu-item menu-item-type-post_type menu-item-object-page wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-2830 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-2830'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/left-sidebar/"><span class="wpmm-mega-menu-href-title">Left sidebar</span></a></li>		<li class='menu-item menu-item-type-post_type menu-item-object-page wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-2832 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-2832'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/right-sidebar/"><span class="wpmm-mega-menu-href-title">Right Sidebar</span></a></li>		<li class='menu-item menu-item-type-post_type menu-item-object-page wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-2831 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-2831'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/no-sidebar/"><span class="wpmm-mega-menu-href-title">No Sidebar</span></a></li>	</ul></div>
-</li>	<li class='menu-item menu-item-type-widget menu-widget-class-widget_recent_entries widget_recent_entries wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-3columns-4total menu-item-recent-posts-4 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-recent-posts-4'>                        <h4 class="wpmm-mega-block-title">Recent Posts</h4>            <ul>
-                            <li>
-                	<span class="recent-posts-thumbnail"> 
-	                <img width="330" height="200" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2023/02/7-330x200.jpg" class="attachment-wntr-small-thumb size-wntr-small-thumb wp-post-image" alt="" decoding="async" loading="lazy" />										</span>
-                   
-					<span class="recent-post-detail">
-                  <a href="https://themes.workdo.io/wordpress/toaster/books/learn-once-read-everywhere/">Learn Once, Read Everywhere</a>
-                                    <span class="post-date">May 27, 2023</span>
-                                </span>
-                </li>
-                            <li>
-                	<span class="recent-posts-thumbnail"> 
-	                <img width="330" height="200" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2023/02/1-330x200.jpg" class="attachment-wntr-small-thumb size-wntr-small-thumb wp-post-image" alt="" decoding="async" loading="lazy" />										</span>
-                   
-					<span class="recent-post-detail">
-                  <a href="https://themes.workdo.io/wordpress/toaster/books/fantasy-in-words-and-pages/">Fantasy In Words And Pages</a>
-                                    <span class="post-date">May 27, 2023</span>
-                                </span>
-                </li>
-                            <li>
-                	<span class="recent-posts-thumbnail"> 
-	                <img width="330" height="200" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2023/02/3-330x200.jpg" class="attachment-wntr-small-thumb size-wntr-small-thumb wp-post-image" alt="" decoding="async" loading="lazy" />										</span>
-                   
-					<span class="recent-post-detail">
-                  <a href="https://themes.workdo.io/wordpress/toaster/books/from-one-fiction-reader-to-another/">From One Fiction Reader To Another</a>
-                                    <span class="post-date">May 27, 2023</span>
-                                </span>
-                </li>
-                            <li>
-                	<span class="recent-posts-thumbnail"> 
-	                <img width="330" height="200" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2023/02/2-330x200.jpg" class="attachment-wntr-small-thumb size-wntr-small-thumb wp-post-image" alt="" decoding="async" loading="lazy" />										</span>
-                   
-					<span class="recent-post-detail">
-                  <a href="https://themes.workdo.io/wordpress/toaster/books/cooking-up-something-delicious/">Cooking Up Something Delicious</a>
-                                    <span class="post-date">May 27, 2023</span>
-                                </span>
-                </li>
-                            <li>
-                	<span class="recent-posts-thumbnail"> 
-	                <img width="330" height="200" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2023/02/4-330x200.jpg" class="attachment-wntr-small-thumb size-wntr-small-thumb wp-post-image" alt="" decoding="async" loading="lazy" />										</span>
-                   
-					<span class="recent-post-detail">
-                  <a href="https://themes.workdo.io/wordpress/toaster/books/obscure-loft-literary-gems/">Obscure Loft Literary Gems</a>
-                                    <span class="post-date">May 27, 2023</span>
-                                </span>
-                </li>
-                        </ul>
-                        </li></ul></div>
-</li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-menu-flyout wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-flyout-horizontal-right menu-item-7223 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7223'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/humour/"><span class="wpmm-mega-menu-href-title">Humour</span></a></li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-menu-flyout wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-flyout-horizontal-right menu-item-7414 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7414'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/thrillers/"><span class="wpmm-mega-menu-href-title">Thrillers</span></a></li></ul><div class="wpmega-responsive-closebtn" id="close-megamenu">CLOSE</div></div>													</div>
-						<div class="mobile-menu">
-							<h3 class="mob-toggle">Menu</h3><span class="close-menu"></span>
-							<div class="menu-mainmenu-container"><ul id="menu-mainmenu" class="mobile-menu-inner"><li id="menu-item-7215" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item menu-item-7215"><a href="https://themes.workdo.io/wordpress/toaster/books/shop/" aria-current="page">Shop</a></li>
-<li id="menu-item-470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-470"><a href="https://themes.workdo.io/wordpress/toaster/books/blog/">Blog</a>
-<ul class="sub-menu">
-	<li id="menu-item-743" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-743"><a href="https://themes.workdo.io/wordpress/toaster/books/left-sidebar/">Left sidebar</a></li>
-	<li id="menu-item-986" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-986"><a href="https://themes.workdo.io/wordpress/toaster/books/right-sidebar/">Right Sidebar</a></li>
-	<li id="menu-item-985" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-985"><a href="https://themes.workdo.io/wordpress/toaster/books/no-sidebar/">No Sidebar</a></li>
-</ul>
-</li>
-<li id="menu-item-4857" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4857"><a>category</a>
-<ul class="sub-menu">
-	<li id="menu-item-4863" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4863"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/">Fantasy</a>
+ 
+<div id="wpmm-wrap-megamenu" class="wp-megamenu-main-wrapper wpmm-ctheme-wrapper wpmega-default-theme wpmega-enabled-mobile-menu wpmm-toggle-standard wpmm-onhover wpmm-orientation-horizontal  wpmm-fade"><div class="wpmegamenu-toggle wpmega-enabled-menutoggle" data-responsive-breakpoint="910px"><div class='wp-mega-toggle-block'><div class='wpmega-closeblock'><i class='dashicons dashicons-no'></i></div><div class='wpmega-openblock'><i class='dashicons dashicons-menu'></i></div><div class='menutoggle'>Menu</div></div></div><ul id="wpmega-menu-megamenu" class="wpmm-mega-wrapper" data-advanced-click="wpmm-click-submenu" data-trigger-effect="wpmm-onhover"><li class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item wpmega-menu-flyout wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-flyout-horizontal-right menu-item-7219 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7219'><a class="wp-mega-menu-link" href="{% url 'shop' %}"><span class="wpmm-mega-menu-href-title">Shop</span></a></li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-7222 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7222'>	<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4883 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4883'>{% for category in bcategory4 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}<div class='wpmm-sub-menu-wrap'></li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-5708 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-5708'>{% for category in bcategory5 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}<div class='wpmm-sub-menu-wrap'>
+	<div class='wpmm-sub-menu-wrapper wpmm-menu0'><ul class="wp-mega-sub-menu">
+		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4883 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4883'>{% for category in bcategory1 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}
+		<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
+			{% for category in category1 %}<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-4885 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-4885'><a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="ght">{{category.name}}</span></a></li>{% endfor %}	</ul></div>
+	</li>	<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4887 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4887'>{% for category in bcategory2 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}
+		<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
+			{% for category in category2 %}<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-4885 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-4885'><a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="ght">{{category.name}}</span></a></li>{% endfor %}	</ul></div>
+	</li>	<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-5615 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-5615'>{% for category in bcategory3 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}
+		<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
+			{% for category in category3 %}<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-4885 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-4885'><a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="ght">{{category.name}}</span></a></li>{% endfor %}</ul></div>
+	</li>	<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-2411 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-2411'>{% for category in bcategory4 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}
+		<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
+			{% for category in category4 %}<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-4885 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-4885'><a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="ght">{{category.name}}</span></a></li>{% endfor %}	</ul></div>
+	</li></ul></div>
+	</li><li class='menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-2828 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-2828'><a class="wp-mega-menu-link" href="{% url 'blog' %}"><span class="wpmm-mega-menu-href-title">Blog</span></a><div class='wpmm-sub-menu-wrap'>
+	<div class='wpmm-sub-menu-wrapper wpmm-menu0'><ul class="wp-mega-sub-menu">
+		<li class='menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4881 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4881'><a class="wp-mega-menu-link" href="{% url 'blog' %}"><span class="wpmm-mega-menu-href-title">Blog</span></a>
+		<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
+			<li class='menu-item menu-item-type-post_type menu-item-object-page wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-2830 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-2830'><a class="wp-mega-menu-link" href="#insta"><span class="ght">My instagram profile is</span></a></li>		<li class='menu-item menu-item-type-post_type menu-item-object-page wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-2832 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-2832'><a class="wp-mega-menu-link" href="https://www.instagram.com/different_roads3"><span class="ght">Different roads3</span></a></li>	</ul></div>
+	</li>	<li class='menu-item menu-item-type-widget menu-widget-class-widget_recent_entries widget_recent_entries wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-3columns-4total menu-item-recent-posts-4 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-recent-posts-4'>                        <h4 class="wpmm-mega-block-title">Recent Posts</h4>            <ul>
+	{% for blog in blogs %}
+								<li>
+						<span class="recent-posts-thumbnail"> 
+						<img width="330" height="200" src="{{blog.imageURL}}" class="attachment-wntr-small-thumb size-wntr-small-thumb wp-post-image" alt="" decoding="async" loading="lazy" />										</span>
+					   
+						<span class="recent-post-detail">
+					  <a href="{% url 'blog-data' blog.id %}">{{blog.title}}</a>
+										<span class="post-date">{{blog.created_at|date:'d-m-y'}}</span>
+									</span>
+					</li>
+					{% endfor %}
+							</ul>
+							</li></ul></div>
+	</li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-menu-flyout wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-flyout-horizontal-right menu-item-7223 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7223'>{% for category in bcategory6 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}</li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-menu-flyout wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-flyout-horizontal-right menu-item-7414 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7414'>{% for category in bcategory7 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}</li></ul><div class="wpmega-responsive-closebtn" id="close-megamenu">CLOSE</div></div>													</div>
+							<div class="mobile-menu">
+								<h3 class="mob-toggle">Menu</h3><span class="close-menu"></span>
+								<div class="menu-mainmenu-container"><ul id="menu-mainmenu" class="mobile-menu-inner"><li id="menu-item-7215" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item menu-item-7215"><a href="https://themes.workdo.io/wordpress/toaster/books/shop/" aria-current="page">Shop</a></li>
+	<li id="menu-item-470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-470"><a href="https://themes.workdo.io/wordpress/toaster/books/blog/">Blog</a>
 	<ul class="sub-menu">
-		<li id="menu-item-4864" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4864"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
-		<li id="menu-item-4865" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4865"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
+	
 	</ul>
-</li>
-	<li id="menu-item-4861" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4861"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/thrillers/">Thrillers</a>
+	</li>
+	<li id="menu-item-4857" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4857"><a>category</a>
 	<ul class="sub-menu">
-		<li id="menu-item-7218" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-7218"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/classics/">Classics</a></li>
-		<li id="menu-item-7217" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-7217"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fairy-tales/">Fairy tales</a></li>
+		<li id="menu-item-4863" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4863"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/">Fantasy</a>
+		<ul class="sub-menu">
+			<li id="menu-item-4864" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4864"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
+			<li id="menu-item-4865" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4865"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
+		</ul>
+	</li>
+		<li id="menu-item-4861" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4861"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/thrillers/">Thrillers</a>
+		<ul class="sub-menu">
+			<li id="menu-item-7218" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-7218"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/classics/">Classics</a></li>
+			<li id="menu-item-7217" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-7217"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fairy-tales/">Fairy tales</a></li>
+		</ul>
+	</li>
 	</ul>
-</li>
-</ul>
-</li>
-<li id="menu-item-7216" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-7216"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
-<li id="menu-item-1102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1102"><a href="https://themes.workdo.io/wordpress/toaster/books/contact-with-us/">Contact With Us</a></li>
-<li id="menu-item-4859" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4859"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/humour/">Humour</a></li>
-</ul></div>						</div>
-				</nav>
-						</div>	
-				</div>
-					<div class="header-right ">					
-						<div class="head-cart d-flex align-items-center">
-								<!--Cart -->
-								<!-- header search start -->
-										<div class="header-search">
-						<div class="header-toggle">
-							<span class="d-block text-center"><svg width="20px" height="20px"><use xlink:href="#head_search"></use></svg></span>
+	</li>
+	<li id="menu-item-7216" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-7216"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
+	<li id="menu-item-1102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1102"><a href="https://themes.workdo.io/wordpress/toaster/books/contact-with-us/">Contact With Us</a></li>
+	<li id="menu-item-4859" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4859"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/humour/">Humour</a></li>
+	</ul></div>						</div>
+					</nav>
+							</div>	
+					</div>
+						<div class="header-right ">					
+							<div class="head-cart d-flex align-items-center">
+									<!--Cart -->
+									<!-- header search start -->
+											<div class="header-search">
+							<div class="header-toggle">
+								<span class="d-block text-center"><svg width="20px" height="20px"><use xlink:href="#head_search"></use></svg></span>
+							</div>
+							<div class="search-overlay">
+									<form method="GET" name="searchForm" class="woocommerce-product-search" action="{% url 'shop' %}">
+										
+				<div class="product-search-widget input-group">
+					<select name="q" class="orderby">
+													<option value="" selected="selected">All Categories</option>
+															<option value="Adventure stories" >Adventure stories</option>
+															<option value="Classics" >Classics</option>
+															<option value="Crime" >Crime</option>
+															<option value="Fairy tales" >Fairy tales</option>
+															<option value="Fantasy" >Fantasy</option>
+															<option value="Historical fiction" >Historical fiction</option>
+															<option value="Humour" >Humour</option>
+															<option value="Mystery" >Mystery</option>
+															<option value="Thrillers" >Thrillers</option>
+											</select>    
+					<input name="q" type="text" class="search-field form-control" placeholder="Search Products&hellip;" value="" title="Search for:" />
+					<button type="submit" value="Search">Search</button>
+					</div>
+					
+				</form>
+	
+								</div>
 						</div>
-						<div class="search-overlay">
-								<form method="GET" class="woocommerce-product-search" action="{% url 'shop' %}">
-			<div class="product-search-widget input-group">
-			    <select class="orderby">
-												<option value="" selected="selected">All Categories</option>	
-										</select>    
-				<input type="text" class="search-field form-control" placeholder="Search Products" value="" name="q" title="Search for:" />
-
-				<button type="submit" value="Search">Search</button>
+							 
+									<div class="hdr-btn-main">								
+										<!-- account -->
+																			<div class="topbar-link">
+											<span class="top-svg d-block text-center"><svg width="15px" height="18px"><use xlink:href="#user"></use></svg></span>			
+											{% if request.user.is_authenticated %}
+											<span><a href="{% url 'logout' %}">Logout</a></span>
+											{% else %}
+											<span><a href="{% url 'login' %}">Login</a></span>
+											
+											{% endif %}
+											<div class="topbar-link-wrapper">
+												<div class="account-menu-links">
+													<ul id="menu-header-account-links" class="account-menu"><li id="menu-item-7212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7212">	
+															{% if request.user.is_authenticated %}
+														<span><a href="{% url 'logout' %}">Logout</a></span>
+														{% else %}
+														<span><a href="{% url 'login' %}">Login</a></span>
+														{% endif %}</li>
+	<li id="menu-item-7213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7213"><a href="{% url 'checkout' %}">Checkout</a></li>
+	<li id="menu-item-7402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7402"><a href="{% url 'wishlist' %}">Wishlist</a></li>
+	
+	</ul>																										{% if request.user.is_authenticated %}
+														<a class="login-out" href="{% url 'logout' %}">Logout</a>
+														{% else %}
+														<a class="login-out" href="{% url 'login' %}">Login</a>
+														{% endif %}
+																								</div>
+											</div>
+										</div>
+										<div class="wntr-topbar-menu-links">
+											<div class="topbar-menu-toggle"></div>					
+																						<div class="wishlist-menu">
+													<div class="menu-wishlist-container"><ul id="menu-wishlist" class="menu"><li id="menu-item-7404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7404"><a href="{% url 'wishlist' %}">Wishlist</a></li>
+	</ul></div>											</div>
+																				</div>
+																			
+									<div class="head-cart">
+																				<div class="header-cart">
+												<div class="cart-item togg">
+																									<div class="shopping_cart tog" title="View your shopping cart">
+														
+														<div class="cart-qty">
+															<div class="mycart"><a href="{% url 'cart' %}" class="mycart">my cart</a>
+															<a class="cart-contents" href="{% url 'cart' %}" title="View your shopping cart">
+		
+															<span class="quanitity first_qty">{{cart_count}}</span>
+														<span class="cart-subt">${{sum_price}}<p>usd</p></span>
+														</a>
+														</div>
+														<span class="shopping-svg"><svg width="22px" height="26px"><use xlink:href="#cart"></use></svg></span>
+														</div>
+													</div>
+																									<aside id="woocommerce_widget_cart-1" class="widget woocommerce widget_shopping_cart tab_content"><h3 class="widget-title">Cart</h3><div class="widget_shopping_cart_content"></div></aside>											</div>
+											</div>
+																		</div>
+									
+								</div>
+							
+						</div>
 				</div>
-				
-			</form>
+			</div>	
+		</div>
+	</header>
+	<script>
 
-							</div>
-					</div>
-						 
-								<div class="hdr-btn-main">								
-									<!-- account -->
-																		<div class="topbar-link">
-										<span class="top-svg d-block text-center"><svg width="15px" height="18px"><use xlink:href="#user"></use></svg></span>			
-										<span>My profile</span>
-	
-										<div class="topbar-link-wrapper">
-											<div class="account-menu-links">
-												<ul id="menu-header-account-links" class="account-menu"><li id="menu-item-7212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7212"><a href="https://themes.workdo.io/wordpress/toaster/books/my-account/">My account</a></li>
-<li id="menu-item-7213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7213"><a href="https://themes.workdo.io/wordpress/toaster/books/checkout/">Checkout</a></li>
-<li id="menu-item-7402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7402"><a href="https://themes.workdo.io/wordpress/toaster/books/wishlist/">Wishlist</a></li>
-<li id="menu-item-7403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7403"><a href="https://themes.workdo.io/wordpress/toaster/books/compare/">Compare</a></li>
-</ul>																									<a class="login-out" href="https://themes.workdo.io/wordpress/toaster/books/my-account/">Login</a>
-																							</div>
-										</div>
-									</div>
-									<div class="wntr-topbar-menu-links">
-										<div class="topbar-menu-toggle"></div>					
-																					<div class="wishlist-menu">
-												<div class="menu-wishlist-container"><ul id="menu-wishlist" class="menu"><li id="menu-item-7404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7404"><a href="https://themes.workdo.io/wordpress/toaster/books/wishlist/">Wishlist</a></li>
-</ul></div>											</div>
-																			</div>
-																		
-								<div class="head-cart">
-																			<div class="header-cart">
-											<div class="cart-item togg">
-																								<div class="shopping_cart tog" title="View your shopping cart">
-													
-													<div class="cart-qty">
-														<div class="mycart"><a class="mycart">my cart</a>
-														<a class="cart-contents" href="#" title="View your shopping cart">
-	
-														<span class="quanitity first_qty">{{cart_count}}</span>
-													<span class="cart-subt">${{sum_price}}<p>usd</p></span>
-													</a>
-													</div>
-													<span class="shopping-svg"><svg width="22px" height="26px"><use xlink:href="#cart"></use></svg></span>
-													</div>
-												</div>
-																								<aside id="woocommerce_widget_cart-1" class="widget woocommerce widget_shopping_cart tab_content"><h3 class="widget-title">Cart</h3><div class="widget_shopping_cart_content"></div></aside>											</div>
-										</div>
-																	</div>
-								
-							</div>
-					    
-					</div>
-			</div>
-		</div>	
-	</div>
-</header>
+//GET SEARCH FORM AND PAGE LINKS
+let searchForm = document.getElementById('searchForm')
+let pageLinks = document.getElementsByClassName('page-link')
+
+//ENSURE SEARCH FORM EXISTS
+if (searchForm) {
+    for (let i = 0; pageLinks.length > i; i++) {
+        pageLinks[i].addEventListener('click', function (e) {
+            e.preventDefault()
+
+            //GET THE DATA ATTRIBUTE
+            let page = this.dataset.page
+
+            //ADD HIDDEN SEARCH INPUT TO FORM
+            searchForm.innerHTML += `<input value=${page} name="page" hidden/>`
+
+
+            //SUBMIT FORM
+            searchForm.submit()
+        })
+    }
+}
+
+
+
+let tags = document.getElementsByClassName('project-tag')
+
+for (let i = 0; tags.length > i; i++) {
+    tags[i].addEventListener('click', (e) => {
+        let tagId = e.target.dataset.tag
+        let projectId = e.target.dataset.project
+
+        // console.log('TAG ID:', tagId)
+        // console.log('PROJECT ID:', projectId)
+
+        fetch('http://127.0.0.1:8000/api/remove-tag/', {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ 'project': projectId, 'tag': tagId })
+        })
+            .then(response => response.json())
+            .then(data => {
+                e.target.remove()
+            })
+
+    })
+}
+
+	</script>

@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import MinValueValidator, MaxValueValidator
 # Create your models here.
 
 class Category(models.Model):
@@ -7,6 +8,13 @@ class Category(models.Model):
     
     def __str__(self):
         return self.name
+    
+class Classe(models.Model):
+    name = models.CharField(max_length=1050)
+    
+    def __str__(self):
+        return self.name
+
 
 class Tags(models.Model):
     name = models.CharField(max_length=100)
@@ -25,16 +33,32 @@ class Book(models.Model):
     name=models.CharField(max_length=150)
     price=models.FloatField(default=0)
     image = models.ImageField(upload_to='images/', blank=True, null=True)
+    image2 = models.ImageField(upload_to='images/', blank=True, null=True)
     description = models.CharField(max_length=250)
-    rating=models.IntegerField(default=3)
     category=models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
     tags=models.ForeignKey(Tags, on_delete=models.SET_NULL, null=True)
     created_at=models.DateTimeField(auto_now_add=True)
+    color=models.CharField(max_length=255, null=True, blank=True)
+    weight=models.CharField(max_length=255, null=True, blank=True)
+    dimensions = models.CharField(max_length=255, null=True, blank=True)
     sku = models.CharField(max_length=255, null=True, blank=True)
     size = models.ForeignKey(Sizes, on_delete=models.SET_NULL, null=True)
+    classes = models.ForeignKey(Classe, on_delete=models.SET_NULL, null=True, blank=True)
     
     def __str__(self):
         return self.name
+    
+    def get_rating(self):
+        reviews_total = 0 
+
+        for review in self.reviews.all():
+            reviews_total += int(review.rating)
+
+        if reviews_total > 0:
+            return reviews_total // self.reviews.count()
+
+        return 0
+        
     
 
 class Wishist(models.Model):
@@ -69,13 +93,20 @@ class Order(models.Model):
 
     def __str__(self):
         return self.first_name + ' ' + self.last_name
+class Rating(models.Model):
+    name = models.CharField(max_length=250)
+    
+    def __str__(self):
+        return self.name
+    
 
 class Review(models.Model):
     name = models.CharField(max_length=150,)
-    email = models.EmailField(max_length=150)
+    email = models.EmailField(max_length=150)    
+    rating = models.ForeignKey(Rating, related_name='ratings',
+                               on_delete=models.CASCADE)
     book = models.ForeignKey(
         Book, related_name="reviews", on_delete=models.CASCADE)
-    rating = models.CharField(max_length=200)
     content = models.TextField()
     created_by = models.ForeignKey(
         User, related_name="reviews", on_delete=models.CASCADE)

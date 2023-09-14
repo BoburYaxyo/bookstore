@@ -5,6 +5,7 @@ from apps.users import views
 urlpatterns = [
     path('', views.register, name='register'),
     path('login/', views.login_user, name='login'),
+    path('logout/', views.logoutUser, name='logout'),
     path('password-reset/', auth_views.PasswordResetView.as_view(
         template_name="my-account/lost-password/password_reset_form.html"), name='password_reset'),
     path('my-account/lost-password/password-reset/done/', auth_views.PasswordResetDoneView.as_view(
