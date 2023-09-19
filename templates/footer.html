@@ -4,14 +4,15 @@
 			<div id="footer-widget-area">
 		<div id="first" class="first-widget footer-widget animated" data-animated="fadeInLeft">
 		<aside id="text-2" class="widget widget_text">			<div class="textwidget">
-<div class="wpcf7 no-js" id="wpcf7-f4520-o2" lang="en-US" dir="ltr">
+<div class="wpcf7 no-js" id="wpcf7-f4520-o1" lang="en-US" dir="ltr">
 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="/wordpress/toaster/books/#wpcf7-f4520-o2" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
-<div style="display: none;">
+<form action="{% url 'register' %}" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+{% csrf_token %}
+	<div style="display: none;">
 <input type="hidden" name="_wpcf7" value="4520" />
 <input type="hidden" name="_wpcf7_version" value="5.7.7" />
 <input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4520-o2" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4520-o1" />
 <input type="hidden" name="_wpcf7_container_post" value="0" />
 <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
 </div>
@@ -33,17 +34,17 @@
 		</aside>	</div>
 	<!-- #first .widget-area -->
 			<div id="second" class="second-widget footer-widget animated" data-animated="fadeInLeft">
-		<aside id="nav_menu-1" class="widget widget_nav_menu"><h3 class="widget-title">Shop</h3><div class="menu-footer-category-container"><ul id="menu-footer-category" class="menu"><li id="menu-item-6902" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6902"><a href="https://themes.workdo.io/wordpress/toaster/books/about-us/">About Us</a></li>
-<li id="menu-item-4876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4876"><a href="https://themes.workdo.io/wordpress/toaster/books/faqs/">FAQ’s</a></li>
-<li id="menu-item-4875" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4875"><a href="https://themes.workdo.io/wordpress/toaster/books/contact-with-us/">Contact With Us</a></li>
-<li id="menu-item-6870" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6870"><a href="https://themes.workdo.io/wordpress/toaster/books/refund_returns/">Refund and Returns Policy</a></li>
+		<aside id="nav_menu-1" class="widget widget_nav_menu"><h3 class="widget-title">Shop</h3><div class="menu-footer-category-container"><ul id="menu-footer-category" class="menu"><li id="menu-item-6902" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6902"><a href="{% url 'about' %}">About Us</a></li>
+<li id="menu-item-4876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4876"><a href="{% url 'faqs' %}">FAQ’s</a></li>
+<li id="menu-item-4875" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4875"><a href="{% url 'contact' %}">Contact With Us</a></li>
+<li id="menu-item-6870" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6870"><a href="{% url 'refs' %}">Refund and Returns Policy</a></li>
 </ul></div></aside>	</div>
 	<!-- #second .widget-area -->
 			<div id="third" class="third-widget footer-widget animated" data-animated="fadeInLeft">
-		<aside id="nav_menu-2" class="widget widget_nav_menu"><h3 class="widget-title">Account</h3><div class="menu-footer-account-link-container"><ul id="menu-footer-account-link" class="menu"><li id="menu-item-7417" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7417"><a href="https://themes.workdo.io/wordpress/toaster/books/my-account/orders/">Orders</a></li>
-<li id="menu-item-7210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7210"><a href="https://themes.workdo.io/wordpress/toaster/books/checkout/">Checkout</a></li>
-<li id="menu-item-7418" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7418"><a href="https://themes.workdo.io/wordpress/toaster/books/my-account/downloads/">Downloads</a></li>
-<li id="menu-item-7419" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7419"><a href="https://themes.workdo.io/wordpress/toaster/books/my-account/edit-account/">Account details</a></li>
+		<aside id="nav_menu-2" class="widget widget_nav_menu"><h3 class="widget-title">Account</h3><div class="menu-footer-account-link-container"><ul id="menu-footer-account-link" class="menu"><li id="menu-item-7417" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7417"><a href="{% url '404' %}">Orders</a></li>
+<li id="menu-item-7210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7210"><a href="{% url 'checkout' %}">Checkout</a></li>
+<li id="menu-item-7418" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7418"><a href="{% url '404' %}">Downloads</a></li>
+<li id="menu-item-7419" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7419"><a href="{% url '404' %}">Account details</a></li>
 </ul></div></aside>	</div>
 	<!-- #third .widget-area -->
 			<div id="fourth" class="fourth-widget footer-widget animated" data-animated="fadeInLeft">

@@ -388,11 +388,11 @@
                                                                     <div class="featured-main woofeature filter-div" >
                                             <div class="woocommerce columns-4 ">	<ul class="products" >
 												{% for book in books %}
-<li class="post-78 product type-product status-publish has-post-thumbnail product_cat-crime product_cat-fairy-tales product_cat-fantasy product_cat-humour product_cat-thrillers product_tag-lamps first instock featured shipping-taxable purchasable product-type-simple">
+<li class="post-78 product_datan product type-product status-publish has-post-thumbnail product_cat-crime product_cat-fairy-tales product_cat-fantasy product_cat-humour product_cat-thrillers product_tag-lamps first instock featured shipping-taxable purchasable product-type-simple">
  <span class="product-loading"></span>
 	<div class="container-inner">
 		<div class="product-block-inner">
-			<a href="{% url 'single-book' book.id %}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">			<div class="image-block">	
+			<a href="{% url 'single-book' book.id %}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link prod_id">			<div class="image-block">	
 				<img width="300" height="300" src="{{book.image.url}}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="{{book.image2.url}} 300w, {{book.image.url}} 100w, {{book.image.url}} 150w, {{book.image.url}} 145w" sizes="(max-width: 300px) 100vw, 300px" /><img width="800" height="938" src="{{book.image.url}}" class="secondary-image attachment-shop-catalog" alt="" decoding="async" loading="lazy" srcset="{{book.image.url}} 800w, https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2022/03/2-600x704.png 600w, https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2022/03/2-256x300.png 256w, https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2022/03/2-768x900.png 768w" sizes="(max-width: 800px) 100vw, 800px" /><p class="product-tag"><a href="#lamps">{{book.tags}}</a></p>				<div class="cart-aerrow"><svg><use xlink:href="#arright"></svg></div>
 				</div>
 				<div class="product-detail-wrapper">				
@@ -400,7 +400,7 @@
 				<a href="{% url 'single-book' book.id %}"><h3 class="product-name">{{book.name}}</h3></a>
 						
 	<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>{{book.price}}</span></span>
-					</a><a href="{% url 'add-cart' book.id %}" class="button product_type_simple add_to_cart_button ajax_add_to_cart" rel="nofollow">Add to cart</a>
+					</a><a href="{% url 'add-cart' book.id %}" class="button product_type_simple addToCartBtn add_to_cart_button ajax_add_to_cart" rel="nofollow">Add to cart</a>
 <div class="yith-wcwl-add-to-wishlist add-to-wishlist-78  wishlist-fragment on-first-load">
 			
 			<!-- ADD TO WISHLIST -->
@@ -498,7 +498,7 @@
 </div>                                        </div>
                                                                             <div class="latest-main woobest filter-div " >
                                             <div class="woocommerce columns-4 ">	<ul class="products" >
-												{% for book in books %}
+												{% for book in bbooks %}
 <li class="post-78 product type-product status-publish has-post-thumbnail product_cat-crime product_cat-fairy-tales product_cat-fantasy product_cat-humour product_cat-thrillers product_tag-lamps first instock featured shipping-taxable purchasable product-type-simple">
  <span class="product-loading"></span>
 	<div class="container-inner">
@@ -707,7 +707,7 @@
                                 <div class="woo-heading product-grid-container">
                                 <div class="woocommerce columns-2 ">	<ul class="products" >
 
-									{% for book in books %}
+									{% for book in bbooks %}
 <li class="post-78 product type-product status-publish has-post-thumbnail product_cat-crime product_cat-fairy-tales product_cat-fantasy product_cat-humour product_cat-thrillers product_tag-lamps first instock featured shipping-taxable purchasable product-type-simple">
  <span class="product-loading"></span>
 	<div class="container-inner">
@@ -770,7 +770,7 @@
                                  
                                 <div class="woo-heading product-grid-container">
                                 <div class="woocommerce columns-2 ">	<ul class="products" >
-									{% for book in books %}
+									{% for book in books3 %}
 <li class="post-78 product type-product status-publish has-post-thumbnail product_cat-crime product_cat-fairy-tales product_cat-fantasy product_cat-humour product_cat-thrillers product_tag-lamps first instock featured shipping-taxable purchasable product-type-simple">
  <span class="product-loading"></span>
 	<div class="container-inner">

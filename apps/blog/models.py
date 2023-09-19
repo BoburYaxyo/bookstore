@@ -9,9 +9,10 @@ class BCategory(models.Model):
         return self.name
 class Classes(models.Model):
     name = models.CharField(max_length=250)
+    manba = models.CharField(max_length=50, null=True, blank=True)
     
     def __str__(self):
-        return self.name
+        return self.manba
     
 class Blog(models.Model):
     title = models.CharField(max_length=150)

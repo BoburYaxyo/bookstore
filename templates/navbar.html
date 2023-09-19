@@ -1,4 +1,4 @@
-
+{% load cart_tag %}
 <body class="archive post-type-archive post-type-archive-product theme-books woocommerce-multi-currency-USD woocommerce-shop woocommerce woocommerce-page woocommerce-no-js masthead-fixed list-view elementor-default elementor-kit-7">
 <svg style="display: none;">
 	  <symbol id="user" viewBox="0 0 15 18">
@@ -94,9 +94,9 @@
 								<span><a href="#">Get more</a></span>					
 							</div>
 												<div class="topbar-link">
-							<a href="refund_returns-2">Policy Privacy</a>
-							<a href="terms-and-conditions">Cookie Policy</a>
-							<a href="faqs">Faq</a>
+							<a href="{% url 'refs' %}">Policy Privacy</a>
+							<a href="{% url 'terms' %}">Cookie Policy</a>
+							<a href="{% url 'faqs' %}">Faq</a>
 						</div>
 					</div>
 				</div>        
@@ -110,16 +110,16 @@
 						<!-- Header LOGO-->
 						<div class="header-logo">
 																												<span class="site-icon">
-								<a href="https://themes.workdo.io/wordpress/toaster/books/" rel="home" class="site-title">
-																		<img alt="" class="site-logo" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/images/workdo/logo.png" />
+								<a href="/" rel="home" class="site-title">
+																		<img alt="" class="site-logo" src="static/css/wp-content/themes/books/images/workdo/logo.png" />
 								</a>
 							</span>
 																				</div>
 						<!-- Header Mob LOGO-->
 						<div class="header-mob-logo">
 																													<span class="site-icon">
-									<a href="https://themes.workdo.io/wordpress/toaster/books/" rel="home" class="site-title">
-										<img alt="" class="site-logo" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/images/workdo/logo.png" />
+									<a href="/" rel="home" class="site-title">
+										<img alt="" class="site-logo" src="/static/css/wp-content/themes/books/images/workdo/logo.png" />
 									</a>
 								</span>
 							
@@ -490,7 +490,7 @@ color: #ccc;
  </style>
 
  
-<div id="wpmm-wrap-megamenu" class="wp-megamenu-main-wrapper wpmm-ctheme-wrapper wpmega-default-theme wpmega-enabled-mobile-menu wpmm-toggle-standard wpmm-onhover wpmm-orientation-horizontal  wpmm-fade"><div class="wpmegamenu-toggle wpmega-enabled-menutoggle" data-responsive-breakpoint="910px"><div class='wp-mega-toggle-block'><div class='wpmega-closeblock'><i class='dashicons dashicons-no'></i></div><div class='wpmega-openblock'><i class='dashicons dashicons-menu'></i></div><div class='menutoggle'>Menu</div></div></div><ul id="wpmega-menu-megamenu" class="wpmm-mega-wrapper" data-advanced-click="wpmm-click-submenu" data-trigger-effect="wpmm-onhover"><li class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item wpmega-menu-flyout wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-flyout-horizontal-right menu-item-7219 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7219'><a class="wp-mega-menu-link" href="{% url 'shop' %}"><span class="wpmm-mega-menu-href-title">Shop</span></a></li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-7222 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7222'>	<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4883 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4883'>{% for category in bcategory4 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}<div class='wpmm-sub-menu-wrap'></li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-5708 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-5708'>{% for category in bcategory5 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}<div class='wpmm-sub-menu-wrap'>
+<div id="wpmm-wrap-megamenu" class="wp-megamenu-main-wrapper wpmm-ctheme-wrapper wpmega-default-theme wpmega-enabled-mobile-menu wpmm-toggle-standard wpmm-onhover wpmm-orientation-horizontal  wpmm-fade"><div class="wpmegamenu-toggle wpmega-enabled-menutoggle" data-responsive-breakpoint="910px"><div class='wp-mega-toggle-block'><div class='wpmega-closeblock'><i class='dashicons dashicons-no'></i></div><div class='wpmega-openblock'><i class='dashicons dashicons-menu'></i></div><div class='menutoggle'>Menu</div></div></div><ul id="wpmega-menu-megamenu" class="wpmm-mega-wrapper" data-advanced-click="wpmm-click-submenu" data-trigger-effect="wpmm-onhover"><li class='menu-item menu-item-type-post_type menu-item-object-page wpmega-menu-flyout wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-flyout-horizontal-right menu-item-7219 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7219'><a class="wp-mega-menu-link" href="{% url 'shop' %}"><span class="wpmm-mega-menu-href-title">Shop</span></a></li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-7222 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7222'>	<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4883 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4883'>{% for category in bcategory4 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}<div class='wpmm-sub-menu-wrap'></li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-5708 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-5708'>{% for category in bcategory5 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}<div class='wpmm-sub-menu-wrap'>
 	<div class='wpmm-sub-menu-wrapper wpmm-menu0'><ul class="wp-mega-sub-menu">
 		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4883 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4883'>{% for category in bcategory1 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}
 		<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
@@ -512,7 +512,7 @@ color: #ccc;
 			<li class='menu-item menu-item-type-post_type menu-item-object-page wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-2830 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-2830'><a class="wp-mega-menu-link" href="#insta"><span class="ght">My instagram profile is</span></a></li>		<li class='menu-item menu-item-type-post_type menu-item-object-page wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-2832 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-2832'><a class="wp-mega-menu-link" href="https://www.instagram.com/different_roads3"><span class="ght">Different roads3</span></a></li>	</ul></div>
 	</li>	<li class='menu-item menu-item-type-widget menu-widget-class-widget_recent_entries widget_recent_entries wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-3columns-4total menu-item-recent-posts-4 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-recent-posts-4'>                        <h4 class="wpmm-mega-block-title">Recent Posts</h4>            <ul>
 	{% for blog in blogs %}
-								<li>
+								<li style="max-width: 250px;">
 						<span class="recent-posts-thumbnail"> 
 						<img width="330" height="200" src="{{blog.imageURL}}" class="attachment-wntr-small-thumb size-wntr-small-thumb wp-post-image" alt="" decoding="async" loading="lazy" />										</span>
 					   
@@ -627,21 +627,39 @@ color: #ccc;
 																			
 									<div class="head-cart">
 																				<div class="header-cart">
-												<div class="cart-item togg">
-																									<div class="shopping_cart tog" title="View your shopping cart">
-														
-														<div class="cart-qty">
-															<div class="mycart"><a href="{% url 'cart' %}" class="mycart">my cart</a>
-															<a class="cart-contents" href="{% url 'cart' %}" title="View your shopping cart">
-		
-															<span class="quanitity first_qty">{{cart_count}}</span>
-														<span class="cart-subt">${{sum_price}}<p>usd</p></span>
-														</a>
-														</div>
-														<span class="shopping-svg"><svg width="22px" height="26px"><use xlink:href="#cart"></use></svg></span>
-														</div>
-													</div>
-																									<aside id="woocommerce_widget_cart-1" class="widget woocommerce widget_shopping_cart tab_content"><h3 class="widget-title">Cart</h3><div class="widget_shopping_cart_content"></div></aside>											</div>
+																				
+																						<div class="cart-item togg">
+																																			<div class="shopping_cart tog" title="View your shopping cart">
+																								
+																								<div class="cart-qty">
+																									<div class="mycart"><a class="mycart">my cart</a>
+																									<a class="cart-contents" href="https://themes.workdo.io/wordpress/toaster/books/cart/" title="View your shopping cart">
+												<span class="quanitity first_qty">{{request.session.cart|length}} </span>
+												<span class="cart-subt">{{cart_total_amount}}<p>usd</p></span>
+											</a>
+											
+																								</div>
+																								<span class="shopping-svg"><svg width="22px" height="26px"><use xlink:href="#cart"></use></svg></span>
+																								</div>
+																							</div>
+																																			<aside id="woocommerce_widget_cart-1" class="widget woocommerce widget_shopping_cart tab_content" style="display: none;"><h3 class="widget-title">Cart</h3><div class="widget_shopping_cart_content">
+											
+												<ul class="woocommerce-mini-cart cart_list product_list_widget ">
+													{% for key, value in request.session.cart.items %}
+													<li class="woocommerce-mini-cart-item mini_cart_item">
+												<a href="{% url "item_clear" key %}" class="remove remove_from_cart_button">×</a>											<a href="{% url "single-book" key %}">
+														<img width="300" height="300" src="{{value.image}}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="{{value.image}} 300w, https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2022/03/3-100x100.png 100w, https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2022/03/3-150x150.png 150w, https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2022/03/3-145x145.png 145w" sizes="(max-width: 300px) 100vw, 300px">{{value.name}}						</a>
+																						<span class="quantity">x{{ value.quantity }} <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>{{value.price|multiply:value.quantity}}</bdi></span></span>				</li>{% endfor %}
+											
+												<p class="woocommerce-mini-cart__total total">
+													<strong>Subtotal:</strong> <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>{{cart_total_amount}}</bdi></span>	</p>
+											
+												
+												<p class="woocommerce-mini-cart__buttons buttons"><a href="{% url "cart" %}" class="button wc-forward">View cart</a><a href="{% url "checkout" %}" class="button checkout wc-forward">Checkout</a></p>
+											
+												
+											
+											</div></aside>												</div>
 											</div>
 																		</div>
 									
@@ -703,5 +721,8 @@ for (let i = 0; tags.length > i; i++) {
 
     })
 }
+
+
+
 
 	</script>

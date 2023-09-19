@@ -40,8 +40,8 @@
                                     <tbody>
                                         {% for item in wishItems %}
                                         <tr>
-                                            <td class="product-thumbnail"><a href="{% url 'shop' %}"><img src="{{item.imageURL}}" alt=""></a></td>
-                                            <td class="product-name"><a href="{% url 'shop' %}">{{item.name}}</a></td>
+                                            <td class="product-thumbnail"><a href="{% url 'single-book' item.id %}"><img style="max-width: 50px;" src="{{item.image.url}}" alt=""></a></td>
+                                            <td class="product-name"><a href="{% url 'single-book' item.id %}">{{item.name}}</a></td>
                                             <td class="product-price"><span class="amount">{{item.price}}</span></td>
                                             <td class="product-quantity">
                                                 <a href="{% url 'add-cart' item.id %}" class="tp-btn-h1">Add To Cart</a>

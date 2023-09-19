@@ -7,7 +7,7 @@
 	<div class="main_inner">
 							<div class="page-title shop-page-title">
 						<div class="page-title-inner theme-container">
-							<a href="https://themes.workdo.io/wordpress/toaster/books" rel="nofollow">Home</a>&nbsp;&nbsp;&#187;&nbsp;&nbsp;Login							<h1 class="entry-title-main shop-entry-title-main">
+							<a href="/" rel="nofollow">Home</a>&nbsp;&nbsp;&#187;&nbsp;&nbsp;Login							<h1 class="entry-title-main shop-entry-title-main">
 								Login						</h1>
 							<div class="breadcrumb-inner">Reading not only improves your vocabulary but also assists you in gaining a fresh perspective.</div>
 						</div>
@@ -26,12 +26,12 @@
 
 <div class="u-columns col2-set" id="customer_login">
 
-	<div class="u-column1 col-1">
+	<div class="u-column1 col-1 hok">
 
 
 		<h2>Login</h2>
 
-		<form action="{% url 'login' %}" class="woocommerce-form woocommerce-form-login login" method="POST">
+		<form action="{% url 'login' %}" class="woocommerce-form woocommerce-form-login login hokform" method="POST">
 
 			{% csrf_token %}
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
@@ -101,6 +101,49 @@
 </div><!-- .main-content-inner -->
 </div><!-- .main_inner -->
 </div><!-- #main -->
+<style>
+	@media only screen and (max-width: 280px) {
+		.hok {
+			display: flex;
+			align-self: center;
+			flex-direction: column;
+			justify-content: center;
+			
+			}
+		
+	}
+	@media only screen and (min-width: 360px) {
+		.hok {
+		
+
+		
+			}
+		
+	}
+
+	@media only screen and (min-width: 760px) {
+		.hok {
+		
+			margin-left: 25%;
+			}
+	
+	}
+
+	@media only screen and (min-width: 992px) {
+		.hok {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+			transform: translate(-30%,0);
+		margin-left: 35%;
+		}
+		.hokform{
+			width: 600px;
+	
+		}
+		}
+
+	</style>
 {% else %}
 <div id="main" class="site-main ">
 	<div class="main_inner">
@@ -140,9 +183,9 @@
 				<label for="reg_email">Email address&nbsp;<span class="required">*</span></label>
 				<input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email" autocomplete="email" value="" />			
 				<label for="password1">Password&nbsp;<span class="required">*</span></label>
-				<input type="password1" class="woocommerce-Input woocommerce-Input--text input-text" name="password1" id="reg_email" autocomplete="password1" value="" />	
+				<input type="password" class="woocommerce-Input woocommerce-Input--text input-text" name="password1" id="reg_email" autocomplete="password1" value="" />	
 				<label for="password2">Password confirmation&nbsp;<span class="required">*</span></label>
-				<input type="password2" class="woocommerce-Input woocommerce-Input--text input-text" name="password2" id="reg_email" autocomplete="password2" value="" />	
+				<input type="password" class="woocommerce-Input woocommerce-Input--text input-text" name="password2" id="reg_email" autocomplete="password2" value="" />	
 			</p>
 
 			
@@ -200,33 +243,61 @@
 </div><!-- .main_inner -->
 </div><!-- #main -->
 <style>
-	@media only screen and (min-width: 992px) {
-	.hok {
-	margin-left: 30%;
-	}
-	.hdf{
-		margin-left: 80%;
-	}
+	@media only screen and (max-width: 280px) {
+		.hok {
+			display: flex;
+			align-self: center;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-left: 40%;
+			}
+			.hokform{
+				width: 220px;
+		
+			}
 	}
 	@media only screen and (min-width: 360px) {
-		.hokform{
-			width: 320px;
-		}
-	}
-	@media only screen and (min-width: 760px) {
-		.hok{
-			margin-left: 30%;
-		}
-	}
-	@media only screen and (max-width: 280px) {
-		.hokform{
-			width: 220px;
-		}
-		.renafkl{
-			margin-left: -20px;
+		.hok {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-left: 40%;
+			}
+			.hokform{
+				width: 320px;
 		
-		}
+			}
 	}
+
+	@media only screen and (min-width: 760px) {
+		.hok {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-left: 40%;
+			}
+			.hokform{
+				width: 320px;
+		
+			}
+	}
+
+	@media only screen and (min-width: 992px) {
+		.hok {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-left: 40%;
+		}
+		.hokform{
+			width: 400px;
+	
+		}
+		}
 
 	</style>
 {% endif %}

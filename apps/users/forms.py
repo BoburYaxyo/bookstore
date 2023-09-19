@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 
 from django.contrib.auth.forms import AuthenticationForm
 from django.forms.widgets import PasswordInput, TextInput
+from books.models import Order
 from users.models import Profile
 from django import forms
 
@@ -22,7 +23,7 @@ class CustomUserCreationForm(UserCreationForm):
             field.widget.attrs.update({'class': 'input'})
 
 class ProfileForm(ModelForm):
-    class Meta:
+    class Meta: 
         model = Profile
 
         fields = '__all__'
@@ -32,3 +33,4 @@ class ProfileForm(ModelForm):
 
         for name, field in self.fields.items():
             field.widget.attrs.update({'class': 'input'})
+            

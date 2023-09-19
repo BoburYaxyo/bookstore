@@ -1,4 +1,5 @@
-
+{% load static %}
+{% load cart_tag %}
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -13,8 +14,8 @@
 <meta name='robots' content='max-image-preview:large' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-<link rel="alternate" type="application/rss+xml" title="Books WorkDo &raquo; Feed" href="https://themes.workdo.io/wordpress/toaster/books/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Books WorkDo &raquo; Comments Feed" href="https://themes.workdo.io/wordpress/toaster/books/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Books WorkDo &raquo; Feed" href="/static/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Books WorkDo &raquo; Comments Feed" href="/static/comments/feed/" />
 <script type="text/javascript">
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
 /*! This file is auto-generated */
@@ -39,47 +40,47 @@ img.emoji {
 [data-font="FontAwesome"]:before {font-family: 'FontAwesome' !important;content: attr(data-icon) !important;speak: none !important;font-weight: normal !important;font-variant: normal !important;text-transform: none !important;line-height: 1 !important;font-style: normal !important;-webkit-font-smoothing: antialiased !important;-moz-osx-font-smoothing: grayscale !important;}
 </style>
 <link rel='stylesheet' id='wntr-google-fonts-css' href='https://fonts.googleapis.com/css?family=Quicksand%3A100%2C200%2C300%2C400%2C500%2C600%2C700&#038;ver=1.0.0#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='wntr-custom-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/custom.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='owl-carousel-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/owl.carousel.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='owl-transitions-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/owl.transitions.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='shadowbox-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/shadowbox.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='animate-min-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/animate.min.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wntr-shortcode-style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/shortcode_style.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='slick-theme-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/slick-theme.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='slick-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/slick.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='bootstrap-min-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/bootstrap.min.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wntr-woocommerce-css-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/css/workdo/woocommerce.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-library-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wc-blocks-vendors-style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=10.2.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wc-blocks-style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=10.2.3' type='text/css' media='all' />
-<link rel='stylesheet' id='jquery-selectBox-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/yith-woocommerce-wishlist/assets/css/jquery.selectBox.css?ver=1.2.0' type='text/css' media='all' />
-<link rel='stylesheet' id='yith-wcwl-font-awesome-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/yith-woocommerce-wishlist/assets/css/font-awesome.css?ver=4.7.0' type='text/css' media='all' />
-<link rel='stylesheet' id='woocommerce_prettyPhoto_css-css' href='//themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/assets/css/prettyPhoto.css?ver=3.1.6' type='text/css' media='all' />
-<link rel='stylesheet' id='yith-wcwl-main-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/yith-woocommerce-wishlist/assets/css/style.css?ver=3.22.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wntr-custom-css' href='/static/css/wp-content/themes/books/css/workdo/custom.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-css' href='/static/css/wp-content/themes/books/css/workdo/owl.carousel.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-transitions-css' href='/static/css/wp-content/themes/books/css/workdo/owl.transitions.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='shadowbox-css' href='/static/css/wp-content/themes/books/css/workdo/shadowbox.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-min-css' href='/static/css/wp-content/themes/books/css/workdo/animate.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wntr-shortcode-style-css' href='/static/css/wp-content/themes/books/css/workdo/shortcode_style.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-theme-css' href='/static/css/wp-content/themes/books/css/workdo/slick-theme.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-css' href='/static/css/wp-content/themes/books/css/workdo/slick.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-min-css' href='/static/css/wp-content/themes/books/css/workdo/bootstrap.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wntr-woocommerce-css-css' href='/static/css/wp-content/themes/books/css/workdo/woocommerce.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='/static/css/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-vendors-style-css' href='/static/css/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=10.2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-css' href='/static/css/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=10.2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-selectBox-css' href='/static/css/wp-content/plugins/yith-woocommerce-wishlist/assets/css/jquery.selectBox.css?ver=1.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='yith-wcwl-font-awesome-css' href='/static/css/wp-content/plugins/yith-woocommerce-wishlist/assets/css/font-awesome.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce_prettyPhoto_css-css' href='/static/css/wp-content/plugins/woocommerce/assets/css/prettyPhoto.css?ver=3.1.6' type='text/css' media='all' />
+<link rel='stylesheet' id='yith-wcwl-main-css' href='/static/css/wp-content/plugins/yith-woocommerce-wishlist/assets/css/style.css?ver=3.22.0' type='text/css' media='all' />
 <style id='yith-wcwl-main-inline-css' type='text/css'>
 .yith-wcwl-share li a{color: #FFFFFF;}.yith-wcwl-share li a:hover{color: #FFFFFF;}.yith-wcwl-share a.facebook{background: #39599E; background-color: #39599E;}.yith-wcwl-share a.facebook:hover{background: #39599E; background-color: #39599E;}.yith-wcwl-share a.twitter{background: #45AFE2; background-color: #45AFE2;}.yith-wcwl-share a.twitter:hover{background: #39599E; background-color: #39599E;}.yith-wcwl-share a.pinterest{background: #AB2E31; background-color: #AB2E31;}.yith-wcwl-share a.pinterest:hover{background: #39599E; background-color: #39599E;}.yith-wcwl-share a.email{background: #FBB102; background-color: #FBB102;}.yith-wcwl-share a.email:hover{background: #39599E; background-color: #39599E;}.yith-wcwl-share a.whatsapp{background: #00A901; background-color: #00A901;}.yith-wcwl-share a.whatsapp:hover{background: #39599E; background-color: #39599E;}
 </style>
-<link rel='stylesheet' id='classic-theme-styles-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-includes/css/classic-themes.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='/static/css/wp-includes/css/classic-themes.min.css?ver=6.2.2' type='text/css' media='all' />
 <style id='global-styles-inline-css' type='text/css'>
 body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
 .wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
 </style>
-<link rel='stylesheet' id='redux-extendify-styles-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/redux-framework/redux-core/assets/css/extendify-utilities.css?ver=4.4.1' type='text/css' media='all' />
-<link rel='stylesheet' id='wpmm-frontend-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/ap-mega-menu/css/style.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wpmm-responsive-stylesheet-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/ap-mega-menu/css/responsive.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wpmm-animate-css-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/ap-mega-menu/css/animate.css?ver=ap-mega-menu' type='text/css' media='all' />
-<link rel='stylesheet' id='wpmm-frontwalker-stylesheet-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/ap-mega-menu/css/frontend_walker.css?ver=ap-mega-menu' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-extendify-styles-css' href="{% static 'css/wp-content/plugins/redux-framework/redux-core/assets/css/extendify-utilities.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wpmm-frontend-css' href="{% static 'css/wp-content/plugins/ap-mega-menu/css/style.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wpmm-responsive-stylesheet-css' href="{% static 'css/wp-content/plugins/ap-mega-menu/css/responsive.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wpmm-animate-css-css' href="{% static 'css/wp-content/plugins/ap-mega-menu/css/animate.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wpmm-frontwalker-stylesheet-css' href="{% static 'css/wp-content/plugins/ap-mega-menu/css/frontend_walker.css' %}" type='text/css' media='all' />
 <link rel='stylesheet' id='wpmm-google-fonts-style-css' href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700&#038;ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wpmegamenu-fontawesome-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/ap-mega-menu/css/wpmm-icons/font-awesome/font-awesome.min.css?ver=ap-mega-menu' type='text/css' media='all' />
-<link rel='stylesheet' id='wpmegamenu-genericons-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/ap-mega-menu/css/wpmm-icons/genericons.css?ver=ap-mega-menu' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-includes/css/dashicons.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wpmegamenu-fontawesome-css' href="{% static 'css/wp-content/plugins/ap-mega-menu/css/wpmm-icons/font-awesome/font-awesome.min.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wpmegamenu-genericons-css' href="{% static 'css/wp-content/plugins/ap-mega-menu/css/wpmm-icons/genericons.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href="{% static 'css/wp-includes/css/dashicons.min.css' %}" type='text/css' media='all' />
 <style id='dashicons-inline-css' type='text/css'>
 [data-font="Dashicons"]:before {font-family: 'Dashicons' !important;content: attr(data-icon) !important;speak: none !important;font-weight: normal !important;font-variant: normal !important;text-transform: none !important;line-height: 1 !important;font-style: normal !important;-webkit-font-smoothing: antialiased !important;-moz-osx-font-smoothing: grayscale !important;}
 </style>
-<link rel='stylesheet' id='contact-form-7-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.7' type='text/css' media='all' />
-<link rel='stylesheet' id='woo-multi-currency-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woo-multi-currency/css/woo-multi-currency.min.css?ver=2.1.30' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href='/static/css/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.7' type='text/css' media='all' />
+<link rel='stylesheet' id='woo-multi-currency-css' href='/static/css/wp-content/plugins/woo-multi-currency/css/woo-multi-currency.min.css?ver=2.1.30' type='text/css' media='all' />
 <style id='woo-multi-currency-inline-css' type='text/css'>
 .woo-multi-currency .wmc-list-currencies .wmc-currency.wmc-active,.woo-multi-currency .wmc-list-currencies .wmc-currency:hover {background: #f78080 !important;}
 		.woo-multi-currency .wmc-list-currencies .wmc-currency,.woo-multi-currency .wmc-title, .woo-multi-currency.wmc-price-switcher a {background: #212121 !important;}
@@ -96,64 +97,64 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				#yith-quick-view-close{color:#cdcdcd;}
 				#yith-quick-view-close:hover{color:#ff0000;}
 </style>
-<link rel='stylesheet' id='parent-style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/style.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wntr-responsive-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/responsive.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css' href="{% static 'css/wp-content/themes/books/style.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wntr-responsive-css' href="{% static 'css/wp-content/themes/books/responsive.css' %}" type='text/css' media='all' />
 <link rel='stylesheet' id='wntr-fonts-css' href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CRubik%3A400%2C500%2C600%2C700%2C800&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='wntr-style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books-child/style.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-icons-ekiticons-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css?ver=2.8.8' type='text/css' media='all' />
-<link rel='stylesheet' id='elementskit-parallax-style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit/modules/parallax/assets/css/style.css?ver=3.1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='berocket_compare_products_style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/products-compare-for-woocommerce/css/products_compare.css?ver=3.5.7.8' type='text/css' media='all' />
-<link rel='stylesheet' id='wt-owlcarousel-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/workdo-addon/assets/css/owlcarousel/owl.carousel.min.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wt-elementor-style-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/workdo-addon/assets/css/workdo-style.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='ekit-widget-styles-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=2.8.8' type='text/css' media='all' />
-<link rel='stylesheet' id='ekit-widget-styles-pro-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit/widgets/init/assets/css/widget-styles-pro.css?ver=3.1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='ekit-responsive-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=2.8.8' type='text/css' media='all' />
+<link rel='stylesheet' id='wntr-style-css' href="{% static 'css/wp-content/themes/books-child/style.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-ekiticons-css' href="{% static 'css/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='elementskit-parallax-style-css' href="{% static 'css/wp-content/plugins/elementskit/modules/parallax/assets/css/style.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='berocket_compare_products_style-css' href="{% static 'css/wp-content/plugins/products-compare-for-woocommerce/css/products_compare.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wt-owlcarousel-css' href='/static/css/wp-content/plugins/workdo-addon/assets/css/owlcarousel/owl.carousel.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wt-elementor-style-css' href='/static/css/wp-content/plugins/workdo-addon/assets/css/workdo-style.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ekit-widget-styles-css' href='/static/css/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=2.8.8' type='text/css' media='all' />
+<link rel='stylesheet' id='ekit-widget-styles-pro-css' href='/static/css/wp-content/plugins/elementskit/widgets/init/assets/css/widget-styles-pro.css?ver=3.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ekit-responsive-css' href='/static/css/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=2.8.8' type='text/css' media='all' />
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Quicksand&#038;display=swap&#038;ver=1687526223" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&#038;display=swap&#038;ver=1687526223" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&#038;display=swap&#038;ver=1687526223" /></noscript><script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='/static/css/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js'></script>
 <script type='text/javascript' id='wp_megamenu-frontend_scripts-js-extra'>
 /* <![CDATA[ */
 var wp_megamenu_params = {"wpmm_mobile_toggle_option":"toggle_standard","wpmm_event_behavior":"click_submenu","wpmm_ajaxurl":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","wpmm_ajax_nonce":"45fca89587","check_woocommerce_enabled":"true","wpmm_mlabel_animation_type":"none","wpmm_animation_delay":"2s","wpmm_animation_duration":"3s","wpmm_animation_iteration_count":"1","enable_mobile":"1"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/ap-mega-menu/js/frontend.js?ver=ap-mega-menu' id='wp_megamenu-frontend_scripts-js'></script>
+<script type='text/javascript' src='/static/css/wp-content/plugins/ap-mega-menu/js/frontend.js?ver=ap-mega-menu' id='wp_megamenu-frontend_scripts-js'></script>
 <script type='text/javascript' id='woo-multi-currency-js-extra'>
 /* <![CDATA[ */
 var wooMultiCurrencyParams = {"enableCacheCompatible":"0","ajaxUrl":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","extra_params":[],"current_currency":"USD"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woo-multi-currency/js/woo-multi-currency.min.js?ver=2.1.30' id='woo-multi-currency-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.jqtransform.js?ver=6.2.2' id='jqtransform-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.jqtransform.script.js?ver=6.2.2' id='jqtransform-script-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.custom.min.js?ver=6.2.2' id='wntr-custom-script-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/jquery.isotope.min.js?ver=6.2.2' id='isotope-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/custom.min.js?ver=6.2.2' id='custom-min-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.easypiechart.min.js?ver=6.2.2' id='easypiechart-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/owl.carousel.min.js?ver=6.2.2' id='owlcarousel-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.formalize.min.js?ver=6.2.2' id='formalize-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/respond.min.js?ver=6.2.2' id='respond-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.validate.js?ver=6.2.2' id='validate-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/shadowbox.js?ver=6.2.2' id='shadowbox-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/waypoints.min.js?ver=6.2.2' id='waypoints-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.megamenu.js?ver=6.2.2' id='megamenu-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/easyResponsiveTabs.js?ver=6.2.2' id='easyResponsiveTabs-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.treeview.js?ver=6.2.2' id='jtree-min-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.jscroll.min.js?ver=6.2.2' id='scroll-min-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/countUp.js?ver=6.2.2' id='countUp-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/doubletaptogo.js?ver=6.2.2' id='doubletaptogo-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/slick.min.js?ver=6.2.2' id='slick-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/bootstrap.min.js?ver=6.2.2' id='bootstrap-min-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/custom.js?ver=6.2.2' id='wntr-custom-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit/modules/parallax/assets/js/jarallax.js?ver=3.1.0' id='jarallax-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/products-compare-for-woocommerce/js/jquery.cookie.js?ver=3.5.7.8' id='berocket_jquery_cookie-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/woo-multi-currency/js/woo-multi-currency.min.js' %}" id='woo-multi-currency-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.jqtransform.js' %}" id='jqtransform-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.jqtransform.script.js' %}" id='jqtransform-script-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.custom.min.js' %}" id='wntr-custom-script-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/jquery.isotope.min.js' %}" id='isotope-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/custom.min.js' %}" id='custom-min-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.easypiechart.min.js' %}" id='easypiechart-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/owl.carousel.min.js' %}" id='owlcarousel-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.formalize.min.js' %}" id='formalize-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/respond.min.js' %}" id='respond-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.validate.js' %}" id='validate-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/shadowbox.js' %}" id='shadowbox-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/waypoints.min.js' %}" id='waypoints-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.megamenu.js' %}" id='megamenu-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/easyResponsiveTabs.js' %}" id='easyResponsiveTabs-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.treeview.js' %}" id='jtree-min-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.jscroll.min.js' %}" id='scroll-min-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/countUp.js' %}" id='countUp-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/doubletaptogo.js' %}" id='doubletaptogo-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/slick.min.js' %}" id='slick-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/bootstrap.min.js' %}" id='bootstrap-min-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/custom.js' %}" id='wntr-custom-js'></script>
+<script type='text/javascript' src='/static/css/wp-content/plugins/elementskit/modules/parallax/assets/js/jarallax.js?ver=3.1.0' id='jarallax-js'></script>
+<script type='text/javascript' src='/static/css/wp-content/plugins/products-compare-for-woocommerce/js/jquery.cookie.js?ver=3.5.7.8' id='berocket_jquery_cookie-js'></script>
 <script type='text/javascript' id='berocket_compare_products_script-js-extra'>
 /* <![CDATA[ */
 var the_compare_products_data = {"ajax_url":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","user_func":{"before_load":"","after_load":"","before_remove":"","after_remove":"","custom_css":""},"home_url":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books","hide_same":"Hide attributes with same values","show_same":"Show attributes with same values","hide_same_default":"","compare_selector":"#br_popup_1","toppadding":"0","is_compare_page":""};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/products-compare-for-woocommerce/js/products_compare.js?ver=3.5.7.8' id='berocket_compare_products_script-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/products-compare-for-woocommerce/js/jquery.mousewheel.min.js?ver=3.5.7.8' id='jquery-mousewheel-js'></script>
-<link rel="https://api.w.org/" href="https://themes.workdo.io/wordpress/toaster/books/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://themes.workdo.io/wordpress/toaster/books/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://themes.workdo.io/wordpress/toaster/books/wp-includes/wlwmanifest.xml" />
+<script type='text/javascript' src='/static/css/wp-content/plugins/products-compare-for-woocommerce/js/products_compare.js?ver=3.5.7.8' id='berocket_compare_products_script-js'></script>
+<script type='text/javascript' src='/static/css/wp-content/plugins/products-compare-for-woocommerce/js/jquery.mousewheel.min.js?ver=3.5.7.8' id='jquery-mousewheel-js'></script>
+<link rel="https://api.w.org/" href="/static/css/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://themes.workdo.io/wordpress/toaster/books/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/static/css/wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 6.2.2" />
 <meta name="generator" content="WooCommerce 7.8.0" />
 <meta name="generator" content="Redux 4.4.1" /><style type='text/css'>                .wp-megamenu-main-wrapper .wpmm-mega-menu-icon{
@@ -592,7 +593,7 @@ var the_compare_products_data = {"ajax_url":"https:\/\/themes.workdo.io\/wordpre
 		font-family: Quicksand, sans-serif;
 		font-style: normal;
 		background-color:#ffffff !important;
-				background-image: url("https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/images/workdo/colorpicker/pattern/body-bg.png")!important;
+				background-image: url("/static/css/wp-content/themes/books/images/workdo/colorpicker/pattern/body-bg.png")!important;
 			}		
 	.widget button, .widget input[type="button"], .widget input[type="reset"], .widget input[type="submit"], a.button, button, .contributor-posts-link, input[type="button"], input[type="reset"], input[type="submit"], .button_content_inner a, .woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce .wishlist_table td.product-add-to-cart a,.woocommerce .wc-proceed-to-checkout .checkout-button:hover,
 	.woocommerce-page input.button:hover,.woocommerce #content input.button.disabled,.woocommerce #content input.button:disabled,.woocommerce #respond input#submit.disabled,.woocommerce #respond input#submit:disabled,.woocommerce a.button.disabled,.woocommerce a.button:disabled,.woocommerce button.button.disabled,.woocommerce button.button:disabled,.woocommerce input.button.disabled,.woocommerce input.button:disabled,.woocommerce-page #content input.button.disabled,.woocommerce-page #content input.button:disabled,.woocommerce-page #respond input#submit.disabled,.woocommerce-page #respond input#submit:disabled,.woocommerce-page a.button.disabled,.woocommerce-page a.button:disabled,.woocommerce-page button.button.disabled,.woocommerce-page button.button:disabled,.woocommerce-page input.button.disabled,.woocommerce-page input.button:disabled,.loadgridlist-wrapper .woocount:hover,#primary .entry-summary .single_add_to_cart_button,.loadgridlist-wrapper .woocount{
@@ -645,7 +646,7 @@ var the_compare_products_data = {"ajax_url":"https:\/\/themes.workdo.io\/wordpre
 	
 			.page-template-blog-list .page-title, .single.single-post .page-title{
 			text-align: center;
-		    background-image: url(https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/images/workdo/blog-brd.jpg) !important;
+		    background-image: url(/static/css/wp-content/themes/books/images/workdo/blog-brd.jpg) !important;
 		    background-size:cover;
 			background-position: center;
 		    background-repeat: repeat;
@@ -880,9 +881,9 @@ var the_compare_products_data = {"ajax_url":"https:\/\/themes.workdo.io\/wordpre
 								<span><a href="#">Get more</a></span>					
 							</div>
 												<div class="topbar-link">
-							<a href="refund_returns-2">Policy Privacy</a>
-							<a href="terms-and-conditions">Cookie Policy</a>
-							<a href="faqs">Faq</a>
+							<a href="{% url 'refs' %}">Policy Privacy</a>
+							<a href="{% url 'terms' %}">Cookie Policy</a>
+							<a href="{% url 'faqs' %}">Faq</a>
 						</div>
 					</div>
 				</div>        
@@ -896,16 +897,16 @@ var the_compare_products_data = {"ajax_url":"https:\/\/themes.workdo.io\/wordpre
 						<!-- Header LOGO-->
 						<div class="header-logo">
 																												<span class="site-icon">
-								<a href="https://themes.workdo.io/wordpress/toaster/books/" rel="home" class="site-title">
-																		<img alt="" class="site-logo" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/images/workdo/logo.png" />
+								<a href="/" rel="home" class="site-title">
+																		<img alt="" class="site-logo" src="/static/css/wp-content/themes/books/images/workdo/logo.png" />
 								</a>
 							</span>
 																				</div>
 						<!-- Header Mob LOGO-->
 						<div class="header-mob-logo">
 																													<span class="site-icon">
-									<a href="https://themes.workdo.io/wordpress/toaster/books/" rel="home" class="site-title">
-										<img alt="" class="site-logo" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/images/workdo/logo.png" />
+									<a href="/" rel="home" class="site-title">
+										<img alt="" class="site-logo" src="/static/css/wp-content/themes/books/images/workdo/logo.png" />
 									</a>
 								</span>
 							
@@ -914,14 +915,12 @@ var the_compare_products_data = {"ajax_url":"https:\/\/themes.workdo.io\/wordpre
 				</div>
 				<div class="header-middle">
 						<div class="header-menu">
-							<!-- #site-navigation -->
+						 	<!-- #site-navigation -->
 							<div class="category-list">
-																	<aside id="nav_menu-3" class="widget widget_nav_menu"><h3 class="widget-title">All Products</h3><div class="menu-foomenu1-container"><ul id="menu-foomenu1" class="menu"><li id="menu-item-5473" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5473"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/">Fantasy</a></li>
-<li id="menu-item-5475" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5475"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
-<li id="menu-item-5481" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5481"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/humour/">Humour</a></li>
-<li id="menu-item-5482" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5482"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/thrillers/">Thrillers</a></li>
-<li id="menu-item-5484" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5484"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/">Fantasy</a></li>
-<li id="menu-item-5486" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5486"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
+																	<aside id="nav_menu-3" class="widget widget_nav_menu"><h3 class="widget-title">All Products</h3><div class="menu-foomenu1-container"><ul id="menu-foomenu1" class="menu">
+																		{% for category in ncategory %}
+<li id="menu-item-5475" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5475"><a href="{% url 'shop' %}?q={{category.name}}">{{category.name}}</a></li>
+{% endfor %}
 </ul></div></aside>															</div>
 					<!-- #site-navigation -->
 						
@@ -1265,199 +1264,249 @@ color: #ccc;
  </style>
 
 
-
-<div id="wpmm-wrap-megamenu" class="wp-megamenu-main-wrapper wpmm-ctheme-wrapper wpmega-default-theme wpmega-enabled-mobile-menu wpmm-toggle-standard wpmm-onhover wpmm-orientation-horizontal  wpmm-fade"><div class="wpmegamenu-toggle wpmega-enabled-menutoggle" data-responsive-breakpoint="910px"><div class='wp-mega-toggle-block'><div class='wpmega-closeblock'><i class='dashicons dashicons-no'></i></div><div class='wpmega-openblock'><i class='dashicons dashicons-menu'></i></div><div class='menutoggle'>Menu</div></div></div><ul id="wpmega-menu-megamenu" class="wpmm-mega-wrapper" data-advanced-click="wpmm-click-submenu" data-trigger-effect="wpmm-onhover"><li class='menu-item menu-item-type-post_type menu-item-object-page wpmega-menu-flyout wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-flyout-horizontal-right menu-item-7219 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7219'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/shop/"><span class="wpmm-mega-menu-href-title">Shop</span></a></li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-7222 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7222'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/fairy-tales/"><span class="wpmm-mega-menu-href-title">Fairy tales</span></a><div class='wpmm-sub-menu-wrap'></li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-5708 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-5708'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/crime/"><span class="wpmm-mega-menu-href-title">Crime</span></a><div class='wpmm-sub-menu-wrap'>
-<div class='wpmm-sub-menu-wrapper wpmm-menu0'><ul class="wp-mega-sub-menu">
-	<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4883 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4883'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/humour/"><span class="wpmm-mega-menu-href-title">Humour</span></a>
-	<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
-		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-4885 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-4885'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/thrillers/"><span class="wpmm-mega-menu-href-title">Thrillers</span></a></li>		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-5602 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-5602'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/"><span class="wpmm-mega-menu-href-title">Fantasy</span></a></li>		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-5603 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-5603'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/"><span class="wpmm-mega-menu-href-title">Historical fiction</span></a></li>		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-5619 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-5619'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/crime/"><span class="wpmm-mega-menu-href-title">Crime</span></a></li>	</ul></div>
-</li>	<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4887 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4887'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/"><span class="wpmm-mega-menu-href-title">Fantasy</span></a>
-	<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
-		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-4888 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-4888'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/"><span class="wpmm-mega-menu-href-title">Historical fiction</span></a></li>		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-5605 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-5605'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/humour/"><span class="wpmm-mega-menu-href-title">Humour</span></a></li>		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-5606 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-5606'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/thrillers/"><span class="wpmm-mega-menu-href-title">Thrillers</span></a></li>		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-5607 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-5607'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/crime/"><span class="wpmm-mega-menu-href-title">Crime</span></a></li>	</ul></div>
-</li>	<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-5615 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-5615'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/"><span class="wpmm-mega-menu-href-title">Historical fiction</span></a>
-	<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
-		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-5614 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-5614'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/"><span class="wpmm-mega-menu-href-title">Fantasy</span></a></li>		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-5620 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-5620'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/crime/"><span class="wpmm-mega-menu-href-title">Crime</span></a></li>		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-5617 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-5617'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/humour/"><span class="wpmm-mega-menu-href-title">Humour</span></a></li>		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-5618 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-5618'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/thrillers/"><span class="wpmm-mega-menu-href-title">Thrillers</span></a></li>	</ul></div>
-</li>	<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-2411 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-2411'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/humour/"><span class="wpmm-mega-menu-href-title">Humour</span></a>
-	<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
-		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-7224 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-7224'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/fairy-tales/"><span class="wpmm-mega-menu-href-title">Fairy tales</span></a></li>		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-7225 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-7225'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/classics/"><span class="wpmm-mega-menu-href-title">Classics</span></a></li>		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-7226 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-7226'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/thrillers/"><span class="wpmm-mega-menu-href-title">Thrillers</span></a></li>		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-7227 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-7227'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/mystery/"><span class="wpmm-mega-menu-href-title">Mystery</span></a></li>	</ul></div>
-</li></ul></div>
-</li><li class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-468 current_page_item current_page_parent current-menu-ancestor current-menu-parent current_page_ancestor menu-item-has-children wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-2828 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-2828'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/blog/"><span class="wpmm-mega-menu-href-title">Blog</span></a><div class='wpmm-sub-menu-wrap'>
-<div class='wpmm-sub-menu-wrapper wpmm-menu0'><ul class="wp-mega-sub-menu">
-	<li class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-468 current_page_item current_page_parent menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4881 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4881'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/blog/"><span class="wpmm-mega-menu-href-title">Blog</span></a>
-	<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
-		<li class='menu-item menu-item-type-post_type menu-item-object-page wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-2830 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-2830'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/left-sidebar/"><span class="wpmm-mega-menu-href-title">Left sidebar</span></a></li>		<li class='menu-item menu-item-type-post_type menu-item-object-page wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-2832 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-2832'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/right-sidebar/"><span class="wpmm-mega-menu-href-title">Right Sidebar</span></a></li>		<li class='menu-item menu-item-type-post_type menu-item-object-page wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-2831 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-2831'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/no-sidebar/"><span class="wpmm-mega-menu-href-title">No Sidebar</span></a></li>	</ul></div>
-</li>	<li class='menu-item menu-item-type-widget menu-widget-class-widget_recent_entries widget_recent_entries wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-3columns-4total menu-item-recent-posts-4 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-recent-posts-4'>                        <h4 class="wpmm-mega-block-title">Recent Posts</h4>            <ul>
-                            <li>
-                	<span class="recent-posts-thumbnail"> 
-	                <img width="330" height="200" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2023/02/7-330x200.jpg" class="attachment-wntr-small-thumb size-wntr-small-thumb wp-post-image" alt="" decoding="async" loading="lazy" />										</span>
-                   
-					<span class="recent-post-detail">
-                  <a href="https://themes.workdo.io/wordpress/toaster/books/learn-once-read-everywhere/">Learn Once, Read Everywhere</a>
-                                    <span class="post-date">May 27, 2023</span>
-                                </span>
-                </li>
-                            <li>
-                	<span class="recent-posts-thumbnail"> 
-	                <img width="330" height="200" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2023/02/1-330x200.jpg" class="attachment-wntr-small-thumb size-wntr-small-thumb wp-post-image" alt="" decoding="async" loading="lazy" />										</span>
-                   
-					<span class="recent-post-detail">
-                  <a href="https://themes.workdo.io/wordpress/toaster/books/fantasy-in-words-and-pages/">Fantasy In Words And Pages</a>
-                                    <span class="post-date">May 27, 2023</span>
-                                </span>
-                </li>
-                            <li>
-                	<span class="recent-posts-thumbnail"> 
-	                <img width="330" height="200" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2023/02/3-330x200.jpg" class="attachment-wntr-small-thumb size-wntr-small-thumb wp-post-image" alt="" decoding="async" loading="lazy" />										</span>
-                   
-					<span class="recent-post-detail">
-                  <a href="https://themes.workdo.io/wordpress/toaster/books/from-one-fiction-reader-to-another/">From One Fiction Reader To Another</a>
-                                    <span class="post-date">May 27, 2023</span>
-                                </span>
-                </li>
-                            <li>
-                	<span class="recent-posts-thumbnail"> 
-	                <img width="330" height="200" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2023/02/2-330x200.jpg" class="attachment-wntr-small-thumb size-wntr-small-thumb wp-post-image" alt="" decoding="async" loading="lazy" />										</span>
-                   
-					<span class="recent-post-detail">
-                  <a href="https://themes.workdo.io/wordpress/toaster/books/cooking-up-something-delicious/">Cooking Up Something Delicious</a>
-                                    <span class="post-date">May 27, 2023</span>
-                                </span>
-                </li>
-                            <li>
-                	<span class="recent-posts-thumbnail"> 
-	                <img width="330" height="200" src="https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2023/02/4-330x200.jpg" class="attachment-wntr-small-thumb size-wntr-small-thumb wp-post-image" alt="" decoding="async" loading="lazy" />										</span>
-                   
-					<span class="recent-post-detail">
-                  <a href="https://themes.workdo.io/wordpress/toaster/books/obscure-loft-literary-gems/">Obscure Loft Literary Gems</a>
-                                    <span class="post-date">May 27, 2023</span>
-                                </span>
-                </li>
-                        </ul>
-                        </li></ul></div>
-</li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-menu-flyout wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-flyout-horizontal-right menu-item-7223 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7223'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/humour/"><span class="wpmm-mega-menu-href-title">Humour</span></a></li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-menu-flyout wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-flyout-horizontal-right menu-item-7414 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7414'><a class="wp-mega-menu-link" href="https://themes.workdo.io/wordpress/toaster/books/product-category/thrillers/"><span class="wpmm-mega-menu-href-title">Thrillers</span></a></li></ul><div class="wpmega-responsive-closebtn" id="close-megamenu">CLOSE</div></div>													</div>
-						<div class="mobile-menu">
-							<h3 class="mob-toggle">Menu</h3><span class="close-menu"></span>
-							<div class="menu-mainmenu-container"><ul id="menu-mainmenu" class="mobile-menu-inner"><li id="menu-item-7215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7215"><a href="https://themes.workdo.io/wordpress/toaster/books/shop/">Shop</a></li>
-<li id="menu-item-470" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-468 current_page_item current_page_parent menu-item-has-children menu-item-470"><a href="https://themes.workdo.io/wordpress/toaster/books/blog/" aria-current="page">Blog</a>
-<ul class="sub-menu">
-	<li id="menu-item-743" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-743"><a href="https://themes.workdo.io/wordpress/toaster/books/left-sidebar/">Left sidebar</a></li>
-	<li id="menu-item-986" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-986"><a href="https://themes.workdo.io/wordpress/toaster/books/right-sidebar/">Right Sidebar</a></li>
-	<li id="menu-item-985" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-985"><a href="https://themes.workdo.io/wordpress/toaster/books/no-sidebar/">No Sidebar</a></li>
-</ul>
-</li>
-<li id="menu-item-4857" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4857"><a>category</a>
-<ul class="sub-menu">
-	<li id="menu-item-4863" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4863"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/">Fantasy</a>
+<div id="wpmm-wrap-megamenu" class="wp-megamenu-main-wrapper wpmm-ctheme-wrapper wpmega-default-theme wpmega-enabled-mobile-menu wpmm-toggle-standard wpmm-onhover wpmm-orientation-horizontal  wpmm-fade"><div class="wpmegamenu-toggle wpmega-enabled-menutoggle" data-responsive-breakpoint="910px"><div class='wp-mega-toggle-block'><div class='wpmega-closeblock'><i class='dashicons dashicons-no'></i></div><div class='wpmega-openblock'><i class='dashicons dashicons-menu'></i></div><div class='menutoggle'>Menu</div></div></div><ul id="wpmega-menu-megamenu" class="wpmm-mega-wrapper" data-advanced-click="wpmm-click-submenu" data-trigger-effect="wpmm-onhover"><li class='menu-item menu-item-type-post_type menu-item-object-page wpmega-menu-flyout wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-flyout-horizontal-right menu-item-7219 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7219'><a class="wp-mega-menu-link" href="{% url 'shop' %}"><span class="wpmm-mega-menu-href-title">Shop</span></a></li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-7222 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7222'>	<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4883 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4883'>{% for category in bcategory4 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}<div class='wpmm-sub-menu-wrap'></li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-5708 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-5708'>{% for category in bcategory5 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}<div class='wpmm-sub-menu-wrap'>
+	<div class='wpmm-sub-menu-wrapper wpmm-menu0'><ul class="wp-mega-sub-menu">
+		<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4883 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4883'>{% for category in bcategory1 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}
+		<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
+			{% for category in category1 %}<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-4885 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-4885'><a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="ght">{{category.name}}</span></a></li>{% endfor %}	</ul></div>
+	</li>	<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4887 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4887'>{% for category in bcategory2 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}
+		<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
+			{% for category in category2 %}<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-4885 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-4885'><a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="ght">{{category.name}}</span></a></li>{% endfor %}	</ul></div>
+	</li>	<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-5615 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-5615'>{% for category in bcategory3 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}
+		<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
+			{% for category in category3 %}<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-4885 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-4885'><a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="ght">{{category.name}}</span></a></li>{% endfor %}</ul></div>
+	</li>	<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-2411 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-2411'>{% for category in bcategory4 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}
+		<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
+			{% for category in category4 %}<li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-4885 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-4885'><a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="ght">{{category.name}}</span></a></li>{% endfor %}	</ul></div>
+	</li></ul></div>
+	</li><li class='menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wpmega-menu-megamenu wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-horizontal-full-width menu-item-2828 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-2828'><a class="wp-mega-menu-link" href="{% url 'blog' %}"><span class="wpmm-mega-menu-href-title">Blog</span></a><div class='wpmm-sub-menu-wrap'>
+	<div class='wpmm-sub-menu-wrapper wpmm-menu0'><ul class="wp-mega-sub-menu">
+		<li class='menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-1columns-4total menu-item-4881 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-4881'><a class="wp-mega-menu-link" href="{% url 'blog' %}"><span class="wpmm-mega-menu-href-title">Blog</span></a>
+		<div class='wpmm-sub-menu-wrapper wpmm-menu1'><ul class="wp-mega-sub-menu">
+			<li class='menu-item menu-item-type-post_type menu-item-object-page wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-2830 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-2830'><a class="wp-mega-menu-link" href="#insta"><span class="ght">My instagram profile is</span></a></li>		<li class='menu-item menu-item-type-post_type menu-item-object-page wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon menu-item-2832 menu-item-depth-2 no-dropdown' id='wp_nav_menu-item-2832'><a class="wp-mega-menu-link" href="https://www.instagram.com/different_roads3"><span class="ght">Different roads3</span></a></li>	</ul></div>
+	</li>	<li class='menu-item menu-item-type-widget menu-widget-class-widget_recent_entries widget_recent_entries wp-mega-menu-header wpmega-show-arrow wpmm-submenu-align-left wpmm-menu-align-left wpmega-hide-menu-icon wpmega-3columns-4total menu-item-recent-posts-4 menu-item-depth-1 no-dropdown' id='wp_nav_menu-item-recent-posts-4'>                        <h4 class="wpmm-mega-block-title">Recent Posts</h4>            <ul>
+	{% for blog in blogs %}
+								<li  style="max-width: 250px;">
+						<span class="recent-posts-thumbnail"> 
+						<img width="330" height="200" src="{{blog.imageURL}}" class="attachment-wntr-small-thumb size-wntr-small-thumb wp-post-image" alt="" decoding="async" loading="lazy" />										</span>
+					   
+						<span class="recent-post-detail">
+					  <a href="{% url 'blog-data' blog.id %}">{{blog.title}}</a>
+										<span class="post-date">{{blog.created_at|date:'d-m-y'}}</span>
+									</span>
+					</li>
+					{% endfor %}
+							</ul>
+							</li></ul></div>
+	</li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-menu-flyout wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-flyout-horizontal-right menu-item-7223 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7223'>{% for category in bcategory6 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}</li><li class='menu-item menu-item-type-taxonomy menu-item-object-product_cat wpmega-menu-flyout wpmega-show-arrow wpmm-menu-align-left wpmega-hide-menu-icon wpmega-flyout-horizontal-right menu-item-7414 menu-item-depth-0 no-dropdown' id='wp_nav_menu-item-7414'>{% for category in bcategory7 %}<a class="wp-mega-menu-link" href="{% url 'shop' %}?q={{category.name}}"><span class="wpmm-mega-menu-href-title">{{category.name}}</span></a>{% endfor %}</li></ul><div class="wpmega-responsive-closebtn" id="close-megamenu">CLOSE</div></div>													</div>
+							<div class="mobile-menu">
+								<h3 class="mob-toggle">Menu</h3><span class="close-menu"></span>
+								<div class="menu-mainmenu-container"><ul id="menu-mainmenu" class="mobile-menu-inner"><li id="menu-item-7215" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item menu-item-7215"><a href="https://themes.workdo.io/wordpress/toaster/books/shop/" aria-current="page">Shop</a></li>
+	<li id="menu-item-470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-470"><a href="https://themes.workdo.io/wordpress/toaster/books/blog/">Blog</a>
 	<ul class="sub-menu">
-		<li id="menu-item-4864" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4864"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
-		<li id="menu-item-4865" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4865"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
+	
 	</ul>
-</li>
-	<li id="menu-item-4861" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4861"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/thrillers/">Thrillers</a>
+	</li>
+	<li id="menu-item-4857" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4857"><a>category</a>
 	<ul class="sub-menu">
-		<li id="menu-item-7218" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-7218"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/classics/">Classics</a></li>
-		<li id="menu-item-7217" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-7217"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fairy-tales/">Fairy tales</a></li>
+		<li id="menu-item-4863" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4863"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/">Fantasy</a>
+		<ul class="sub-menu">
+			<li id="menu-item-4864" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4864"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
+			<li id="menu-item-4865" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4865"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
+		</ul>
+	</li>
+		<li id="menu-item-4861" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4861"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/thrillers/">Thrillers</a>
+		<ul class="sub-menu">
+			<li id="menu-item-7218" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-7218"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/classics/">Classics</a></li>
+			<li id="menu-item-7217" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-7217"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fairy-tales/">Fairy tales</a></li>
+		</ul>
+	</li>
 	</ul>
-</li>
-</ul>
-</li>
-<li id="menu-item-7216" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-7216"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
-<li id="menu-item-1102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1102"><a href="https://themes.workdo.io/wordpress/toaster/books/contact-with-us/">Contact With Us</a></li>
-<li id="menu-item-4859" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4859"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/humour/">Humour</a></li>
-</ul></div>						</div>
-				</nav>
-						</div>	
-				</div>
-					<div class="header-right ">					
-						<div class="head-cart d-flex align-items-center">
-								<!--Cart -->
-								<!-- header search start -->
-										<div class="header-search">
-						<div class="header-toggle">
-							<span class="d-block text-center"><svg width="20px" height="20px"><use xlink:href="#head_search"></use></svg></span>
+	</li>
+	<li id="menu-item-7216" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-7216"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/fantasy/historical-fiction/">Historical fiction</a></li>
+	<li id="menu-item-1102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1102"><a href="https://themes.workdo.io/wordpress/toaster/books/contact-with-us/">Contact With Us</a></li>
+	<li id="menu-item-4859" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4859"><a href="https://themes.workdo.io/wordpress/toaster/books/product-category/humour/">Humour</a></li>
+	</ul></div>						</div>
+					</nav>
+							</div>	
+					</div>
+						<div class="header-right ">					
+							<div class="head-cart d-flex align-items-center">
+									<!--Cart -->
+									<!-- header search start -->
+											<div class="header-search">
+							<div class="header-toggle">
+								<span class="d-block text-center"><svg width="20px" height="20px"><use xlink:href="#head_search"></use></svg></span>
+							</div>
+							<div class="search-overlay">
+									<form method="GET" name="searchForm" class="woocommerce-product-search" action="{% url 'shop' %}">
+										
+				<div class="product-search-widget input-group">
+					<select name="q" class="orderby">
+													<option value="" selected="selected">All Categories</option>
+															<option value="Adventure stories" >Adventure stories</option>
+															<option value="Classics" >Classics</option>
+															<option value="Crime" >Crime</option>
+															<option value="Fairy tales" >Fairy tales</option>
+															<option value="Fantasy" >Fantasy</option>
+															<option value="Historical fiction" >Historical fiction</option>
+															<option value="Humour" >Humour</option>
+															<option value="Mystery" >Mystery</option>
+															<option value="Thrillers" >Thrillers</option>
+											</select>    
+					<input name="q" type="text" class="search-field form-control" placeholder="Search Products&hellip;" value="" title="Search for:" />
+					<button type="submit" value="Search">Search</button>
+					</div>
+					
+				</form>
+	
+								</div>
 						</div>
-						<div class="search-overlay">
-								<form method="get" class="woocommerce-product-search" action="https://themes.workdo.io/wordpress/toaster/books/shop/">
-			<div class="product-search-widget input-group">
-			    <select class="orderby" name="product_cat">
-												<option value="" selected="selected">All Categories</option>
-														<option value="adventure-stories" >Adventure stories</option>
-														<option value="classics" >Classics</option>
-														<option value="crime" >Crime</option>
-														<option value="fairy-tales" >Fairy tales</option>
-														<option value="fantasy" >Fantasy</option>
-														<option value="historical-fiction" >Historical fiction</option>
-														<option value="humour" >Humour</option>
-														<option value="mystery" >Mystery</option>
-														<option value="thrillers" >Thrillers</option>
-										</select>    
-				<input type="search" class="search-field form-control" placeholder="Search Products&hellip;" value="" name="s" title="Search for:" />
-				<input type="hidden" name="post_type" value="product" />
-				<button type="submit" value="Search">Search</button>
-				</div>
-				
-			</form>
-
-							</div>
-					</div>
-						 
-								<div class="hdr-btn-main">								
-									<!-- account -->
-																		<div class="topbar-link">
-										<span class="top-svg d-block text-center"><svg width="15px" height="18px"><use xlink:href="#user"></use></svg></span>			
-										<span>My profile</span>
+							 
+									<div class="hdr-btn-main">								
+										<!-- account -->
+																			<div class="topbar-link">
+											<span class="top-svg d-block text-center"><svg width="15px" height="18px"><use xlink:href="#user"></use></svg></span>			
+											{% if request.user.is_authenticated %}
+											<span><a href="{% url 'logout' %}">Logout</a></span>
+											{% else %}
+											<span><a href="{% url 'login' %}">Login</a></span>
+											
+											{% endif %}
+											<div class="topbar-link-wrapper">
+												<div class="account-menu-links">
+													<ul id="menu-header-account-links" class="account-menu"><li id="menu-item-7212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7212">	
+															{% if request.user.is_authenticated %}
+														<span><a href="{% url 'logout' %}">Logout</a></span>
+														{% else %}
+														<span><a href="{% url 'login' %}">Login</a></span>
+														{% endif %}</li>
+	<li id="menu-item-7213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7213"><a href="{% url 'checkout' %}">Checkout</a></li>
+	<li id="menu-item-7402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7402"><a href="{% url 'wishlist' %}">Wishlist</a></li>
 	
-										<div class="topbar-link-wrapper">
-											<div class="account-menu-links">
-												<ul id="menu-header-account-links" class="account-menu"><li id="menu-item-7212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7212"><a href="https://themes.workdo.io/wordpress/toaster/books/my-account/">My account</a></li>
-<li id="menu-item-7213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7213"><a href="https://themes.workdo.io/wordpress/toaster/books/checkout/">Checkout</a></li>
-<li id="menu-item-7402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7402"><a href="https://themes.workdo.io/wordpress/toaster/books/wishlist/">Wishlist</a></li>
-<li id="menu-item-7403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7403"><a href="https://themes.workdo.io/wordpress/toaster/books/compare/">Compare</a></li>
-</ul>																									<a class="login-out" href="https://themes.workdo.io/wordpress/toaster/books/my-account/">Login</a>
+	</ul>																										{% if request.user.is_authenticated %}
+														<a class="login-out" href="{% url 'logout' %}">Logout</a>
+														{% else %}
+														<a class="login-out" href="{% url 'login' %}">Login</a>
+														{% endif %}
+																								</div>
+											</div>
+										</div>
+										<div class="wntr-topbar-menu-links">
+											<div class="topbar-menu-toggle"></div>					
+																						<div class="wishlist-menu">
+													<div class="menu-wishlist-container"><ul id="menu-wishlist" class="menu"><li id="menu-item-7404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7404"><a href="{% url 'wishlist' %}">Wishlist</a></li>
+	</ul></div>											</div>
+																				</div>
+																			
+									<div class="head-cart">
+																				<div class="header-cart">
+																				
+																						<div class="cart-item togg">
+																																			<div class="shopping_cart tog" title="View your shopping cart">
+																								
+																								<div class="cart-qty">
+																									<div class="mycart"><a class="mycart">my cart</a>
+																									<a class="cart-contents" href="https://themes.workdo.io/wordpress/toaster/books/cart/" title="View your shopping cart">
+												<span class="quanitity first_qty">{{request.session.cart|length}} </span>
+												<span class="cart-subt">{{cart_total_amount}}<p>usd</p></span>
+											</a>
+											
+																								</div>
+																								<span class="shopping-svg"><svg width="22px" height="26px"><use xlink:href="#cart"></use></svg></span>
+																								</div>
 																							</div>
-										</div>
-									</div>
-									<div class="wntr-topbar-menu-links">
-										<div class="topbar-menu-toggle"></div>					
-																					<div class="wishlist-menu">
-												<div class="menu-wishlist-container"><ul id="menu-wishlist" class="menu"><li id="menu-item-7404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7404"><a href="https://themes.workdo.io/wordpress/toaster/books/wishlist/">Wishlist</a></li>
-</ul></div>											</div>
-																			</div>
-																		
-								<div class="head-cart">
-																			<div class="header-cart">
-											<div class="cart-item togg">
-																								<div class="shopping_cart tog" title="View your shopping cart">
-													
-													<div class="cart-qty">
-														<div class="mycart"><a class="mycart">my cart</a>
-														<a class="cart-contents" href="https://themes.workdo.io/wordpress/toaster/books/cart/" title="View your shopping cart">
-	
-														<span class="quanitity first_qty">0</span>
-													<span class="cart-subt">0<p>usd</p></span>
-													</a>
-													</div>
-													<span class="shopping-svg"><svg width="22px" height="26px"><use xlink:href="#cart"></use></svg></span>
-													</div>
-												</div>
-																								<aside id="woocommerce_widget_cart-1" class="widget woocommerce widget_shopping_cart tab_content"><h3 class="widget-title">Cart</h3><div class="widget_shopping_cart_content"></div></aside>											</div>
-										</div>
-																	</div>
-								
-							</div>
-					    
-					</div>
-			</div>
-		</div>	
-	</div>
-</header>
+																																			<aside id="woocommerce_widget_cart-1" class="widget woocommerce widget_shopping_cart tab_content" style="display: none;"><h3 class="widget-title">Cart</h3><div class="widget_shopping_cart_content">
+											
+												<ul class="woocommerce-mini-cart cart_list product_list_widget ">
+													{% for key, value in request.session.cart.items %}
+													<li class="woocommerce-mini-cart-item mini_cart_item">
+												<a href="{% url "item_clear" key %}" class="remove remove_from_cart_button">×</a>											<a href="{% url "single-book" key %}">
+														<img width="300" height="300" src="{{value.image}}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" srcset="{{value.image}} 300w, https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2022/03/3-100x100.png 100w, https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2022/03/3-150x150.png 150w, https://themes.workdo.io/wordpress/toaster/books/wp-content/uploads/2022/03/3-145x145.png 145w" sizes="(max-width: 300px) 100vw, 300px">{{value.name}}						</a>
+																						<span class="quantity">x{{ value.quantity }} <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>{{value.price|multiply:value.quantity}}</bdi></span></span>				</li>{% endfor %}
+											
+												<p class="woocommerce-mini-cart__total total">
+													<strong>Subtotal:</strong> <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>{{cart_total_amount}}</bdi></span>	</p>
+											
+												
+												<p class="woocommerce-mini-cart__buttons buttons"><a href="{% url "cart" %}" class="button wc-forward">View cart</a><a href="{% url "checkout" %}" class="button checkout wc-forward">Checkout</a></p>
+											
+												
+											
+											</div></aside>												</div>
+											</div>
+																		</div>
+									
+								</div>
+							
+						</div>
+				</div>
+			</div>	
+		</div>
+	</header>
+	<script>
+
+//GET SEARCH FORM AND PAGE LINKS
+let searchForm = document.getElementById('searchForm')
+let pageLinks = document.getElementsByClassName('page-link')
+
+//ENSURE SEARCH FORM EXISTS
+if (searchForm) {
+    for (let i = 0; pageLinks.length > i; i++) {
+        pageLinks[i].addEventListener('click', function (e) {
+            e.preventDefault()
+
+            //GET THE DATA ATTRIBUTE
+            let page = this.dataset.page
+
+            //ADD HIDDEN SEARCH INPUT TO FORM
+            searchForm.innerHTML += `<input value=${page} name="page" hidden/>`
+
+
+            //SUBMIT FORM
+            searchForm.submit()
+        })
+    }
+}
+
+
+
+let tags = document.getElementsByClassName('project-tag')
+
+for (let i = 0; tags.length > i; i++) {
+    tags[i].addEventListener('click', (e) => {
+        let tagId = e.target.dataset.tag
+        let projectId = e.target.dataset.project
+
+        // console.log('TAG ID:', tagId)
+        // console.log('PROJECT ID:', projectId)
+
+        fetch('http://127.0.0.1:8000/api/remove-tag/', {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ 'project': projectId, 'tag': tagId })
+        })
+            .then(response => response.json())
+            .then(data => {
+                e.target.remove()
+            })
+
+    })
+}
+
+
+
+
+	</script>
 <div id="main" class="site-main ">
 	<div class="main_inner">
 							<div class="page-title shop-page-title">
 						<div class="page-title-inner theme-container">
 							<a href="/" rel="nofollow">Home</a>							<h1 class="entry-title-main shop-entry-title-main">
 								All Blog							</h1>
-							<div class="breadcrumb-inner">Reading not only improves your vocabulary but also assists you in gaining a fresh perspective. <a href="{% url 'add-blog' %}" class='button'>Add blog</a></div>
+							<div class="breadcrumb-inner">Reading not only improves your vocabulary but also assists you in gaining a fresh perspective. 
 						</div>
 					</div>
 			
@@ -1514,7 +1563,7 @@ color: #ccc;
 													{{blog.description}}												</div>
 
 																										<div class="blog-button ">
-															<a href="https://themes.workdo.io/wordpress/toaster/books/learn-once-read-everywhere/">
+															<a href="{% url 'blog-data' blog.id %}">
 																Read More<svg><use xlink:href="#arrowright"></svg>
 															</a>
 														</div>
@@ -1545,8 +1594,9 @@ color: #ccc;
 		<aside id="text-2" class="widget widget_text">			<div class="textwidget">
 <div class="wpcf7 no-js" id="wpcf7-f4520-o1" lang="en-US" dir="ltr">
 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="/wordpress/toaster/books/blog/#wpcf7-f4520-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
-<div style="display: none;">
+<form action="{% url 'register' %}" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+{% csrf_token %}
+	<div style="display: none;">
 <input type="hidden" name="_wpcf7" value="4520" />
 <input type="hidden" name="_wpcf7_version" value="5.7.7" />
 <input type="hidden" name="_wpcf7_locale" value="en_US" />
@@ -1572,17 +1622,17 @@ color: #ccc;
 		</aside>	</div>
 	<!-- #first .widget-area -->
 			<div id="second" class="second-widget footer-widget animated" data-animated="fadeInLeft">
-		<aside id="nav_menu-1" class="widget widget_nav_menu"><h3 class="widget-title">Shop</h3><div class="menu-footer-category-container"><ul id="menu-footer-category" class="menu"><li id="menu-item-6902" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6902"><a href="https://themes.workdo.io/wordpress/toaster/books/about-us/">About Us</a></li>
-<li id="menu-item-4876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4876"><a href="https://themes.workdo.io/wordpress/toaster/books/faqs/">FAQ’s</a></li>
-<li id="menu-item-4875" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4875"><a href="https://themes.workdo.io/wordpress/toaster/books/contact-with-us/">Contact With Us</a></li>
-<li id="menu-item-6870" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6870"><a href="https://themes.workdo.io/wordpress/toaster/books/refund_returns/">Refund and Returns Policy</a></li>
+		<aside id="nav_menu-1" class="widget widget_nav_menu"><h3 class="widget-title">Shop</h3><div class="menu-footer-category-container"><ul id="menu-footer-category" class="menu"><li id="menu-item-6902" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6902"><a href="{% url 'about' %}">About Us</a></li>
+<li id="menu-item-4876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4876"><a href="{% url 'faqs' %}">FAQ’s</a></li>
+<li id="menu-item-4875" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4875"><a href="{% url 'contact' %}">Contact With Us</a></li>
+<li id="menu-item-6870" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6870"><a href="{% url 'refs' %}">Refund and Returns Policy</a></li>
 </ul></div></aside>	</div>
 	<!-- #second .widget-area -->
 			<div id="third" class="third-widget footer-widget animated" data-animated="fadeInLeft">
-		<aside id="nav_menu-2" class="widget widget_nav_menu"><h3 class="widget-title">Account</h3><div class="menu-footer-account-link-container"><ul id="menu-footer-account-link" class="menu"><li id="menu-item-7417" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7417"><a href="https://themes.workdo.io/wordpress/toaster/books/my-account/orders/">Orders</a></li>
-<li id="menu-item-7210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7210"><a href="https://themes.workdo.io/wordpress/toaster/books/checkout/">Checkout</a></li>
-<li id="menu-item-7418" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7418"><a href="https://themes.workdo.io/wordpress/toaster/books/my-account/downloads/">Downloads</a></li>
-<li id="menu-item-7419" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7419"><a href="https://themes.workdo.io/wordpress/toaster/books/my-account/edit-account/">Account details</a></li>
+		<aside id="nav_menu-2" class="widget widget_nav_menu"><h3 class="widget-title">Account</h3><div class="menu-footer-account-link-container"><ul id="menu-footer-account-link" class="menu"><li id="menu-item-7417" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7417"><a href="{% url '404' %}">Orders</a></li>
+<li id="menu-item-7210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7210"><a href="{% url 'checkout' %}">Checkout</a></li>
+<li id="menu-item-7418" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7418"><a href="{% url '404' %}">Downloads</a></li>
+<li id="menu-item-7419" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7419"><a href="{% url '404' %}">Account details</a></li>
 </ul></div></aside>	</div>
 	<!-- #third .widget-area -->
 			<div id="fourth" class="fourth-widget footer-widget animated" data-animated="fadeInLeft">
@@ -1637,11 +1687,11 @@ color: #ccc;
         <div class="mydiv" id='formFormEmail' style="display:none" >
            <div class="container_n">
 
-             <form id="newsletter_signup" name="newsletter_signup">
+             <form id="newsletter_signup" action="{% url 'register' %}" name="newsletter_signup">
 
 
                 <div class="header">
-                    <div class="AjaxLoader"><img src="https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/email-subscribe/images/AjaxLoader.gif"/>Please wait...</div>
+                    <div class="AjaxLoader"><img src="/static/css/wp-content/plugins/email-subscribe/images/AjaxLoader.gif"/>Please wait...</div>
                     <div id="myerror_msg" class="myerror_msg"></div>
                     <div id="mysuccess_msg" class="mysuccess_msg"></div>
 
@@ -1992,20 +2042,20 @@ color: #ccc;
 <script type="text/template" id="tmpl-unavailable-variation-template">
 	<p>Sorry, this product is unavailable. Please choose a different combination.</p>
 </script>
-<link rel='stylesheet' id='edn-google-fonts0-css' href='//fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
-<link rel='stylesheet' id='edn-google-fonts-style-css-css' href='//fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
-<link rel='stylesheet' id='edn-google-fonts-style2-css-css' href='//fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
-<link rel='stylesheet' id='edn-google-fonts-style3-css-css' href='//fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
-<link rel='stylesheet' id='edn-google-fonts-style4-css-css' href='//fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
-<link rel='stylesheet' id='edn-google-fonts-style5-css-css' href='//fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
-<link rel='stylesheet' id='berocket_framework_popup-animate-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/products-compare-for-woocommerce/berocket/libraries/../assets/popup/animate.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='berocket_framework_popup-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/products-compare-for-woocommerce/berocket/libraries/../assets/popup/br_popup.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-email-subscription-popup-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/email-subscribe/css/wp-email-subscription-popup.css?ver=1.2.11' type='text/css' media='all' />
-<link rel='stylesheet' id='subscribe-popup-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/email-subscribe/css/subscribe-popup.css?ver=1.2.11' type='text/css' media='all' />
-<link rel='stylesheet' id='photoswipe-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css?ver=7.8.0' type='text/css' media='all' />
-<link rel='stylesheet' id='photoswipe-default-skin-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css?ver=7.8.0' type='text/css' media='all' />
-<link rel='stylesheet' id='quick-view-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/quick-view.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='rs-plugin-settings-css' href='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.5.25' type='text/css' media='all' />
+<link rel='stylesheet' id='edn-google-fonts0-css' href='fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
+<link rel='stylesheet' id='edn-google-fonts-style-css-css' href='fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
+<link rel='stylesheet' id='edn-google-fonts-style2-css-css' href='fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
+<link rel='stylesheet' id='edn-google-fonts-style3-css-css' href='fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
+<link rel='stylesheet' id='edn-google-fonts-style4-css-css' href='fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
+<link rel='stylesheet' id='edn-google-fonts-style5-css-css' href='fonts.googleapis.com/css?family=Open+Sans&#038;ver=ap-mega-menu' type='text/css' media='all' />
+<link rel='stylesheet' id='berocket_framework_popup-animate-css' href="{% static 'css/wp-content/plugins/products-compare-for-woocommerce/berocket/assets/popup/animate.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='berocket_framework_popup-css' href="{% static 'css/wp-content/plugins/products-compare-for-woocommerce/berocket/assets/popup/br_popup.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wp-email-subscription-popup-css' href="{% static 'css/wp-content/plugins/email-subscribe/css/wp-email-subscription-popup.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='subscribe-popup-css' href="{% static 'css/wp-content/plugins/email-subscribe/css/subscribe-popup.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='photoswipe-css' href="{% static 'css/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='photoswipe-default-skin-css' href="{% static 'css/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css"' %} type='text/css' media='all' />
+<link rel='stylesheet' id='quick-view-css' href="{% static 'css/wp-content/themes/books/quick-view.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css' href="{% static 'css/wp-content/plugins/revslider/public/assets/css/rs6.css' %}"" type='text/css' media='all' />
 <style id='rs-plugin-settings-inline-css' type='text/css'>
 #rs-demo-id {}
 </style>
@@ -2016,94 +2066,179 @@ color: #ccc;
 var yith_wcwl_l10n = {"ajax_url":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","redirect_to_cart":"no","yith_wcwl_button_position":"after_add_to_cart","multi_wishlist":"","hide_add_button":"1","enable_ajax_loading":"","ajax_loader_url":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-content\/plugins\/yith-woocommerce-wishlist\/assets\/images\/ajax-loader-alt.svg","remove_from_wishlist_after_add_to_cart":"1","is_wishlist_responsive":"1","time_to_close_prettyphoto":"3000","fragments_index_glue":".","reload_on_found_variation":"1","mobile_media_query":"768","labels":{"cookie_disabled":"We are sorry, but this feature is available only if cookies on your browser are enabled.","added_to_cart_message":"<div class=\"woocommerce-notices-wrapper\"><div class=\"woocommerce-message\" role=\"alert\">Product added to cart successfully<\/div><\/div>"},"actions":{"add_to_wishlist_action":"add_to_wishlist","remove_from_wishlist_action":"remove_from_wishlist","reload_wishlist_and_adding_elem_action":"reload_wishlist_and_adding_elem","load_mobile_action":"load_mobile","delete_item_action":"delete_item","save_title_action":"save_title","save_privacy_action":"save_privacy","load_fragments":"load_fragments"},"nonce":{"add_to_wishlist_nonce":"e799b71993","remove_from_wishlist_nonce":"6d4d28fbf1","reload_wishlist_and_adding_elem_nonce":"940009fab1","load_mobile_nonce":"f6c937edcb","delete_item_nonce":"bd1e75652c","save_title_nonce":"60c2aaea1f","save_privacy_nonce":"32a332c4f1","load_fragments_nonce":"394ddb9fa6"},"redirect_after_ask_estimate":"","ask_estimate_redirect_url":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.yith-wcwl.min.js?ver=3.22.0' id='jquery-yith-wcwl-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.7' id='swv-js'></script>
-<script type='text/javascript' id='contact-form-7-js-extra'>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.selectBox.min.js' %}" id='jquery-selectBox-js'></script>
+<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/prettyPhoto/jquery.prettyPhoto.min.js' %}" id='prettyPhoto-js'></script>
+<script type='text/javascript' id='jquery-yith-wcwl-js-extra'>
 /* <![CDATA[ */
-var wpcf7 = {"api":{"root":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-json\/","namespace":"contact-form-7\/v1"}};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.7' id='contact-form-7-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.18' defer async id='tp-tools-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.25' defer async id='revmin-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.7.8.0' id='jquery-blockui-js'></script>
-<script type='text/javascript' id='wc-add-to-cart-js-extra'>
-/* <![CDATA[ */
-var wc_add_to_cart_params = {"ajax_url":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wordpress\/toaster\/books\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=7.8.0' id='wc-add-to-cart-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.7.8.0' id='js-cookie-js'></script>
-<script type='text/javascript' id='woocommerce-js-extra'>
-/* <![CDATA[ */
-var woocommerce_params = {"ajax_url":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wordpress\/toaster\/books\/?wc-ajax=%%endpoint%%"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=7.8.0' id='woocommerce-js'></script>
-<script type='text/javascript' id='yith-wcqv-frontend-js-extra'>
-/* <![CDATA[ */
-var yith_qv = {"ajaxurl":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","loader":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-content\/plugins\/yith-woocommerce-quick-view\/assets\/image\/qv-loader.gif","lang":""};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/yith-woocommerce-quick-view/assets/js/frontend.min.js?ver=1.28.1' id='yith-wcqv-frontend-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/functions.js?ver=2014-02-01' id='wntr-script-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/navigation.js?ver=1.0' id='wntr-navigation-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/themes/books/js/workdo/jquery.countdown.min.js?ver=6.2.2' id='countdown-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=2.8.8' id='elementskit-framework-js-frontend-js'></script>
-<script type='text/javascript' id='elementskit-framework-js-frontend-js-after'>
-		var elementskit = {
-			resturl: 'https://themes.workdo.io/wordpress/toaster/books/wp-json/elementskit/v1/',
+var yith_wcwl_l10n = {"ajax_url":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","redirect_to_cart":"no","yith_wcwl_button_position":"after_add_to_cart","multi_wishlist":"","hide_add_button":"1","enable_ajax_loading":"","ajax_loader_url":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-content\/plugins\/yith-woocommerce-wishlist\/assets\/images\/ajax-loader-alt.svg","remove_from_wishlist_after_add_to_cart":"1","is_wishlist_responsive":"1","time_to_close_prettyphoto":"3000","fragments_index_glue":".","reload_on_found_variation":"1","mobile_media_query":"768","labels":{"cookie_disabled":"We are sorry, but this feature is available only if cookies on your browser are enabled.","added_to_cart_message":"<div class=\"woocommerce-notices-wrapper\"><div class=\"woocommerce-message\" role=\"alert\">Product added to cart successfully<\/div><\/div>"},"actions":{"add_to_wishlist_action":"add_to_wishlist","remove_from_wishlist_action":"remove_from_wishlist","reload_wishlist_and_adding_elem_action":"reload_wishlist_and_adding_elem","load_mobile_action":"load_mobile","delete_item_action":"delete_item","save_title_action":"save_title","save_privacy_action":"save_privacy","load_fragments":"load_fragments"},"nonce":{"add_to_wishlist_nonce":"e799b71993","remove_from_wishlist_nonce":"6d4d28fbf1","reload_wishlist_and_adding_elem_nonce":"940009fab1","load_mobile_nonce":"f6c937edcb","delete_item_nonce":"bd1e75652c","save_title_nonce":"60c2aaea1f","save_privacy_nonce":"32a332c4f1","load_fragments_nonce":"394ddb9fa6"},"redirect_after_ask_estimate":"","ask_estimate_redirect_url":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books"};
+	/* ]]> */
+	</script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.yith-wcwl.min.js' %}" id='jquery-yith-wcwl-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/contact-form-7/includes/swv/js/index.js' id='swv-js' %}"></script>
+	<script type='text/javascript' id='contact-form-7-js-extra'>
+	/* <![CDATA[ */
+	var wpcf7 = {"api":{"root":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-json\/","namespace":"contact-form-7\/v1"}};
+	/* ]]> */
+	</script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/contact-form-7/includes/js/index.js' %}" id='contact-form-7-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/revslider/public/assets/js/rbtools.min.js' %}" defer async id='tp-tools-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/revslider/public/assets/js/rs6.min.js' %}" defer async id='revmin-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js' %}" id='jquery-blockui-js'></script>
+	<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+	/* <![CDATA[ */
+	var wc_add_to_cart_params = {"ajax_url":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wordpress\/toaster\/books\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+	/* ]]> */
+	</script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js' %}" id='wc-add-to-cart-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js' %}" id='js-cookie-js'></script>
+	<script type='text/javascript' id='woocommerce-js-extra'>
+	/* <![CDATA[ */
+	var woocommerce_params = {"ajax_url":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wordpress\/toaster\/books\/?wc-ajax=%%endpoint%%"};
+	/* ]]> */
+	</script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js' %}" id='woocommerce-js'></script>
+	<script type='text/javascript' id='yith-wcqv-frontend-js-extra'>
+	/* <![CDATA[ */
+	var yith_qv = {"ajaxurl":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","loader":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-content\/plugins\/yith-woocommerce-quick-view\/assets\/image\/qv-loader.gif","lang":""};
+	/* ]]> */
+	</script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/yith-woocommerce-quick-view/assets/js/frontend.min.js' %}" id='yith-wcqv-frontend-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/functions.js' %}" id='wntr-script-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/navigation.js' %}"" id='wntr-navigation-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/themes/books/js/workdo/jquery.countdown.min.js' %}" id='countdown-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js' %}" id='elementskit-framework-js-frontend-js'></script>
+	<script type='text/javascript' id='elementskit-framework-js-frontend-js-after'>
+	var elementskit = {
+		resturl: "static/css/wp-json/elementskit/v1/",
+	}
+	</script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js' %}" id='ekit-widget-scripts-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit/modules/parallax/assets/js/anime.js' %}" id='animejs-js'></script>
+	<script defer type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit/modules/parallax/assets/js/parallax-frontend-scripts.js' %}" id='elementskit-parallax-frontend-defer-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/workdo-addon/assets/js/owlcarousel/owl.carousel.js' %}" id='wt-owl-carousel-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/workdo-addon/assets/js/workdo-elementor.js' %}" id='wt-elementor-js-js'></script>
+	<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+	/* <![CDATA[ */
+	var wc_cart_fragments_params = {"ajax_url":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wordpress\/toaster\/books\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_d84b290640c554891817c008057bf54d","fragment_name":"wc_fragments_d84b290640c554891817c008057bf54d","request_timeout":"5000"};
+	/* ]]> */
+	</script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js' %}" id='wc-cart-fragments-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/products-compare-for-woocommerce/berocket/assets/popup/br_popup.js' %}" id='berocket_framework_popup-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/email-subscribe/js/wp-email-subscription-popup-js.js' %}" id='wp-email-subscription-popup-js-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/email-subscribe/js/subscribe-popup.js' %}"" id='subscribe-popup-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-includes/js/underscore.min.js' %}" id='underscore-js'></script>
+	<script type='text/javascript' id='wp-util-js-extra'>
+	/* <![CDATA[ */
+	var _wpUtilSettings = {"ajax":{"url":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php"}};
+	/* ]]> */
+	</script>
+	<script type='text/javascript' src="{% static 'css/wp-includes/js/wp-util.min.js' %}" id='wp-util-js'></script>
+	<script type='text/javascript' id='wc-add-to-cart-variation-js-extra'>
+	/* <![CDATA[ */
+	var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/wordpress\/toaster\/books\/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
+	/* ]]> */
+	</script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js' %}" id='wc-add-to-cart-variation-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js' %}" id='zoom-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js' %}" id='photoswipe-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js' %}" id='photoswipe-ui-default-js'></script>
+	<script type='text/javascript' id='wc-single-product-js-extra'>
+	/* <![CDATA[ */
+	var wc_single_product_params = {"i18n_required_rating_text":"Please select a rating","review_rating_required":"yes","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":"thumbnails","slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_enabled":"1","zoom_options":[],"photoswipe_enabled":"1","photoswipe_options":{"shareEl":false,"closeOnScroll":false,"history":false,"hideAnimationDuration":0,"showAnimationDuration":0},"flexslider_enabled":"1"};
+	/* ]]> */
+	</script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js' %}" id='wc-single-product-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js' %}" id='elementor-webpack-runtime-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementor/assets/js/frontend-modules.min.js' %}" id='elementor-frontend-modules-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js' %}" id='elementor-waypoints-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-includes/js/jquery/ui/core.min.js' %}" id='jquery-ui-core-js'></script>
+	<script type='text/javascript' id='elementor-frontend-js-before'>
+	var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.14.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"e_swiper_latest":true,"landing-pages":true},"urls":{"assets":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":600,"title":"Books%20WorkDo","excerpt":"","featuredImage":false}};
+	</script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementor/assets/js/frontend.min.js' %}" id='elementor-frontend-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.js' %}" id='animate-circle-js'></script>
+	<script type='text/javascript' id='elementskit-elementor-js-extra'>
+	/* <![CDATA[ */
+	var ekit_config = {"ajaxurl":"https:\/\/themes.workdo.io\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","nonce":"6de11c7760"};
+	/* ]]> */
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js' %}" id='elementskit-elementor-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit/widgets/init/assets/js/elementor.js' %}" id='elementskit-elementor-pro-js'></script>
+	<script type='text/javascript' src="{% static 'css/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js' %}" id='swiper-js'></script>
+	<script defer type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit/modules/sticky-content/assets/js/elementskit-sticky-content.js' %}" id='elementskit-sticky-content-script-init-defer-js'></script>
+	<script defer type='text/javascript' src="{% static 'css/wp-content/plugins/elementskit/modules/parallax/assets/js/parallax-admin-scripts.js' %}" id='elementskit-parallax-admin-defer-js'></script>
+	<script id="rs-initialisation-scripts">
+	var	tpj = jQuery;
+	var	revapi1;
+	if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+	if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+	RS_MODULES.modules["revslider11"] = {once: RS_MODULES.modules["revslider11"]!==undefined ? RS_MODULES.modules["revslider11"].once : undefined, init:function() {
+		window.revapi1 = window.revapi1===undefined || window.revapi1===null || window.revapi1.length===0  ? document.getElementById("rev_slider_1_1") : window.revapi1;
+		if(window.revapi1 === null || window.revapi1 === undefined || window.revapi1.length==0) { window.revapi1initTry = window.revapi1initTry ===undefined ? 0 : window.revapi1initTry+1; if (window.revapi1initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider11"].init()}); return;}
+		window.revapi1 = jQuery(window.revapi1);
+		if(window.revapi1.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_1_1"); return;}
+		revapi1.revolutionInit({
+			revapi:"revapi1",
+			DPR:"dpr",
+			visibilityLevels:"1240,1024,778,480",
+			gridwidth:"1920,1025,778,480",
+			gridheight:"650,340,335,140",
+			lazyType:"smart",
+			spinner:"spinner2",
+			perspective:600,
+			perspectiveType:"local",
+			editorheight:"940,502,381,235",
+			responsiveLevels:"1240,1024,778,480",
+			ajaxUrl:"static/css/wp-admin/admin-ajax.php",
+			progressBar:{disableProgressBar:true},
+			navigation: {
+				mouseScrollNavigation:false,
+				wheelCallDelay:1000,
+				onHoverStop:false,
+				arrows: {
+					enable:true,
+					style:"custom",
+					hide_onmobile:true,
+					hide_under:"767px",
+					left: {
+						container:"layergrid",
+						h_offset:0
+					},
+					right: {
+						container:"layergrid",
+						h_offset:0
+					}
+				}
+			},
+			viewPort: {
+				global:true,
+				globalDist:"-200px",
+				enable:false,
+				visible_area:"20%"
+			},
+			fallbacks: {
+				allowHTML5AutoPlayOnAndroid:true
+			},
+		});
+	}} 
+	// End of RevInitScript
+	if (window.RS_MODULES.checkMinimal !== undefined) {
+		window.RS_MODULES.checkMinimal();
 		}
-
-		
-</script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=2.8.8' id='ekit-widget-scripts-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit/modules/parallax/assets/js/anime.js?ver=3.1.0' id='animejs-js'></script>
-<script defer type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/elementskit/modules/parallax/assets/js/parallax-frontend-scripts.js?ver=3.1.0' id='elementskit-parallax-frontend-defer-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/workdo-addon/assets/js/owlcarousel/owl.carousel.js?ver=6.2.2' id='wt-owl-carousel-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/workdo-addon/assets/js/workdo-elementor.js?ver=6.2.2' id='wt-elementor-js-js'></script>
-<script type='text/javascript' id='wc-cart-fragments-js-extra'>
-/* <![CDATA[ */
-var wc_cart_fragments_params = {"ajax_url":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wordpress\/toaster\/books\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_d84b290640c554891817c008057bf54d","fragment_name":"wc_fragments_d84b290640c554891817c008057bf54d","request_timeout":"5000"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=7.8.0' id='wc-cart-fragments-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/products-compare-for-woocommerce/berocket/libraries/../assets/popup/br_popup.js?ver=6.2.2' id='berocket_framework_popup-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/email-subscribe/js/wp-email-subscription-popup-js.js?ver=1.2.11' id='wp-email-subscription-popup-js-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/email-subscribe/js/subscribe-popup.js?ver=1.2.15' id='subscribe-popup-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-includes/js/underscore.min.js?ver=1.13.4' id='underscore-js'></script>
-<script type='text/javascript' id='wp-util-js-extra'>
-/* <![CDATA[ */
-var _wpUtilSettings = {"ajax":{"url":"\/wordpress\/toaster\/books\/wp-admin\/admin-ajax.php"}};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-includes/js/wp-util.min.js?ver=6.2.2' id='wp-util-js'></script>
-<script type='text/javascript' id='wc-add-to-cart-variation-js-extra'>
-/* <![CDATA[ */
-var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/wordpress\/toaster\/books\/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=7.8.0' id='wc-add-to-cart-variation-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js?ver=1.7.21-wc.7.8.0' id='zoom-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js?ver=4.1.1-wc.7.8.0' id='photoswipe-js'></script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js?ver=4.1.1-wc.7.8.0' id='photoswipe-ui-default-js'></script>
-<script type='text/javascript' id='wc-single-product-js-extra'>
-/* <![CDATA[ */
-var wc_single_product_params = {"i18n_required_rating_text":"Please select a rating","review_rating_required":"yes","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":"thumbnails","slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_enabled":"1","zoom_options":[],"photoswipe_enabled":"1","photoswipe_options":{"shareEl":false,"closeOnScroll":false,"history":false,"hideAnimationDuration":0,"showAnimationDuration":0},"flexslider_enabled":"1"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://themes.workdo.io/wordpress/toaster/books/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js?ver=7.8.0' id='wc-single-product-js'></script>
-<div id="br_popup_1" style="display: none!important;"></div><script>
-                    jQuery(document).ready(function() {
-                        function berocket_popup_run_script() {
-                            
-                    jQuery("#br_popup_1").br_popup({"close_delay":"0","hide_body_scroll":true,"print_button":false,"width":"90%","height":"90%","theme":null});
-                        }
-                        berocket_popup_run_script();
-                        jQuery(document).ajaxComplete(function() {
-                            berocket_popup_run_script();
-                        });
-                        
-                    });
-                </script></body>
-</html>
+	</script>
+	
+	<div id="br_popup_1" style="display: none!important;"></div>
+	<script>
+	jQuery(document).ready(function() {
+		function berocket_popup_run_script() {
+			jQuery("#br_popup_1").br_popup({"close_delay":"0","hide_body_scroll":true,"print_button":false,"width":"90%","height":"90%","theme":null});
+		}
+		berocket_popup_run_script();
+		jQuery(document).ajaxComplete(function() {
+			berocket_popup_run_script();
+		});
+	});
+	</script>

@@ -1,7 +1,7 @@
 from rest_framework.serializers import ModelSerializer
 from rest_framework import serializers
 from blog.models import Blog,BCategory, Post
-from books.models import Cart, Order
+from books.models import Cart, Order, OrderItem
 from books.models import Book, Review, Sizes, Tags, Category
 from blog import models
 
@@ -62,21 +62,25 @@ class BookSerializer(ModelSerializer):
         fields = "__all__"
 
 
-class CartSerializer(ModelSerializer):
-    products = BookSerializer(many=True, read_only=True)
-
-    class Meta:
-        model = Cart
-        fields = "__all__"
 
 
+
+
+
+
+        
 class OrderSerializer(ModelSerializer):
-    cart = CartSerializer(read_only=True)
 
     class Meta:
         model = Order
         fields = "__all__"
-
+        
+class OrderItemSerializer(ModelSerializer):
+    order = OrderSerializer(read_only=True)
+    
+    class Meta:
+        model = OrderItem
+        fields = "__all__"
 
 class PostSerializer(ModelSerializer):
 

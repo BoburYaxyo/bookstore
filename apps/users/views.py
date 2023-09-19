@@ -1,5 +1,7 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth.decorators import login_required
+from blog.models import Blog
+from cart.cart import Cart
 from books.utils import cartview, wishview
 from users.models import Profile
 from .forms import CustomUserCreationForm, ProfileForm
@@ -8,11 +10,15 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.db.models import Sum
-from books.models import Cart, Order
+from books.models import Category, Order, OrderItem
 # Create your views here.
+
 
 def login_user(request):
     page = 'login'
+    blogs = Blog.objects.all()
+
+    category = Category.objects.all()
     if request.user.is_authenticated:
         return redirect('home')
 
@@ -33,12 +39,30 @@ def login_user(request):
         else:
             messages.error(request, "Username OR Password does not exist")
 
-    context = {'page': page}
+    context = {
+
+        'page': page,
+        'category': category,
+        'ncategory': category[3:9],
+        'blogs': blogs,
+        'bcategory1': category[0:1],
+        'bcategory2': category[1:2],
+        'bcategory3': category[5:6],
+        'bcategory4': category[3:4],
+        'bcategory5': category[2:3],
+        'bcategory6': category[6:7],
+        'bcategory7': category[8:9],
+        'category1': category[0:4],
+        'category2': category[2:6],
+        'category3': category[5:9],
+        'category4': category[3:7]}
     return render(request, 'my-account/index.html', context)
+
 
 def register(request):
     form = CustomUserCreationForm()
-
+    blogs = Blog.objects.all()
+    category = Category.objects.all()
     if request.method == 'POST':
         form = CustomUserCreationForm(request.POST)
 
@@ -65,20 +89,42 @@ def register(request):
             messages.success(
                 request, 'An error has occurred during registration')
 
-    context = {'form': form}
-    
-    return render(request, 'my-account/index.html')
+    context = {'form': form,
+               'category': category,
+               'ncategory': category[3:9],
+               'blogs': blogs,
+               'bcategory1': category[0:1],
+               'bcategory2': category[1:2],
+               'bcategory3': category[5:6],
+               'bcategory4': category[3:4],
+               'bcategory5': category[2:3],
+               'bcategory6': category[6:7],
+               'bcategory7': category[8:9],
+               'category1': category[0:4],
+               'category2': category[2:6],
+               'category3': category[5:9],
+               'category4': category[3:7]}
+
+    return render(request, 'my-account/index.html', context)
+
+
 def logoutUser(request):
     logout(request)
     messages.info(request, 'User was logged out!')
     return redirect('login')
 
+
 @login_required(login_url='login')
 def checkout(request):
+    category = Category.objects.all()
+
     if request.method == 'POST':
-        order_by = request.POST.get('order_by', '')
+        uid = request.session.get('_auth_user_id')
+        user = User.objects.get(id=uid)
         country = request.POST.get('country', '')
         first_name = request.POST.get('first_name', '')
+        cart = request.session.get('cart')
+        print(cart)
         last_name = request.POST.get('last_name', '')
         company_name = request.POST.get('company_name', 'Uzbekistan')
         street_address = request.POST.get('street_address', '')
@@ -90,57 +136,62 @@ def checkout(request):
         products = request.POST.get('products', '')
         post_code = request.POST.get('post_code', '')
         email_adress = request.POST.get('email_address', '')
-        ship_different = request.POST.get('ship_different', '')
-        cart_products = Cart.objects.filter(
-            user=request.user).prefetch_related("products").first()
-        my = cart_products.products.aggregate(
-            Sum('price')).get('price__sum')
-        ca = cart_products.products.all()
+        additional_information = request.POST.get('additional_information', '')
+        order_id = request.POST.get('order_id')
+        payment = request.POST.get('payment')
+        amount = request.POST.get('amount')
 
-        if first_name:
-            orders = Order.objects.filter(order_by=request.user, total_order=my, cart=request.user.cart)
-            if orders:
-                order.order_by = order_by
-                order.country = country
-                order.products = products
-                order.first_name = first_name
-                order.last_name = last_name
-                order.company_name = company_name
-                order.street_address = street_address
-                order.home_place_number = home_place_number
-                order.phone_number = phone_number
-                order.town_or_city = town_or_city
-                order.state = state
-                order.post_code = post_code
-                order.email_adress = email_adress
-                order.ship_different = ship_different
-                order.save()
-            else: 
-                order = Order.objects.create(
-                    order_by=request.user,
-                    total_order=my,
-                    cart = request.user.cart,
-                    country=country,
-                    first_name=first_name,
-                    last_name=last_name,
-                    company_name=company_name,
-                    street_address=street_address,
-                    home_place_number=home_place_number,
-                    phone_number=phone_number,
-                    town_or_city=town_or_city,
-                    state = state,
-                    post_code=post_code,
-                    email_adress=email_adress,
-                    ship_different = ship_different,
-                )
+        order = Order.objects.create(
+            user=user,
+            country=country,
+            first_name=first_name,
+            last_name=last_name,
+            company_name=company_name,
+            street_address=street_address,
+            home_place_number=home_place_number,
+            phone_number=phone_number,
+            town_or_city=town_or_city,
+            state=state,
+            post_code=post_code,
+            email_adress=email_adress,
+            additional_information=additional_information,
+            payment_id=order_id,
+            amount=amount
+        )
+        order.save()
+        for i in cart:
+            a = cart[i]['price']
+            b = cart[i]['quantity']
 
-            return redirect('checkout')
-            
+            total = a * b
 
-    myctx = cartview(request)
-    qyctx = wishview(request)
+            item = OrderItem(
+                order=order,
+                product=cart[i]['name'],
+                image=cart[i]['image'],
+                quantity=cart[i]['quantity'],
+                price=cart[i]['price'],
+                total=total
+            )
+            item.save()
+        cart = Cart(request)
+        cart.clear()
+        return redirect('home')
+
+
     context = {
-        **myctx,
-        **qyctx,
-        }
+        'category': category,
+        'ncategory': category[3:9],
+        'bcategory1': category[0:1],
+        'bcategory2': category[1:2],
+        'bcategory3': category[5:6],
+        'bcategory4': category[3:4],
+        'bcategory5': category[2:3],
+        'bcategory6': category[6:7],
+        'bcategory7': category[8:9],
+        'category1': category[0:4],
+        'category2': category[2:6],
+        'category3': category[5:9],
+        'category4': category[3:7],
+    }
     return render(request, 'checkout.html', context)

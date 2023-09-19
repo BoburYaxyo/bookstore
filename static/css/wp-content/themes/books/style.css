@@ -1308,7 +1308,6 @@ footer .follow-us a i {
 
 .header-cart .shopping_cart .cart-contents::before {
     position: unset;
-    content: '';
     height: 35px;
     width: 35px;
     background: url("images/workdo/cart.svg") no-repeat;

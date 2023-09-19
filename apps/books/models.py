@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator, MaxValueValidator
@@ -58,6 +59,8 @@ class Book(models.Model):
             return reviews_total // self.reviews.count()
 
         return 0
+    
+    
         
     
 
@@ -72,27 +75,40 @@ class Cart(models.Model):
         User, null=True, blank=True, on_delete=models.PROTECT)
     products = models.ManyToManyField(
         Book, blank=True, related_name='cartproducts')
-
+    
 class Order(models.Model):
-    order_by = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     country = models.CharField(max_length=150)
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     company_name = models.CharField(max_length=100)
     street_address = models.CharField(max_length=100)
-    cart = models.ForeignKey(Cart, on_delete=models.CASCADE, null=True, blank=True, related_name='order')
     home_place_number = models.CharField(max_length=100)
     phone_number = models.CharField(max_length=15)
-    total_order = models.IntegerField(default=0)
     town_or_city = models.CharField(max_length=100)
     state = models.CharField(max_length=100)
     post_code = models.CharField(max_length=100)
     email_adress = models.EmailField(max_length=100)
-    ship_different = models.BooleanField(default=False, null=True, blank=True)
+    additional_information = models.TextField(null=True, blank=True)
+    payment_id = models.CharField(max_length=300, null=True, blank=True)
+    paid = models.BooleanField(default=False, null=True, blank=True)
+    amount = models.CharField(max_length=100)
     order_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.first_name + ' ' + self.last_name
+    
+class OrderItem(models.Model):
+    order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='order')
+    product = models.CharField(max_length=200)
+    image = models.ImageField(upload_to='images/')   
+    quantity = models.CharField(max_length=20)
+    price = models.CharField(max_length=50)
+    total = models.CharField(max_length=1000)
+    
+    def __str__(self):
+        return self.order.user.username
+    
 class Rating(models.Model):
     name = models.CharField(max_length=250)
     
@@ -114,3 +130,6 @@ class Review(models.Model):
 
     class Meta:
         ordering = ['-created_at']
+        
+        
+        

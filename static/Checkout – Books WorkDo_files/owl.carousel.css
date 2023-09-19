@@ -1,0 +1,400 @@
+/*
+*   Owl Carousel Owl Demo Theme 
+*   v1.3.2
+*/
+/* Styling Next and Prev buttons */
+.woocommerce-product-gallery .owl-theme .owl-buttons div{ top: 36%;width: 25px;height: 25px;line-height: 26px;box-shadow: none;}
+.products.owl-theme .owl-buttons div{top: -47px;opacity:1;  -khtml-opacity: 1;-webkit-opacity: 1; -moz-opacity:1;}
+#categorytab .products.owl-theme .owl-buttons div{top: -55px;}
+.brand-carousel.owl-theme .owl-buttons div{ top:30%;}
+.owl-theme .owl-buttons div{   
+    display: block;
+    font-size: 0;
+    color:#808080;
+    height: 26px;
+    font-weight:400;
+    position: absolute;
+    text-align: center;
+    width: 16px;
+    top: 18px;
+    line-height:26px;       
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    opacity:1; -khtml-opacity: 1; -webkit-opacity: 1; -moz-opacity:1;
+}
+
+.blog-page .blog-posts-content .owl-theme .owl-buttons div {
+    top: 18px;
+}
+.blog-posts-content .owl-theme .owl-buttons div{opacity: 1; -khtml-opacity: 1; -webkit-opacity: 1; -moz-opacity:1;}
+.blog-posts-content:hover .owl-theme .owl-buttons div{opacity: 1; -khtml-opacity: 1; -webkit-opacity: 1; -moz-opacity:1;}
+#blog-posts-products.blog-posts-content .owl-theme .owl-buttons div{top: -47px;}
+#team-posts-products .owl-theme .owl-buttons div{top:10px;box-shadow: none; opacity:0; -khtml-opacity: 0; -webkit-opacity: 0; -moz-opacity:0;}
+#team-posts-products:hover .owl-theme .owl-buttons div{opacity:1; -khtml-opacity: 1; -webkit-opacity: 1; -moz-opacity:1;}
+#team-posts-products .owl-theme .owl-buttons div.owl-prev{right:54px; left: auto;}
+#team-posts-products .owl-theme .owl-buttons div.owl-next{right:10px;}
+.owl-theme:hover .owl-buttons div{ opacity:1;   -khtml-opacity: 1;-webkit-opacity: 1; -moz-opacity:1;}
+
+.owl-theme .owl-buttons div:before{
+    content:'';
+    font-family:'FontAwesome';
+    font-size: 22px;
+    text-align:center;
+    position:absolute;
+    right:0;
+    left:0;
+    top:0;
+}
+.woocommerce-product-gallery .owl-theme .owl-controls .owl-buttons .owl-prev::after{content: none;}
+.woocommerce-product-gallery .owl-theme .owl-buttons div{color: #000;background-color: transparent;opacity: 0;}
+.woocommerce-product-gallery:hover .owl-theme .owl-buttons div{opacity: 1;background: none;border: none;}
+.woocommerce-product-gallery .owl-theme .owl-buttons div:hover:before{color:#232b54;}
+.woocommerce-product-gallery .owl-theme .owl-buttons div::before{font-size: 20px;}
+.owl-theme .owl-buttons div.owl-prev:before{ left:0;}
+.owl-theme .owl-buttons div.owl-next:before{ right:-5px;}
+.owl-theme .owl-buttons div:hover:before{color:#014e37;}
+.owl-theme .owl-buttons div.owl-prev:before{content:'\f104';}
+.owl-theme .owl-buttons div.owl-next:before{content:'\f105'; }
+#brand-products .owl-carousel{width: 100%;margin:0 auto;}
+.brand-carousel.owl-theme .owl-buttons div{opacity:1;   -khtml-opacity: 1;-webkit-opacity: 1; -moz-opacity:1;}
+.brand-carousel.owl-theme .owl-buttons div.owl-prev{left: 0;}
+.brand-carousel.owl-theme .owl-buttons div.owl-next{right: 0;}
+.brand-carousel.owl-theme .owl-controls .owl-buttons .owl-prev::after{
+    content: none
+}
+.brand-container:hover .owl-buttons div{  opacity:1;    -khtml-opacity: 1;-webkit-opacity: 1; -moz-opacity:1;}
+.owl-theme .owl-buttons div.owl-prev { right: 36px;}
+.owl-theme .owl-buttons div.owl-next{ right:15px;}
+.woocommerce-product-gallery .owl-theme .owl-buttons div.owl-prev{left: -8px;}
+.woocommerce-product-gallery .owl-theme .owl-buttons div.owl-next{right: -6px;}
+.products.owl-theme .owl-buttons div.owl-prev , .products.owl-theme .owl-buttons div.owl-prev, #blog-posts-products.blog-posts-content .owl-theme .owl-buttons div.owl-prev{ left:auto; right: 40px;box-shadow: none;}
+.products.owl-theme .owl-buttons div.owl-next, #blog-posts-products.blog-posts-content .owl-theme .owl-buttons div.owl-next{ right:15px;box-shadow: none;}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+/* Styling Pagination*/
+.owl-theme .owl-page {
+    display: inline-block;    
+    margin:0 3px;
+     vertical-align: top;
+}
+.owl-pagination .owl-page span{
+    height:10px;
+    width:10px;
+    background-color:#dcdcdc;
+    display:block;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -khtml-border-radius:50%;
+    -moz-border-radius:50%;
+    border: 1px solid #eee;
+}
+.owl-pagination .owl-page:hover span,.owl-pagination .owl-page.active:hover span,.owl-pagination .owl-page.active span{     
+    background:#014e37;
+    border: 1px solid #014e37;
+}
+.owl-pagination .owl-page.active span{
+    cursor:default;
+}
+.owl-pagination .owl-page span:before{
+    font-family:'FontAwesome';
+    font-size:13px;
+    color:#000;
+}
+.product-page .owl-pagination{margin: 10px 0;}
+/* If PaginationNumbers is true */
+.owl-theme .owl-page span.owl-numbers {
+    height: auto;
+    width: auto;
+    color: #FFF;
+    padding: 2px 10px;
+    font-size: 12px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+.owl-pagination {
+    margin: 0;
+    text-align: center;
+}
+/* preloading images */
+.owl-item.loading {
+    min-height: 150px;
+    background: url(../../images/owl/AjaxLoader.gif) no-repeat center center;
+}
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+/* display none until init */
+.owl-carousel {
+    display: none;
+    position: relative;
+    width: 100%;
+    -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper {
+    display: none;
+    position: relative;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight {
+    -webkit-transition: height 500ms ease-in-out;
+    -moz-transition: height 500ms ease-in-out;
+    -ms-transition: height 500ms ease-in-out;
+    -o-transition: height 500ms ease-in-out;
+    transition: height 500ms ease-in-out;
+}
+.owl-carousel .owl-item {
+    text-align: center;
+}
+.owl-page,
+.owl-buttons div {
+    cursor: pointer;
+}
+/* mouse grab icon */
+.grabbing {
+    cursor: url("../../images/owl/grabbing.png") 8 8, move;
+}
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+}
+.owl-carousel {
+    position: relative;
+}
+/*==  Recent Portfolio Slider ==*/
+.portfolio-container, #latest_news {
+    margin: 0 auto;
+}
+.owl-nav button {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    top: 46%;
+    border-radius: 50%;
+    background-color: #fff !important;
+}
+.woo-content.products_block:hover .owl-nav{
+    opacity: 1;
+}
+.owl-nav {
+    opacity: 0;
+    transition: 0.3s ease;
+}
+.owl-carousel:hover .owl-nav {
+    opacity: 1;
+}
+.woocommerce-page .owl-nav button {
+    margin: 0;
+}
+.two_row_first .slick-next {
+    right: 10px !important;
+}
+.owl-nav button.disabled{
+    opacity: 1 !important;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    right: auto;
+    left: -1px;
+    opacity: 1;
+}
+.top-rated-product .slick-next {
+    right: 11px !important;
+}
+.top-rated-product .slick-prev {
+    left: 12px !important;
+}
+.blog-posts-content .owl-nav button {
+    top: 41.6% !important;
+}
+.owl-carousel .owl-nav button.owl-next {
+    left: auto;
+    right: -1px;
+    opacity: 1;
+}
+.slick-next:focus, .slick-next:hover, .slick-prev:focus, .slick-prev:hover , .owl-carousel .owl-nav button:hover{
+    background-color: #FBD9B3 !important; 
+    opacity: 1;
+}
+.owl-nav span {
+    font-size: 26px;
+    color: #808080;
+    margin: 5px 2px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 24px;
+}
+.owl-nav div.owl-prev::before {
+    content: '\2190';
+}
+.owl-nav div.owl-next::before {
+    content: '\2192';
+}
+.slick-prev::before , .slick-next::before {
+    content: none !important;
+}
+.testimonial-carousel .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+.testimonial-carousel .owl-dots span {
+    height: 10px;
+    width: 10px;
+    display: block;
+    background-color: #dcdcdc;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+.home #secondary .owl-nav button {
+    position: absolute;
+    top: -60px;
+}
+.home #secondary .owl-carousel .owl-nav button.owl-prev {
+    right: 20px;
+    left: auto;
+}
+.home #secondary .owl-carousel .owl-nav button.owl-next {
+    left: auto;
+    right: -10px;
+}
+.home #secondary .owl-nav span {
+    font-size: 22px;
+}
+.slick-next::before {
+    content: '\2192';
+}
+.slick-prev::before {
+    content: '\2190';
+}
+.owl-nav button::before {
+    content: '';
+    font-family: 'FontAwesome';
+    font-size: 28px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+.owl-prev::before {
+    content: '\2190';
+}
+.slick-prev {
+    left: 0px !important;
+}
+.slick-next {
+    right: 0px !important;
+}
+.slick-slider .slick-prev::before, .slick-slider .slick-next::before {
+    font-size: 22px;
+    font-weight: 400;
+    color: #808080;
+    font-family: 'FontAwesome';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#woo-products-var .slick-prev {
+    right: auto;
+    left: -10px;
+}
+#woo-products-var .slick-next {
+    right: -10px;
+    left: auto;
+}
+.slick-slider .slick-next.slick-disabled::before, .slick-slider .slick-prev.slick-disabled::before {
+    opacity: 1;
+}
+.slick-slider .slick-next, .slick-slider .slick-prev {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0;
+    opacity: 0;
+    top: 45%;
+    transform: none !important;
+    background-color: #fff;
+}
+.slick-slider:hover .slick-next ,.slick-slider:hover .slick-prev{
+    opacity: 1;
+}
+.owl-nav .fa {
+    margin: 0 10px;
+    font-size: 20px;
+}
+.owl-carousel .owl-nav svg, .slick-slider button svg {
+    width: 14px;
+    height: 27px;
+    fill: #DDE7DE;
+}
+.owl-carousel button.owl-dot{
+    height: 10px;
+    width: 10px;
+    border: 1px solid #D9135A !important;
+    border-radius: 50%;
+    margin: 0 7px;
+}  
+.owl-carousel button.owl-dot.active{
+    height: 12px;
+    width: 12px;
+} 
+.owl-carousel .owl-dots{
+    margin-top: 45px;
+}
+.slick-dots{
+    position: unset !important;
+    margin-top: 45px !important;
+}
+.slick-dots li button::before{
+    display: none;
+}
+.slick-dots li {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0 6px !important;
+}
+.slick-dots li button {
+    width: 10px !important;
+    height: 10px !important;
+    content: "" !important;
+    border: 1px solid #D9135A !important;
+    border-radius: 50%;
+    padding: 0 !important;
+}
+.slick-dots li button {
+    opacity: 1 !important;
+}
+.slick-dots li.slick-active button{
+    height: 12px !important;
+    width: 12px !important;
+}
+.flex-control-nav .owl-nav{
+	display:block !important;
+	opacity:1;
+}
+.flex-control-nav .owl-nav button{
+	top: 38%;
+}
