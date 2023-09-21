@@ -5,15 +5,14 @@ from books.models import Category
 from blog.models import BCategory, Blog, Post
 from .forms import BlogForm, PostForm
 from django.contrib import messages
-from books.utils import cartview, wishview
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
+@login_required(login_url='login')
 def blog(request):
     kated = BCategory.objects.all()
     category = Category.objects.all()
-    myctx = cartview(request)
-    qyctx = wishview(request)
     b = request.GET.get('b') if request.GET.get('b') != None else ''
     blogs = Blog.objects.filter(
         Q(category__name__icontains=b)
@@ -21,8 +20,6 @@ def blog(request):
     num = 1
     custom_range, blogs = paginateBlogs(request, blogs, 5)
     context={
-            **myctx,
-        **qyctx,
         "blogs":blogs,
         'kated':kated,
         'num':num,
@@ -42,6 +39,7 @@ def blog(request):
         }
     return render(request, 'index.html', context)
 
+@login_required(login_url='login')
 def blog_details(request, pk):
     blogs = Blog.objects.all()
     blog = Blog.objects.get(pk=pk)

@@ -40,7 +40,7 @@ def wishlist(request):
     }
     return render(request, 'wishlist.html', context)
 
-
+@login_required(login_url='login')
 def shop(request):
 
     category = Category.objects.all()
@@ -99,7 +99,7 @@ def addWishlistView(request, id) -> None:
 
     return HttpResponseRedirect(lasturl)
 
-
+@login_required(login_url='login')
 def singleBook(request, pk):
    
     blogs = Blog.objects.all()

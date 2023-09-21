@@ -37,7 +37,7 @@ def home(request):
     }
     return render(request, 'home/index.html', context)
 
-
+@login_required(login_url='login')
 def contact(request):
     blogs = Blog.objects.all()
     category = Category.objects.all()
@@ -68,7 +68,7 @@ def contact(request):
 
     return render(request, 'contact-with-us/index.html', context)
 
-
+@login_required(login_url='login')
 def terms(request):
     category = Category.objects.all()
     blogs = Blog.objects.all()
@@ -91,7 +91,7 @@ def terms(request):
 
     return render(request, 'index6.html', context)
 
-
+@login_required(login_url='login')
 def faqs(request):
     category = Category.objects.all()
     blogs = Blog.objects.all()
@@ -114,7 +114,7 @@ def faqs(request):
 
     return render(request, 'faqs.html', context)
 
-
+@login_required(login_url='login')
 def refs(request):
     category = Category.objects.all()
     blogs = Blog.objects.all()
@@ -137,7 +137,7 @@ def refs(request):
 
     return render(request, 'indexr.html', context)
 
-
+@login_required(login_url='login')
 def about(request):
     category = Category.objects.all()
     blogs = Blog.objects.all()
